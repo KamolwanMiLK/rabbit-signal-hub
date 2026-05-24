@@ -664,37 +664,37 @@ body{font-family:'IBM Plex Sans Thai','IBM Plex Sans',sans-serif;background:var(
 <!-- ═══ SIGNAL ASSESSMENT QUIZ ═══ -->
 <div class="sec" id="sec-quiz">
 <div class="s-hero" style="background:var(--blk3);">
-  <div class="s-ey">SIGNAL ASSESSMENT · 45 QUESTIONS</div>
-  <div class="s-h1">ค้นพบ<br><em>Signal ของคุณ</em></div>
-  <div class="s-sub">48 ข้อ · ใช้เวลา ~20 นาที · ไม่มีคำตอบถูกหรือผิด — ตอบตามตัวเองจริงๆ</div>
+  <div class="s-ey" data-th="SIGNAL ASSESSMENT · 48 ข้อ" data-en="SIGNAL ASSESSMENT · 48 QUESTIONS">SIGNAL ASSESSMENT · 48 ข้อ</div>
+  <div class="s-h1" data-th="ค้นพบ<br><em>Signal ของคุณ</em>" data-en="Discover<br><em>Your Signal</em>">ค้นพบ<br><em>Signal ของคุณ</em></div>
+  <div class="s-sub" data-th="48 ข้อ · ใช้เวลา ~20 นาที · ไม่มีคำตอบถูกหรือผิด — ตอบตามตัวเองจริงๆ" data-en="48 questions · ~20 minutes · No right or wrong answers — answer as your true self">48 ข้อ · ใช้เวลา ~20 นาที · ไม่มีคำตอบถูกหรือผิด — ตอบตามตัวเองจริงๆ</div>
 </div>
 <div class="s-body" style="max-width:800px;">
 
 <!-- START SCREEN: EMPLOYEE INFO FORM -->
 <div id="quiz-start">
   <div class="note or" style="margin-bottom:20px;">
-    <strong>ก่อนเริ่ม:</strong> กรอกข้อมูลด้านล่างก่อน เพื่อให้ HR นำผลไปใช้ใน Team Signal Map และ Succession Planning ได้ทันที
+    <span data-th="<strong>ก่อนเริ่ม:</strong> กรอกข้อมูลด้านล่างก่อน เพื่อให้ HR นำผลไปใช้ใน Team Signal Map และ Succession Planning ได้ทันที" data-en="<strong>Before you begin:</strong> Please fill in your details below so HR can use your results in the Team Signal Map and Succession Planning immediately."><strong>ก่อนเริ่ม:</strong> กรอกข้อมูลด้านล่างก่อน เพื่อให้ HR นำผลไปใช้ใน Team Signal Map และ Succession Planning ได้ทันที</span>
   </div>
 
   <!-- Employee Form -->
   <div class="card" style="margin-bottom:20px;">
-    <div class="card-hdr" style="background:var(--blk);"><div class="card-icon" style="font-size:16px;">👤</div><div class="card-title" style="color:#fff;">ข้อมูลพนักงาน</div></div>
+    <div class="card-hdr" style="background:var(--blk);"><div class="card-icon" style="font-size:16px;">👤</div><div class="card-title" style="color:#fff;" data-th="ข้อมูลพนักงาน" data-en="Employee Information">ข้อมูลพนักงาน</div></div>
     <div class="card-body" style="display:flex;flex-direction:column;gap:14px;">
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
         <div>
-          <label style="font-size:10px;font-weight:700;letter-spacing:.1em;color:var(--ink4);display:block;margin-bottom:5px;">ชื่อ *</label>
-          <input id="emp-firstname" type="text" placeholder="ชื่อจริง" style="width:100%;padding:9px 12px;border:1.5px solid var(--ln);border-radius:6px;font-size:13px;font-family:inherit;outline:none;transition:border .15s;" onfocus="this.style.borderColor='var(--or)'" onblur="this.style.borderColor='var(--ln)'">
+          <label style="font-size:10px;font-weight:700;letter-spacing:.1em;color:var(--ink4);display:block;margin-bottom:5px;" data-th="ชื่อ *" data-en="First Name *">ชื่อ *</label>
+          <input id="emp-firstname" type="text" placeholder="ชื่อจริง / First name" style="width:100%;padding:9px 12px;border:1.5px solid var(--ln);border-radius:6px;font-size:13px;font-family:inherit;outline:none;transition:border .15s;" onfocus="this.style.borderColor='var(--or)'" onblur="this.style.borderColor='var(--ln)'">
         </div>
         <div>
-          <label style="font-size:10px;font-weight:700;letter-spacing:.1em;color:var(--ink4);display:block;margin-bottom:5px;">นามสกุล *</label>
-          <input id="emp-lastname" type="text" placeholder="นามสกุล" style="width:100%;padding:9px 12px;border:1.5px solid var(--ln);border-radius:6px;font-size:13px;font-family:inherit;outline:none;transition:border .15s;" onfocus="this.style.borderColor='var(--or)'" onblur="this.style.borderColor='var(--ln)'">
+          <label style="font-size:10px;font-weight:700;letter-spacing:.1em;color:var(--ink4);display:block;margin-bottom:5px;" data-th="นามสกุล *" data-en="Last Name *">นามสกุล *</label>
+          <input id="emp-lastname" type="text" placeholder="นามสกุล / Last name" style="width:100%;padding:9px 12px;border:1.5px solid var(--ln);border-radius:6px;font-size:13px;font-family:inherit;outline:none;transition:border .15s;" onfocus="this.style.borderColor='var(--or)'" onblur="this.style.borderColor='var(--ln)'">
         </div>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
         <div>
           <label style="font-size:10px;font-weight:700;letter-spacing:.1em;color:var(--ink4);display:block;margin-bottom:5px;">BU *</label>
           <select id="emp-bu" style="width:100%;padding:9px 12px;border:1.5px solid var(--ln);border-radius:6px;font-size:13px;font-family:inherit;outline:none;background:#fff;transition:border .15s;" onfocus="this.style.borderColor='var(--or)'" onblur="this.style.borderColor='var(--ln)'">
-            <option value="">-- เลือก BU --</option>
+            <option value="" data-th="-- เลือก BU --" data-en="-- Select BU --">-- เลือก BU --</option>
             <option>Rabbit Rewards</option>
             <option>Rabbit Bytes</option>
             <option>Rabbit Tech</option>
@@ -703,14 +703,14 @@ body{font-family:'IBM Plex Sans Thai','IBM Plex Sans',sans-serif;background:var(
         </div>
         <div>
           <label style="font-size:10px;font-weight:700;letter-spacing:.1em;color:var(--ink4);display:block;margin-bottom:5px;">Department *</label>
-          <input id="emp-dept" type="text" placeholder="เช่น Marketing, Tech, Finance" style="width:100%;padding:9px 12px;border:1.5px solid var(--ln);border-radius:6px;font-size:13px;font-family:inherit;outline:none;transition:border .15s;" onfocus="this.style.borderColor='var(--or)'" onblur="this.style.borderColor='var(--ln)'">
+          <input id="emp-dept" type="text" placeholder="e.g. Marketing, Tech, Finance" style="width:100%;padding:9px 12px;border:1.5px solid var(--ln);border-radius:6px;font-size:13px;font-family:inherit;outline:none;transition:border .15s;" onfocus="this.style.borderColor='var(--or)'" onblur="this.style.borderColor='var(--ln)'">
         </div>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
         <div>
-          <label style="font-size:10px;font-weight:700;letter-spacing:.1em;color:var(--ink4);display:block;margin-bottom:5px;">Level / ตำแหน่ง *</label>
+          <label style="font-size:10px;font-weight:700;letter-spacing:.1em;color:var(--ink4);display:block;margin-bottom:5px;" data-th="Level / ตำแหน่ง *" data-en="Level / Position *">Level / ตำแหน่ง *</label>
           <select id="emp-level" style="width:100%;padding:9px 12px;border:1.5px solid var(--ln);border-radius:6px;font-size:13px;font-family:inherit;outline:none;background:#fff;transition:border .15s;" onfocus="this.style.borderColor='var(--or)'" onblur="this.style.borderColor='var(--ln)'">
-            <option value="">-- เลือก Level --</option>
+            <option value="" data-th="-- เลือก Level --" data-en="-- Select Level --">-- เลือก Level --</option>
             <option>Staff / Officer</option>
             <option>Senior Staff / Senior Officer</option>
             <option>Manager</option>
@@ -721,22 +721,22 @@ body{font-family:'IBM Plex Sans Thai','IBM Plex Sans',sans-serif;background:var(
           </select>
         </div>
         <div>
-          <label style="font-size:10px;font-weight:700;letter-spacing:.1em;color:var(--ink4);display:block;margin-bottom:5px;">อีเมล (ถ้ามี)</label>
+          <label style="font-size:10px;font-weight:700;letter-spacing:.1em;color:var(--ink4);display:block;margin-bottom:5px;" data-th="อีเมล (ถ้ามี)" data-en="Email (optional)">อีเมล (ถ้ามี)</label>
           <input id="emp-email" type="email" placeholder="name@rabbit.co.th" style="width:100%;padding:9px 12px;border:1.5px solid var(--ln);border-radius:6px;font-size:13px;font-family:inherit;outline:none;transition:border .15s;" onfocus="this.style.borderColor='var(--or)'" onblur="this.style.borderColor='var(--ln)'">
         </div>
       </div>
-      <div id="emp-error" style="display:none;color:#c0392b;font-size:12px;padding:8px 12px;background:#fff0f0;border-radius:6px;border:1px solid #f5c6cb;">⚠️ กรุณากรอกข้อมูล ชื่อ, นามสกุล, BU, Department และ Level ให้ครบก่อน</div>
+      <div id="emp-error" style="display:none;color:#c0392b;font-size:12px;padding:8px 12px;background:#fff0f0;border-radius:6px;border:1px solid #f5c6cb;" data-th="⚠️ กรุณากรอกข้อมูล ชื่อ, นามสกุล, BU, Department และ Level ให้ครบก่อน" data-en="⚠️ Please fill in First Name, Last Name, BU, Department and Level before continuing.">⚠️ กรุณากรอกข้อมูล ชื่อ, นามสกุล, BU, Department และ Level ให้ครบก่อน</div>
     </div>
   </div>
 
   <!-- Part summary -->
   <div class="g3" style="margin-bottom:16px;">
-    <div class="stat-card"><div class="stat-n" style="font-size:26px;">Part 1</div><div class="stat-l">18 Scenario Questions<br><span style="color:var(--or);">~8 นาที</span></div></div>
-    <div class="stat-card"><div class="stat-n" style="font-size:26px;">Part 2</div><div class="stat-l">15 Forced Choice<br><span style="color:var(--or);">~6 นาที</span></div></div>
-    <div class="stat-card"><div class="stat-n" style="font-size:26px;">Part 3</div><div class="stat-l">15 Values Signal<br><span style="color:var(--or);">~5 นาที</span></div></div>
+    <div class="stat-card"><div class="stat-n" style="font-size:26px;">Part 1</div><div class="stat-l">18 Scenario Questions<br><span style="color:var(--or);" data-th="~8 นาที" data-en="~8 min">~8 นาที</span></div></div>
+    <div class="stat-card"><div class="stat-n" style="font-size:26px;">Part 2</div><div class="stat-l">15 Forced Choice<br><span style="color:var(--or);" data-th="~6 นาที" data-en="~6 min">~6 นาที</span></div></div>
+    <div class="stat-card"><div class="stat-n" style="font-size:26px;">Part 3</div><div class="stat-l">15 Values Signal<br><span style="color:var(--or);" data-th="~5 นาที" data-en="~5 min">~5 นาที</span></div></div>
   </div>
-  <div class="note" style="margin-bottom:20px;font-size:12px;"><strong>🔒 Anti-bias:</strong> Part 3 มีคำถาม "ข้อสังเกต" แทรกอยู่ เพื่อให้ผลสะท้อน behavior จริง ไม่ใช่แค่ intention · ตอบตามตัวเองจริงๆ เสมอ</div>
-  <button onclick="validateAndStart()" style="background:var(--or);color:var(--blk);border:none;padding:16px 40px;font-size:15px;font-weight:700;border-radius:8px;cursor:pointer;letter-spacing:.05em;width:100%;max-width:360px;display:block;margin:0 auto;">เริ่มทำ Assessment (48 ข้อ) →</button>
+  <div class="note" style="margin-bottom:20px;font-size:12px;" data-th='<strong>🔒 Anti-bias:</strong> Part 3 มีคำถาม &quot;ข้อสังเกต&quot; แทรกอยู่ เพื่อให้ผลสะท้อน behavior จริง ไม่ใช่แค่ intention · ตอบตามตัวเองจริงๆ เสมอ' data-en='<strong>🔒 Anti-bias:</strong> Part 3 contains &quot;observation&quot; questions to reflect actual behavior, not just intention · Always answer honestly'><strong>🔒 Anti-bias:</strong> Part 3 มีคำถาม "ข้อสังเกต" แทรกอยู่ เพื่อให้ผลสะท้อน behavior จริง ไม่ใช่แค่ intention · ตอบตามตัวเองจริงๆ เสมอ</div>
+  <button onclick="validateAndStart()" style="background:var(--or);color:var(--blk);border:none;padding:16px 40px;font-size:15px;font-weight:700;border-radius:8px;cursor:pointer;letter-spacing:.05em;width:100%;max-width:360px;display:block;margin:0 auto;" data-th="เริ่มทำ Assessment (48 ข้อ) →" data-en="Start Assessment (48 Qs) →">เริ่มทำ Assessment (48 ข้อ) →</button>
 </div>
 
 <!-- QUIZ INTERFACE -->
@@ -745,7 +745,7 @@ body{font-family:'IBM Plex Sans Thai','IBM Plex Sans',sans-serif;background:var(
   <div style="margin-bottom:28px;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
       <div style="font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--ink4);" id="quiz-part-label">PART 1 — SCENARIO</div>
-      <div style="font-size:12px;color:var(--ink3);" id="quiz-progress-text">ข้อ 1 / 45</div>
+      <div style="font-size:12px;color:var(--ink3);" id="quiz-progress-text">Q 1 / 48</div>
     </div>
     <div style="height:4px;background:var(--wh3);border-radius:2px;overflow:hidden;">
       <div id="quiz-progress-bar" style="height:100%;background:var(--or);border-radius:2px;transition:width .3s ease;width:2%;"></div>
@@ -771,9 +771,9 @@ body{font-family:'IBM Plex Sans Thai','IBM Plex Sans',sans-serif;background:var(
 
   <!-- Nav buttons -->
   <div style="display:flex;gap:12px;justify-content:space-between;align-items:center;">
-    <button onclick="prevQ()" id="quiz-prev" style="padding:10px 24px;border:1px solid var(--ln);background:#fff;color:var(--ink3);border-radius:6px;cursor:pointer;font-size:13px;font-weight:500;">← กลับ</button>
+    <button onclick="prevQ()" id="quiz-prev" style="padding:10px 24px;border:1px solid var(--ln);background:#fff;color:var(--ink3);border-radius:6px;cursor:pointer;font-size:13px;font-weight:500;" data-th="← กลับ" data-en="← Back">← กลับ</button>
     <div style="font-size:11px;color:var(--ink4);" id="quiz-skip-note"></div>
-    <button onclick="nextQ()" id="quiz-next" style="padding:10px 24px;background:var(--blk);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px;font-weight:600;" disabled>ถัดไป →</button>
+    <button onclick="nextQ()" id="quiz-next" style="padding:10px 24px;background:var(--blk);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px;font-weight:600;" disabled>Next →</button>
   </div>
 </div>
 
@@ -788,7 +788,7 @@ body{font-family:'IBM Plex Sans Thai','IBM Plex Sans',sans-serif;background:var(
 <div class="s-hero" style="background:var(--blk3);">
   <div class="s-ey" style="color:#9a3a10;">HR · ASSESSMENT RESULTS</div>
   <div class="s-h1">Team Signal<br><em>Dashboard</em></div>
-  <div class="s-sub">ผลการประเมินทั้งหมดของพนักงาน — สำหรับ HR และ People Team เท่านั้น</div>
+  <div class="s-sub" data-th="ผลการประเมินทั้งหมดของพนักงาน — สำหรับ HR และ People Team เท่านั้น" data-en="All employee assessment results — for HR and People Team only">ผลการประเมินทั้งหมดของพนักงาน — สำหรับ HR และ People Team เท่านั้น</div>
 </div>
 <div class="s-body" style="max-width:1000px;">
 
@@ -797,11 +797,11 @@ body{font-family:'IBM Plex Sans Thai','IBM Plex Sans',sans-serif;background:var(
     <div style="max-width:360px;margin:0 auto;text-align:center;padding:40px 0;">
       <div style="font-size:48px;margin-bottom:16px;">🔐</div>
       <div style="font-family:'Playfair Display',serif;font-size:22px;margin-bottom:8px;">HR Access Only</div>
-      <div style="font-size:13px;color:var(--ink3);margin-bottom:24px;line-height:1.6;">ป้อน Password เพื่อดู Assessment Results Dashboard<br><span style="font-size:11px;color:var(--ink4);">ติดต่อ People Team หากยังไม่มี password</span></div>
+      <div style="font-size:13px;color:var(--ink3);margin-bottom:24px;line-height:1.6;" data-th="ป้อน Password เพื่อดู Assessment Results Dashboard<br><span style='font-size:11px;color:var(--ink4);'>ติดต่อ People Team หากยังไม่มี password</span>" data-en="Enter password to access the Assessment Results Dashboard<br><span style='font-size:11px;color:var(--ink4);'>Contact the People Team if you need a password.</span>">ป้อน Password เพื่อดู Assessment Results Dashboard<br><span style="font-size:11px;color:var(--ink4);">ติดต่อ People Team หากยังไม่มี password</span></div>
       <input id="hr-pw-input" type="password" placeholder="Enter HR Password" style="width:100%;padding:12px 16px;border:1.5px solid var(--ln);border-radius:8px;font-size:14px;font-family:inherit;outline:none;text-align:center;margin-bottom:8px;transition:border .15s;" onfocus="this.style.borderColor='var(--or)'" onblur="this.style.borderColor='var(--ln)'" onkeydown="if(event.key==='Enter')checkHRPass()">
-      <div id="hr-pw-error" style="display:none;color:#c0392b;font-size:12px;margin-bottom:8px;">❌ Password ไม่ถูกต้อง</div>
-      <button onclick="checkHRPass()" style="width:100%;padding:12px;background:var(--blk);color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;margin-bottom:12px;">เข้าสู่ Dashboard →</button>
-      <div style="font-size:11px;color:var(--ink4);">ติดต่อ People &amp; Talent Team เพื่อขอรับ password</div>
+      <div id="hr-pw-error" style="display:none;color:#c0392b;font-size:12px;margin-bottom:8px;" data-th="❌ Password ไม่ถูกต้อง" data-en="❌ Incorrect password">❌ Password ไม่ถูกต้อง</div>
+      <button onclick="checkHRPass()" style="width:100%;padding:12px;background:var(--blk);color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;margin-bottom:12px;" data-th="เข้าสู่ Dashboard →" data-en="Enter Dashboard →">เข้าสู่ Dashboard →</button>
+      <div style="font-size:11px;color:var(--ink4);" data-th="ติดต่อ People &amp; Talent Team เพื่อขอรับ password" data-en="Contact the People &amp; Talent Team to request a password">ติดต่อ People &amp; Talent Team เพื่อขอรับ password</div>
     </div>
   </div>
 
@@ -812,31 +812,31 @@ body{font-family:'IBM Plex Sans Thai','IBM Plex Sans',sans-serif;background:var(
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:12px;">
       <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--ink);">Signal Overview</div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;">
-        <button onclick="hrFilter('all')" id="hr-f-all" style="padding:6px 14px;border-radius:6px;border:1.5px solid var(--or);background:var(--or);color:var(--blk);font-size:11px;font-weight:700;cursor:pointer;">ทั้งหมด</button>
-        <button onclick="hrFilter('bu')" id="hr-f-bu" style="padding:6px 14px;border-radius:6px;border:1.5px solid var(--ln);background:#fff;color:var(--ink3);font-size:11px;font-weight:600;cursor:pointer;">แบ่งตาม BU</button>
-        <button onclick="hrFilter('level')" id="hr-f-level" style="padding:6px 14px;border-radius:6px;border:1.5px solid var(--ln);background:#fff;color:var(--ink3);font-size:11px;font-weight:600;cursor:pointer;">แบ่งตาม Level</button>
-        <button onclick="refreshFromSheets()" id="hr-refresh-btn" style="padding:6px 14px;border-radius:6px;border:1.5px solid #1a7a50;background:#E4F5EC;color:#1a7a50;font-size:11px;font-weight:700;cursor:pointer;">🔄 Refresh จาก Sheets</button>
-        <button onclick="clearAllResults()" style="padding:6px 14px;border-radius:6px;border:1.5px solid #f5c6cb;background:#fff0f0;color:#c0392b;font-size:11px;font-weight:600;cursor:pointer;">🗑 ล้างข้อมูล</button>
+        <button onclick="hrFilter('all')" id="hr-f-all" style="padding:6px 14px;border-radius:6px;border:1.5px solid var(--or);background:var(--or);color:var(--blk);font-size:11px;font-weight:700;cursor:pointer;" data-th="ทั้งหมด" data-en="All">ทั้งหมด</button>
+        <button onclick="hrFilter('bu')" id="hr-f-bu" style="padding:6px 14px;border-radius:6px;border:1.5px solid var(--ln);background:#fff;color:var(--ink3);font-size:11px;font-weight:600;cursor:pointer;" data-th="แบ่งตาม BU" data-en="By BU">แบ่งตาม BU</button>
+        <button onclick="hrFilter('level')" id="hr-f-level" style="padding:6px 14px;border-radius:6px;border:1.5px solid var(--ln);background:#fff;color:var(--ink3);font-size:11px;font-weight:600;cursor:pointer;" data-th="แบ่งตาม Level" data-en="By Level">แบ่งตาม Level</button>
+        <button onclick="refreshFromSheets()" id="hr-refresh-btn" style="padding:6px 14px;border-radius:6px;border:1.5px solid #1a7a50;background:#E4F5EC;color:#1a7a50;font-size:11px;font-weight:700;cursor:pointer;" data-th="🔄 Refresh จาก Sheets" data-en="🔄 Refresh from Sheets">🔄 Refresh จาก Sheets</button>
+        <button onclick="clearAllResults()" style="padding:6px 14px;border-radius:6px;border:1.5px solid #f5c6cb;background:#fff0f0;color:#c0392b;font-size:11px;font-weight:600;cursor:pointer;" data-th="🗑 ล้างข้อมูล" data-en="🗑 Clear Data">🗑 ล้างข้อมูล</button>
       </div>
     </div>
 
     <!-- Setup Banner (shown when no Script URL configured) -->
     <div id="hr-setup-banner" style="margin-bottom:20px;">
       <div style="background:#fffbe6;border:1.5px solid #f7c948;border-radius:10px;padding:18px 20px;">
-        <div style="font-size:12px;font-weight:700;color:#8a6000;margin-bottom:10px;">⚙️ วิธีตั้งค่าให้พนักงานทุกคน sync ผลมารวมกัน (ทำครั้งเดียว ~10 นาที)</div>
+        <div style="font-size:12px;font-weight:700;color:#8a6000;margin-bottom:10px;" data-th="⚙️ วิธีตั้งค่าให้พนักงานทุกคน sync ผลมารวมกัน (ทำครั้งเดียว ~10 นาที)" data-en="⚙️ Setup: Sync all employee results to Google Sheets (one-time ~10 min)">⚙️ วิธีตั้งค่าให้พนักงานทุกคน sync ผลมารวมกัน (ทำครั้งเดียว ~10 นาที)</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
           <div style="font-size:12px;color:#5a4000;line-height:1.8;">
             <strong>Step 1:</strong> เปิด <a href="https://script.google.com" target="_blank" style="color:#1a7a50;">script.google.com</a> → New Project<br>
-            <strong>Step 2:</strong> Copy code จากกล่องด้านขวา → วางทับ Code.gs<br>
-            <strong>Step 3:</strong> กด Deploy → New Deployment → Web App<br>
+            <strong>Step 2:</strong> <span data-th="Copy code จากกล่องด้านขวา → วางทับ Code.gs" data-en="Copy code from the box on the right → paste over Code.gs">Copy code จากกล่องด้านขวา → วางทับ Code.gs</span><br>
+            <strong>Step 3:</strong> <span data-th="กด Deploy → New Deployment → Web App" data-en="Click Deploy → New Deployment → Web App">กด Deploy → New Deployment → Web App</span><br>
             → Execute as: <strong>Me</strong> · Access: <strong>Anyone</strong><br>
-            <strong>Step 4:</strong> Copy URL ที่ได้ → เปิดไฟล์ HTML นี้<br>
+            <strong>Step 4:</strong> <span data-th="Copy URL ที่ได้ → เปิดไฟล์ HTML นี้" data-en="Copy the URL → open this HTML file">Copy URL ที่ได้ → เปิดไฟล์ HTML นี้</span><br>
             → หา <code style="background:#fff;padding:1px 4px;border-radius:3px;">APPS_SCRIPT_URL = ''</code><br>
-            → วาง URL ระหว่าง quotes แล้วบันทึก<br>
-            <strong>Step 5:</strong> แชร์ไฟล์ HTML ให้พนักงาน → ผลจะรวมใน Sheet อัตโนมัติ
+            → <span data-th="วาง URL ระหว่าง quotes แล้วบันทึก" data-en="Paste the URL between quotes and save">วาง URL ระหว่าง quotes แล้วบันทึก</span><br>
+            <strong>Step 5:</strong> <span data-th="แชร์ไฟล์ HTML ให้พนักงาน → ผลจะรวมใน Sheet อัตโนมัติ" data-en="Share the HTML file with employees → results will sync to Sheet automatically">แชร์ไฟล์ HTML ให้พนักงาน → ผลจะรวมใน Sheet อัตโนมัติ</span>
           </div>
           <div>
-            <div style="font-size:10px;font-weight:700;color:#8a6000;margin-bottom:6px;">Google Apps Script Code (Copy ทั้งหมด):</div>
+            <div style="font-size:10px;font-weight:700;color:#8a6000;margin-bottom:6px;" data-th="Google Apps Script Code (Copy ทั้งหมด):" data-en="Google Apps Script Code (Copy All):">Google Apps Script Code (Copy ทั้งหมด):</div>
             <div id="apps-script-code" style="background:#1e1e1e;border-radius:6px;padding:10px;font-size:10px;color:#d4d4d4;font-family:monospace;line-height:1.5;max-height:180px;overflow-y:auto;white-space:pre;">const SHEET_NAME = 'SignalResults';
 
 function doGet(e) {
@@ -902,24 +902,24 @@ function jsonRes(data) {
           </div>
         </div>
         <div style="margin-top:10px;padding:8px 12px;background:#fff;border-radius:6px;border:1px solid #f7c948;font-size:11px;color:#666;">
-          💡 ยังไม่ได้ตั้งค่า? ข้อมูลจะเก็บใน browser ของคุณก่อนชั่วคราว — เมื่อตั้งค่าแล้วกด Refresh เพื่อดึงข้อมูลจาก Sheets · ข้อมูลใน local cache ยังดูได้ปกติ
+          ${getLang()==='th'?'💡 ยังไม่ได้ตั้งค่า? ข้อมูลจะเก็บใน browser ของคุณก่อนชั่วคราว — เมื่อตั้งค่าแล้วกด Refresh เพื่อดึงข้อมูลจาก Sheets · ข้อมูลใน local cache ยังดูได้ปกติ':'💡 Not configured yet? Data will be stored in your browser temporarily — once set up, click Refresh to pull from Sheets · Local cache data remains accessible normally'}
         </div>
       </div>
     </div>
     <div id="hr-sync-status" style="display:none;margin-bottom:16px;padding:8px 14px;border-radius:6px;font-size:12px;"></div>
 
     <div class="g4" id="hr-summary-stats" style="margin-bottom:24px;">
-      <div class="stat-card"><div class="stat-n" id="hr-total">0</div><div class="stat-l">ผู้เข้าทำ Assessment</div></div>
-      <div class="stat-card"><div class="stat-n" id="hr-bu-count">0</div><div class="stat-l">BU ที่มีข้อมูล</div></div>
-      <div class="stat-card"><div class="stat-n" id="hr-avg-culture" style="color:var(--or);">—</div><div class="stat-l">Culture Score เฉลี่ย</div></div>
-      <div class="stat-card"><div class="stat-n" id="hr-top-arch" style="font-size:14px;padding-top:8px;">—</div><div class="stat-l">Archetype ที่พบมากสุด</div></div>
+      <div class="stat-card"><div class="stat-n" id="hr-total">0</div><div class="stat-l" data-th="ผู้เข้าทำ Assessment" data-en="Assessments Taken">ผู้เข้าทำ Assessment</div></div>
+      <div class="stat-card"><div class="stat-n" id="hr-bu-count">0</div><div class="stat-l" data-th="BU ที่มีข้อมูล" data-en="BUs with Data">BU ที่มีข้อมูล</div></div>
+      <div class="stat-card"><div class="stat-n" id="hr-avg-culture" style="color:var(--or);">—</div><div class="stat-l" data-th="Culture Score เฉลี่ย" data-en="Avg Culture Score">Culture Score เฉลี่ย</div></div>
+      <div class="stat-card"><div class="stat-n" id="hr-top-arch" style="font-size:14px;padding-top:8px;">—</div><div class="stat-l" data-th="Archetype ที่พบมากสุด" data-en="Most Common Archetype">Archetype ที่พบมากสุด</div></div>
     </div>
 
     <!-- Archetype Distribution -->
     <div class="card" style="margin-bottom:16px;">
       <div class="card-hdr"><div class="card-icon">📊</div><div class="card-title">Archetype Distribution</div></div>
       <div class="card-body" id="hr-arch-chart">
-        <div style="color:var(--ink4);font-size:13px;">ยังไม่มีข้อมูล — รอพนักงานทำ Assessment</div>
+        <div style="color:var(--ink4);font-size:13px;" data-th="ยังไม่มีข้อมูล — รอพนักงานทำ Assessment" data-en="No data yet — waiting for employee assessments">ยังไม่มีข้อมูล — รอพนักงานทำ Assessment</div>
       </div>
     </div>
 
@@ -927,7 +927,7 @@ function jsonRes(data) {
     <div class="card" style="margin-bottom:16px;">
       <div class="card-hdr"><div class="card-icon">🕸️</div><div class="card-title">Team Domain Balance</div></div>
       <div class="card-body" id="hr-domain-chart">
-        <div style="color:var(--ink4);font-size:13px;">ยังไม่มีข้อมูล</div>
+        <div style="color:var(--ink4);font-size:13px;" data-th="ยังไม่มีข้อมูล" data-en="No data yet">ยังไม่มีข้อมูล</div>
       </div>
     </div>
 
@@ -937,14 +937,14 @@ function jsonRes(data) {
         <div class="card-icon">👥</div>
         <div class="card-title">Individual Results</div>
         <div style="margin-left:auto;display:flex;gap:8px;align-items:center;">
-          <input id="hr-search" type="text" placeholder="ค้นหาชื่อ / BU / Archetype..." oninput="renderHRTable()" style="padding:5px 10px;border:1px solid var(--ln);border-radius:5px;font-size:12px;width:220px;font-family:inherit;outline:none;">
-          <button onclick="exportAllCSV()" style="padding:5px 12px;background:var(--exec-lt);color:var(--exec);border:1px solid var(--exec-md);border-radius:5px;font-size:11px;font-weight:600;cursor:pointer;">⬇ Export CSV (ทั้งหมด)</button>
+          <input id="hr-search" type="text" placeholder="Search name / BU / Archetype..." oninput="renderHRTable()" style="padding:5px 10px;border:1px solid var(--ln);border-radius:5px;font-size:12px;width:220px;font-family:inherit;outline:none;">
+          <button onclick="exportAllCSV()" style="padding:5px 12px;background:var(--exec-lt);color:var(--exec);border:1px solid var(--exec-md);border-radius:5px;font-size:11px;font-weight:600;cursor:pointer;" data-th="⬇ Export CSV (ทั้งหมด)" data-en="⬇ Export CSV (All)">⬇ Export CSV (ทั้งหมด)</button>
         </div>
       </div>
       <div style="overflow-x:auto;">
         <table class="tbl" id="hr-results-table">
           <tr>
-            <th>ชื่อ-นามสกุล</th>
+            <th data-th="ชื่อ-นามสกุล" data-en="Full Name">ชื่อ-นามสกุล</th>
             <th>BU</th>
             <th>Department</th>
             <th>Level</th>
@@ -955,10 +955,10 @@ function jsonRes(data) {
             <th>Ownership</th>
             <th>Excellence</th>
             <th>Culture Avg</th>
-            <th>วันที่ทำ</th>
+            <th data-th="วันที่ทำ" data-en="Date">วันที่ทำ</th>
           </tr>
           <tbody id="hr-table-body">
-            <tr><td colspan="12" style="text-align:center;color:var(--ink4);padding:24px;">ยังไม่มีข้อมูล — รอพนักงานทำ Assessment</td></tr>
+            <tr><td colspan="12" style="text-align:center;color:var(--ink4);padding:24px;" data-th="ยังไม่มีข้อมูล — รอพนักงานทำ Assessment" data-en="No data yet — waiting for employee assessments">ยังไม่มีข้อมูล — รอพนักงานทำ Assessment</td></tr>
           </tbody>
         </table>
       </div>
@@ -966,14 +966,14 @@ function jsonRes(data) {
 
     <!-- Culture Scores by BU -->
     <div class="card" style="margin-bottom:24px;">
-      <div class="card-hdr"><div class="card-icon">🌟</div><div class="card-title">Culture Values — เปรียบเทียบตาม BU</div></div>
+      <div class="card-hdr"><div class="card-icon">🌟</div><div class="card-title" data-th="Culture Values — เปรียบเทียบตาม BU" data-en="Culture Values — Comparison by BU">Culture Values — เปรียบเทียบตาม BU</div></div>
       <div class="card-body" id="hr-culture-bu">
-        <div style="color:var(--ink4);font-size:13px;">ยังไม่มีข้อมูล</div>
+        <div style="color:var(--ink4);font-size:13px;" data-th="ยังไม่มีข้อมูล" data-en="No data yet">ยังไม่มีข้อมูล</div>
       </div>
     </div>
 
     <div style="text-align:center;margin-bottom:20px;">
-      <button onclick="hrLogout()" style="padding:10px 24px;background:#fff;border:1.5px solid var(--ln);color:var(--ink4);border-radius:7px;cursor:pointer;font-size:12px;">🔒 ออกจาก HR Dashboard</button>
+      <button onclick="hrLogout()" style="padding:10px 24px;background:#fff;border:1.5px solid var(--ln);color:var(--ink4);border-radius:7px;cursor:pointer;font-size:12px;" data-th="🔒 ออกจาก HR Dashboard" data-en="🔒 Exit HR Dashboard">🔒 ออกจาก HR Dashboard</button>
     </div>
   </div><!-- /hr-dashboard -->
 </div>
@@ -986,6 +986,7 @@ function jsonRes(data) {
 const ARCHETYPES=[
   {n:'Type 1',name:'Strategist',th:'นักวางกติกา',d:'A',c:'var(--think)',
    desc_th:'คุณคือคนที่มองเห็น "ภาพใหญ่" ก่อนคนอื่น และมีความสามารถพิเศษในการแปลง complexity ที่คนอื่นยังงงอยู่ ออกมาเป็น clarity ที่ทีมเดินตามได้ทันที คุณไม่ได้แค่วางแผน — คุณออกแบบ "กติกา" ที่ทำให้ทีมชนะได้อย่างยั่งยืน',
+   desc_en:"You see the big picture before others do and have a rare ability to turn complexity that confuses everyone else into clarity that teams can immediately act on. You don't just plan — you design the rules of the game that let teams win sustainably.",
    tags:['วางกลยุทธ์','Pattern Thinker','Decision Maker','Framework Builder'],
    b_th:'ฉัน design the game — วางกรอบ กำหนดทิศทาง และตัดสินใจได้เมื่อข้อมูลยังไม่ครบ',
    b_en:'I design the game — setting frameworks and making decisions even with incomplete information.',
@@ -1002,6 +1003,7 @@ const ARCHETYPES=[
    pc:['Builder','Connector','Optimizer'],wo:['Anchor','Innovator']},
   {n:'Type 2',name:'Innovator',
    desc_th:"คุณคือคนที่ energize จากการสร้างสิ่งที่ยังไม่เคยมีมาก่อน คุณเชื่อมจุดที่ดูไม่เกี่ยวกันเข้าหากันได้อย่างเป็นธรรมชาติ และมักพบ solution จากมุมที่คนอื่นมองข้ามไป คุณไม่กลัว fail — เพราะทุก failure คือ data ที่ทำให้ next version ดีขึ้น",
+   desc_en:"You are energized by creating things that have never existed before. You naturally connect dots that seem unrelated and consistently find solutions from angles others overlook. You don't fear failure — because every failure is data that makes the next version better.",
    tags:['Creative Thinker', 'Prototype Fast', 'Idea Generator', 'Original Output'],
    th:'นักประดิษฐ์ความคิด',d:'A',c:'var(--think)',
    b_th:'ฉันสร้าง output ใหม่ที่ไม่เคยมีมาก่อน — idea ของฉันมี tangible result',
@@ -1019,6 +1021,7 @@ const ARCHETYPES=[
    pc:['Builder','Scout','Explorer'],wo:['Optimizer','Anchor']},
   {n:'Type 3',name:'Scout',
    desc_th:"คุณคือ antenna ขององค์กร — ดักจับ trend, insight, และ best practice ก่อนคนอื่น คุณเรียนรู้จากทุกที่และทุกคน และมีพรสวรรค์ในการ synthesize ข้อมูลจากหลาย domain ออกมาเป็น insight ที่ทีมนำไปใช้ได้จริง",
+   desc_en:"You are the organization's antenna — capturing trends, insights, and best practices before anyone else. You learn from everywhere and everyone, with a gift for synthesizing knowledge across multiple domains into actionable insights the team can actually use.",
    tags:['Knowledge Connector', 'Trend Spotter', 'Lifelong Learner', 'Research Mind'],
    th:'นักสำรวจความรู้',d:'A',c:'var(--think)',
    b_th:'ฉันดูดความรู้จากทุกที่ เชื่อมโยงสิ่งที่ไม่เกี่ยวกัน และนำมาใช้ได้ก่อนคนอื่น',
@@ -1036,6 +1039,7 @@ const ARCHETYPES=[
    pc:['Innovator','Builder','Strategist'],wo:['Optimizer','Challenger']},
   {n:'Type 4',name:'Builder',
    desc_th:"คุณคือคนที่ทำให้ idea กลายเป็น reality คุณ energize จากการลงมือสร้างสิ่งที่จับต้องได้ และรู้สึก achieve เมื่อเห็น output ที่ ship ออกไป คุณทนกับการพูดถึง idea โดยไม่ลงมือทำไม่ได้ — ต้องสร้างก่อนแล้วค่อย perfect",
+   desc_en:"You are the person who turns ideas into reality. You are energized by building tangible things and feel accomplished when you see shipped output. You can't stand talking about ideas without acting on them — you build first, then perfect.",
    tags:['Ship Fast', 'Hands-On', 'Pragmatic', 'Execution First'],
    th:'นักสร้างของใหม่',d:'B',c:'var(--exec)',
    b_th:'ฉันสร้างสิ่งที่ยังไม่มีจาก 0 — ทน ambiguous ได้ ไม่รอ perfect condition',
@@ -1053,6 +1057,7 @@ const ARCHETYPES=[
    pc:['Strategist','Connector','Catalyst'],wo:['Optimizer','Anchor']},
   {n:'Type 5',name:'Optimizer',
    desc_th:"คุณคือคนที่เห็น inefficiency ได้เสมอ และรู้สึก uncomfortable จนกว่าจะแก้ให้ดีขึ้น คุณมีความสุขกับการ streamline process, ลด waste, และสร้าง system ที่ทำงานได้อย่าง seamless แม้ไม่มีคนดูแล",
+   desc_en:"You always spot inefficiency and feel uncomfortable until you've fixed it. You find deep satisfaction in streamlining processes, reducing waste, and building systems that run seamlessly — even without anyone watching over them.",
    tags:['Process Master', 'Efficiency Drive', 'System Thinker', 'Continuous Improvement'],
    th:'นักขัดเกลาระบบ',d:'B',c:'var(--exec)',
    b_th:"ฉันเอาของที่ดีอยู่แล้วมาทำให้ดีกว่าเดิม — หา inefficiency แล้วกำจัดออก",
@@ -1070,6 +1075,7 @@ const ARCHETYPES=[
    pc:['Strategist','Builder','Scout'],wo:['Innovator','Explorer']},
   {n:'Type 6',name:'Connector',
    desc_th:"คุณคือ bridge ที่เชื่อมคนที่ควรรู้จักกันเข้าด้วยกัน คุณเห็น potential ในทุกคน และสนุกกับการทำให้ collaboration เกิดขึ้นในแบบที่คนอื่นไม่นึกถึง คุณรู้ว่า คนใช่ สำคัญกว่า plan ที่ดี เสมอ",
+   desc_en:"You are the bridge that connects people who should know each other. You see potential in everyone and enjoy creating collaboration that others wouldn't think of. You know that the right person always matters more than the best plan.",
    tags:['Relationship Builder', 'Network Weaver', 'Collaboration Driver', 'Bridge Maker'],
    th:'นักเชื่อมโลก',d:'C',c:'var(--ppl)',
    b_th:'ฉันเชื่อมคนและ resource ข้าม team ข้าม BU — เห็นว่าใครควรรู้จักกัน',
@@ -1087,6 +1093,7 @@ const ARCHETYPES=[
    pc:['Catalyst','Strategist','Builder'],wo:['Challenger','Optimizer']},
   {n:'Type 7',name:'Anchor',
    desc_th:"คุณคือ foundation ที่ทีมพึ่งพาได้เสมอ โดยเฉพาะในช่วงที่ทุกอย่างผันผวน คุณสร้าง psychological safety ด้วยความมั่นคงและความน่าเชื่อถือ และเป็นคนที่ทีมรู้ว่าถ้ามีเขาอยู่ พวกเขาไม่ได้อยู่คนเดียว",
+   desc_en:"You are the foundation the team can always rely on — especially when everything is volatile. You create psychological safety through consistency and trustworthiness. When you're around, the team knows they're never alone.",
    tags:['Stabilizer', 'Trust Builder', 'Reliable Core', 'Culture Keeper'],
    th:'หลักของทีม',d:'C',c:'var(--ppl)',
    b_th:'ฉันคือคนที่ทีมวิ่งมาหาเมื่อรู้สึกไม่มั่นคง — ให้ความปลอดภัยทางจิตใจและ stability',
@@ -1104,6 +1111,7 @@ const ARCHETYPES=[
    pc:['Catalyst','Connector','Strategist'],wo:['Builder','Challenger']},
   {n:'Type 8',name:'Catalyst',
    desc_th:"คุณคือประกายไฟที่จุดพลังให้คนรอบข้าง คุณเห็น potential ในทุกคนก่อนที่พวกเขาจะเห็นตัวเอง และมีพรสวรรค์ในการทำให้ทีม energize และ believe ว่าพวกเขาทำสิ่งยากๆ ได้ คุณไม่ได้แค่ motivate — คุณ unlock คนอื่น",
+   desc_en:"You are the spark that ignites energy in those around you. You see potential in people before they see it in themselves, and you have a gift for energizing teams and making them believe they can do hard things. You don't just motivate — you unlock people.",
    tags:['Energy Amplifier', 'Team Energizer', 'People Developer', 'Possibility Thinker'],
    th:'นักจุดประกาย',d:'C',c:'var(--ppl)',
    b_th:'ฉันทำให้คนรอบข้าง perform ได้ดีกว่าที่คิดว่าตัวเองทำได้ — amplify คนอื่น',
@@ -1121,6 +1129,7 @@ const ARCHETYPES=[
    pc:['Builder','Strategist','Connector'],wo:['Optimizer','Anchor']},
   {n:'Type 9',name:'Challenger',
    desc_th:"คุณคือคนที่กล้าถามคำถามที่คนอื่นไม่กล้าถาม คุณมองว่า status quo คือสิ่งที่ต้องตั้งคำถามเสมอ และ push ให้ทีมทำได้ดีกว่าที่พวกเขาคิดว่าทำได้ คุณไม่ challenge เพื่อสร้างปัญหา แต่เพราะเชื่อว่าดีกว่านี้ได้เสมอ",
+   desc_en:"You dare to ask questions others are afraid to ask. You see the status quo as something that must always be questioned, and you push teams to perform beyond what they think they're capable of. You don't challenge to create problems — you challenge because you believe better is always possible.",
    tags:['Status Quo Challenger', 'High Standards', 'Critical Thinker', 'Growth Driver'],
    th:'นักท้าทายขีดจำกัด',d:'D',c:'var(--drv)',
    b_th:'ฉัน push คนและระบบให้เกินขีดจำกัดเดิม — ไม่ยอมรับ status quo ถ้าทำได้ดีกว่า',
@@ -1380,6 +1389,14 @@ function setLang(lang){
     const val = el.getAttribute('data-'+lang);
     if(val!=null) el.innerHTML=val;
   });
+  // update select option placeholders
+  document.querySelectorAll('option[data-th]').forEach(el=>{
+    const val = el.getAttribute('data-'+lang);
+    if(val!=null) el.textContent=val;
+  });
+  // re-render quiz question if active (so lang switches mid-quiz)
+  const qi = document.getElementById('quiz-interface');
+  if (qi && qi.style.display !== 'none') renderQuestion();
   // rebuild dynamic sections
   const fw=document.getElementById('framework-body');
   if(fw && fw.children.length) buildFramework();
@@ -1711,7 +1728,7 @@ function renderQuestion() {
   const idx = quizState.current;
 
   // Progress
-  document.getElementById('quiz-progress-text').textContent = `ข้อ ${idx+1} / ${total}`;
+  document.getElementById('quiz-progress-text').textContent = lang==='th' ? `ข้อ ${idx+1} / ${total}` : `Q ${idx+1} / ${total}`;
   document.getElementById('quiz-progress-bar').style.width = `${Math.max(2, ((idx+1)/total)*100)}%`;
   
   // Part labels
@@ -1745,9 +1762,9 @@ function renderQuestion() {
     const isReverse = q.reverse === true;
     optEl.innerHTML = `
       <div style="padding:18px 20px;">
-        <div style="font-size:10px;font-weight:700;letter-spacing:.12em;color:${vc};margin-bottom:14px;">● ${valueLabel[q.value]?.toUpperCase()} VALUE${isReverse?' <span style="font-weight:400;opacity:.6;">(ข้อสังเกต)</span>':''}</div>
+        <div style="font-size:10px;font-weight:700;letter-spacing:.12em;color:${vc};margin-bottom:14px;">● ${valueLabel[q.value]?.toUpperCase()} VALUE${isReverse?' <span style="font-weight:400;opacity:.6;">'+(lang==='th'?'(ข้อสังเกต)':'(Observation)')+'</span>':''}</div>
         <div style="display:flex;justify-content:space-between;margin-bottom:8px;font-size:11px;color:#999;">
-          <span>${isReverse?'ไม่เป็นแบบนั้นเลย':'ไม่เป็นแบบนั้นเลย'}</span><span>${isReverse?'เป็นแบบนั้นมาก':'เป็นแบบนั้นมาก'}</span>
+          <span>${lang==='th'?'ไม่เป็นแบบนั้นเลย':'Not at all'}</span><span>${lang==='th'?'เป็นแบบนั้นมาก':'Very much so'}</span>
         </div>
         <div style="display:flex;gap:8px;justify-content:center;">
           ${[1,2,3,4,5].map(v=>`
@@ -1776,12 +1793,13 @@ function renderQuestion() {
 
   // Nav buttons
   document.getElementById('quiz-prev').disabled = idx === 0;
+  document.getElementById('quiz-prev').textContent = lang==='th' ? '← กลับ' : '← Back';
   document.getElementById('quiz-prev').style.opacity = idx === 0 ? '0.3' : '1';
   const nextBtn = document.getElementById('quiz-next');
   const answered = quizState.answers[idx] !== undefined;
   nextBtn.disabled = !answered;
   nextBtn.style.opacity = answered ? '1' : '0.35';
-  nextBtn.textContent = idx === total-1 ? 'ดูผลลัพธ์ ✨' : 'ถัดไป →';
+  nextBtn.textContent = idx === total-1 ? (lang==='th'?'ดูผลลัพธ์ ✨':'See Results ✨') : (lang==='th'?'ถัดไป →':'Next →');
 }
 
 function selectOpt(qIdx, optIdx) {
@@ -1813,6 +1831,7 @@ function prevQ() {
 }
 
 function showQuizResult() {
+  const lang = getLang();  // capture language at result-render time
   document.getElementById('quiz-interface').style.display = 'none';
   const resultEl = document.getElementById('quiz-result');
   resultEl.style.display = 'block';
@@ -1855,13 +1874,13 @@ function showQuizResult() {
   const dominanceRatio = top2Norm / Math.max(topNorm, 1);
   let signalBand, signalBandDesc;
   if (dominanceRatio < 0.55) {
-    signalBand = 'Dominant Signal'; signalBandDesc = 'สัญญาณแข็งมาก — คุณชัดเจนใน archetype นี้เป็นพิเศษ ทีมรู้สึกได้ทันทีว่าคุณ operate ยังไง';
+    signalBand = 'Dominant Signal'; signalBandDesc = lang==='th'?'สัญญาณแข็งมาก — คุณชัดเจนใน archetype นี้เป็นพิเศษ ทีมรู้สึกได้ทันทีว่าคุณ operate ยังไง':'Very strong signal — you are exceptionally clear in this archetype. Teams immediately sense how you operate.';
   } else if (dominanceRatio < 0.75) {
-    signalBand = 'Strong Signal'; signalBandDesc = 'สัญญาณชัด — มี secondary ที่เสริมพอดี ทำให้คุณ flexible ในหลาย context';
+    signalBand = 'Strong Signal'; signalBandDesc = lang==='th' ? 'สัญญาณชัด — มี secondary ที่เสริมพอดี ทำให้คุณ flexible ในหลาย context' : 'Clear signal — a well-matched secondary makes you flexible across many contexts.';
   } else if (dominanceRatio < 0.88) {
-    signalBand = 'Blended Signal'; signalBandDesc = 'สัญญาณผสม — คุณ operate ได้ใน 2 mode ขึ้นอยู่กับ context ทำให้ versatile แต่บางทีคนอื่น predict ยาก';
+    signalBand = 'Blended Signal'; signalBandDesc = lang==='th'?'สัญญาณผสม — คุณ operate ได้ใน 2 mode ขึ้นอยู่กับ context ทำให้ versatile แต่บางทีคนอื่น predict ยาก':'Blended signal — you can operate in two modes by context, making you versatile though sometimes harder to predict.';
   } else {
-    signalBand = 'Multi-Mode'; signalBandDesc = 'สัญญาณหลายทิศ — คุณ adapt ได้สูงมาก แต่ควรระวังว่าในบางสถานการณ์ทีมต้องการ clarity ว่าคุณจะ lead ด้วย mode ไหน';
+    signalBand = 'Multi-Mode'; signalBandDesc = lang==='th'?'สัญญาณหลายทิศ — คุณ adapt ได้สูงมาก แต่ควรระวังว่าในบางสถานการณ์ทีมต้องการ clarity ว่าคุณจะ lead ด้วย mode ไหน':'Multi-mode signal — you adapt well, but in some situations teams need clarity on which mode you will lead with.';
   }
 
   // ── 3. DOMAIN RADAR SCORES (normalized per domain) ───────────
@@ -1934,61 +1953,61 @@ function showQuizResult() {
   // ── 6. DEEP NARRATIVE ─────────────────────────────────────────
   const narratives = {
     Strategist: {
-      who: `คุณคือ <strong>${topName} — นักวางกติกา</strong> คนที่สร้าง value สูงสุดผ่าน "วิธีคิด" ก่อนลงมือทำ คุณมีความสามารถพิเศษในการมองเห็น pattern ที่ซ่อนอยู่ในข้อมูลที่ยังไม่ครบถ้วน และแปลง complexity ที่ทำให้คนอื่นงงออกมาเป็น clarity ที่ทีมทำตามได้`,
-      how: `ในการทำงาน คุณมักเป็นคนที่ตั้งคำถามว่า "เราแก้ปัญหาที่ใช่ไหม?" ก่อนที่จะถาม "เราแก้ยังไง?" คุณ operate ได้ดีที่สุดในสภาวะที่มีความไม่แน่นอนสูง เพราะแทนที่จะรู้สึกหนักใจ คุณมองว่านั่นคือ white space ที่ต้องการ framework ใหม่`,
-      grow: `จุดที่ต้องระวัง: ความสามารถในการวาง strategy ที่แม่นยำอาจทำให้คุณ over-plan ก่อน execute ทีมอาจรู้สึกว่าคุณ "think too much" ในขณะที่พวกเขาพร้อม ship แล้ว การ balance ระหว่าง strategic clarity กับ execution speed คือ growth edge ของคุณ`
+      who: lang==='th'?`คุณคือ <strong>${topName} — นักวางกติกา</strong> คนที่สร้าง value สูงสุดผ่าน "วิธีคิด" ก่อนลงมือทำ คุณมีความสามารถพิเศษในการมองเห็น pattern ที่ซ่อนอยู่ในข้อมูลที่ยังไม่ครบถ้วน และแปลง complexity ที่ทำให้คนอื่นงงออกมาเป็น clarity ที่ทีมทำตามได้`:`You are <strong>${topName} — the Strategist</strong>, someone who creates the most value through <em>thinking before acting</em>. You have a rare ability to spot hidden patterns in incomplete data and convert complexity that confuses others into clarity teams can act on.`,
+      how: lang==='th'?`ในการทำงาน คุณมักเป็นคนที่ตั้งคำถามว่า "เราแก้ปัญหาที่ใช่ไหม?" ก่อนที่จะถาม "เราแก้ยังไง?" คุณ operate ได้ดีที่สุดในสภาวะที่มีความไม่แน่นอนสูง เพราะแทนที่จะรู้สึกหนักใจ คุณมองว่านั่นคือ white space ที่ต้องการ framework ใหม่`:`At work, you tend to ask "Are we solving the right problem?" before "How do we solve it?" You operate best in high-uncertainty environments — instead of feeling overwhelmed, you see that as white space demanding a new framework.`,
+      grow: lang==='th'?`จุดที่ต้องระวัง: ความสามารถในการวาง strategy ที่แม่นยำอาจทำให้คุณ over-plan ก่อน execute ทีมอาจรู้สึกว่าคุณ "think too much" ในขณะที่พวกเขาพร้อม ship แล้ว การ balance ระหว่าง strategic clarity กับ execution speed คือ growth edge ของคุณ`:`Watch out: your precision in strategy may lead you to over-plan before executing. Teams can feel you "think too much" when they're ready to ship. Balancing strategic clarity with execution speed is your key growth edge.`
     },
     Innovator: {
-      who: `คุณคือ <strong>${topName} — นักประดิษฐ์ความคิด</strong> คนที่ energize จากการสร้าง output ที่ไม่เคยมีมาก่อน คุณเชื่อมสิ่งที่ดูไม่เกี่ยวกันเข้าหากันได้อย่างเป็นธรรมชาติ และมักพบ solution จากมุมที่คนอื่นไม่ได้คิดถึง`,
-      how: `คุณทำงานได้ดีที่สุดเมื่อมีพื้นที่ในการ experiment โดยไม่กลัวว่าจะ fail คุณมองว่า prototype ที่ยังไม่สมบูรณ์ดีกว่า plan ที่สมบูรณ์แบบในกระดาษ และคุณดึงดูดความสนใจจากคนรอบข้างด้วย idea ที่ทำให้ทุกคนหยุดคิด`,
-      grow: `สิ่งที่ต้องพัฒนา: energy ที่คุณมีในช่วง ideation มักลดลงอย่างรวดเร็วเมื่อต้องเข้าสู่ phase ที่ต้องการ consistency และ follow-through การจับคู่กับ Builder หรือ Optimizer จะช่วย close gap นี้ได้`
+      who: lang==='th'?`คุณคือ <strong>${topName} — นักประดิษฐ์ความคิด</strong> คนที่ energize จากการสร้าง output ที่ไม่เคยมีมาก่อน คุณเชื่อมสิ่งที่ดูไม่เกี่ยวกันเข้าหากันได้อย่างเป็นธรรมชาติ และมักพบ solution จากมุมที่คนอื่นไม่ได้คิดถึง`:`You are <strong>${topName} — the Innovator</strong>, energized by creating output that has never existed before. You naturally connect seemingly unrelated things and consistently find solutions from angles no one else considers.`,
+      how: lang==='th'?`คุณทำงานได้ดีที่สุดเมื่อมีพื้นที่ในการ experiment โดยไม่กลัวว่าจะ fail คุณมองว่า prototype ที่ยังไม่สมบูรณ์ดีกว่า plan ที่สมบูรณ์แบบในกระดาษ และคุณดึงดูดความสนใจจากคนรอบข้างด้วย idea ที่ทำให้ทุกคนหยุดคิด`:`You work best when given space to experiment without fear of failure. An imperfect prototype beats a perfect plan on paper. You capture people's attention with ideas that make everyone stop and think.`,
+      grow: lang==='th'?`สิ่งที่ต้องพัฒนา: energy ที่คุณมีในช่วง ideation มักลดลงอย่างรวดเร็วเมื่อต้องเข้าสู่ phase ที่ต้องการ consistency และ follow-through การจับคู่กับ Builder หรือ Optimizer จะช่วย close gap นี้ได้`:`To develop: your energy during ideation often drops quickly once the work requires consistency and follow-through. Pairing with a Builder or Optimizer will help close this gap.`
     },
     Scout: {
-      who: `คุณคือ <strong>${topName} — นักสำรวจความรู้</strong> คนที่ value สูงสุดอยู่ที่การเชื่อมโยงข้อมูลจากหลาย domain ที่ดูไม่เกี่ยวกัน คุณคือ internal antenna ขององค์กรที่ดักจับ trend และ insight ก่อนคนอื่น`,
-      how: `คุณ operate ได้ดีที่สุดเมื่อได้เรียนรู้อย่างต่อเนื่อง ไม่ว่าจะเป็น book, podcast, conversation หรือ conference ทีมมักมาหาคุณเมื่อต้องการรู้ว่า "ใครเป็น expert เรื่องนี้?" หรือ "industry อื่นเขาแก้ปัญหาแบบนี้ยังไง?"`,
-      grow: `Growth edge ของคุณ: ความสามารถในการ absorb ความรู้อาจทำให้ติดกับดัก "รอให้รู้ครบก่อน" คุณอาจ collect มากกว่า execute การตั้ง deadline ให้ตัวเองว่า "เรียนรู้ X สัปดาห์แล้ว ship" จะช่วยได้มาก`
+      who: lang==='th'?`คุณคือ <strong>${topName} — นักสำรวจความรู้</strong> คนที่ value สูงสุดอยู่ที่การเชื่อมโยงข้อมูลจากหลาย domain ที่ดูไม่เกี่ยวกัน คุณคือ internal antenna ขององค์กรที่ดักจับ trend และ insight ก่อนคนอื่น`:`You are <strong>${topName} — the Scout</strong>, creating the most value by connecting knowledge across domains that appear unrelated. You are the organization's internal antenna, capturing trends and insights before anyone else.`,
+      how: lang==='th'?`คุณ operate ได้ดีที่สุดเมื่อได้เรียนรู้อย่างต่อเนื่อง ไม่ว่าจะเป็น book, podcast, conversation หรือ conference ทีมมักมาหาคุณเมื่อต้องการรู้ว่า "ใครเป็น expert เรื่องนี้?" หรือ "industry อื่นเขาแก้ปัญหาแบบนี้ยังไง?"`:`You operate best when learning continuously — books, podcasts, conversations, conferences. Teams seek you out when they need to know "Who's the expert on this?" or "How does another industry solve this problem?"`,
+      grow: lang==='th'?`Growth edge ของคุณ: ความสามารถในการ absorb ความรู้อาจทำให้ติดกับดัก "รอให้รู้ครบก่อน" คุณอาจ collect มากกว่า execute การตั้ง deadline ให้ตัวเองว่า "เรียนรู้ X สัปดาห์แล้ว ship" จะช่วยได้มาก`:`Your growth edge: your ability to absorb knowledge can trap you in "wait until I know enough." You may collect more than you execute. Set yourself a deadline: "Learn for X weeks, then ship" — it will make a big difference.`
     },
     Builder: {
-      who: `คุณคือ <strong>${topName} — นักสร้างของใหม่</strong> คนที่สร้าง value ผ่านการ "ลงมือทำ" จาก 0 คุณไม่รอให้ condition สมบูรณ์แบบ คุณ start ด้วยสิ่งที่มี iterate เร็ว และเรียนจาก real usage มากกว่า theory`,
-      how: `คุณ thrive ในสภาวะที่ ambiguous เพราะ blank page คือโอกาส ไม่ใช่ความน่ากลัว คนในทีมมักมาหาคุณเมื่อต้องการให้ "ลงมือทำให้มันเกิดขึ้นจริง" และคุณมักเป็นคนแรกที่ prototype เพื่อ prove concept`,
-      grow: `สิ่งที่ต้องระวัง: style การทำงานคนเดียวที่รวดเร็วอาจทำให้ทีมรู้สึก left behind และเมื่อถึงเวลา handoff งานที่อยู่ในหัวคุณมักยาก transfer ให้คนอื่น การ document และ involve ทีมตั้งแต่ต้นคือ key growth area`
+      who: lang==='th'?`คุณคือ <strong>${topName} — นักสร้างของใหม่</strong> คนที่สร้าง value ผ่านการ "ลงมือทำ" จาก 0 คุณไม่รอให้ condition สมบูรณ์แบบ คุณ start ด้วยสิ่งที่มี iterate เร็ว และเรียนจาก real usage มากกว่า theory`:`You are <strong>${topName} — the Builder</strong>, creating value by making things from zero. You don't wait for perfect conditions — you start with what you have, iterate fast, and learn from real usage rather than theory.`,
+      how: lang==='th'?`คุณ thrive ในสภาวะที่ ambiguous เพราะ blank page คือโอกาส ไม่ใช่ความน่ากลัว คนในทีมมักมาหาคุณเมื่อต้องการให้ "ลงมือทำให้มันเกิดขึ้นจริง" และคุณมักเป็นคนแรกที่ prototype เพื่อ prove concept`:`You thrive in ambiguity because a blank page is an opportunity, not a threat. Teams come to you when they need to "make it actually happen," and you're usually the first to prototype and prove a concept.`,
+      grow: lang==='th'?`สิ่งที่ต้องระวัง: style การทำงานคนเดียวที่รวดเร็วอาจทำให้ทีมรู้สึก left behind และเมื่อถึงเวลา handoff งานที่อยู่ในหัวคุณมักยาก transfer ให้คนอื่น การ document และ involve ทีมตั้งแต่ต้นคือ key growth area`:`Watch out: your fast solo work style can leave the team feeling behind, and knowledge in your head is hard to transfer at handoff time. Documenting your work and involving the team from the start is a key growth area.`
     },
     Optimizer: {
-      who: `คุณคือ <strong>${topName} — นักขัดเกลาระบบ</strong> คนที่มองเห็น inefficiency ที่คนอื่นผ่านมองข้าม และมีความสามารถพิเศษในการทำให้ "ของที่ดีอยู่แล้ว" ดีขึ้นอีก คุณสร้าง value สูงสุดผ่านการ refine, streamline และ standardize`,
-      how: `คุณทำงานได้ดีที่สุดเมื่อมี foundation ให้ปรับปรุง คุณ data-driven ไม่เปลี่ยนโดยไม่มี logic และมักเป็นคนที่ทำให้ระบบ scalable จากที่เคยรับได้ 10 คน ทำได้ 1,000 คน`,
-      grow: `Growth challenge: ความต้องการ data และ logic ก่อนเปลี่ยนอาจทำให้คุณดู resistant ต่อ innovation ในช่วง early stage ที่ยังไม่มีข้อมูลพอ การ practice tolerance ต่อ "good enough to test" จะเปิด potential ใหม่ให้คุณ`
+      who: lang==='th'?`คุณคือ <strong>${topName} — นักขัดเกลาระบบ</strong> คนที่มองเห็น inefficiency ที่คนอื่นผ่านมองข้าม และมีความสามารถพิเศษในการทำให้ "ของที่ดีอยู่แล้ว" ดีขึ้นอีก คุณสร้าง value สูงสุดผ่านการ refine, streamline และ standardize`:`You are <strong>${topName} — the Optimizer</strong>, spotting inefficiencies others walk past and making "already good things" even better. You create the most value through refining, streamlining, and standardizing.`,
+      how: lang==='th'?`คุณทำงานได้ดีที่สุดเมื่อมี foundation ให้ปรับปรุง คุณ data-driven ไม่เปลี่ยนโดยไม่มี logic และมักเป็นคนที่ทำให้ระบบ scalable จากที่เคยรับได้ 10 คน ทำได้ 1,000 คน`:`You work best when there's a foundation to improve. You're data-driven and don't change without logic — and you're often the person who scales a system from handling 10 people to 1,000.`,
+      grow: lang==='th'?`Growth challenge: ความต้องการ data และ logic ก่อนเปลี่ยนอาจทำให้คุณดู resistant ต่อ innovation ในช่วง early stage ที่ยังไม่มีข้อมูลพอ การ practice tolerance ต่อ "good enough to test" จะเปิด potential ใหม่ให้คุณ`:`Growth challenge: your need for data and logic before change can make you appear resistant to early-stage innovation when data is scarce. Practicing tolerance for "good enough to test" will unlock new potential.`
     },
     Connector: {
-      who: `คุณคือ <strong>${topName} — นักเชื่อมโลก</strong> คนที่สร้าง value ผ่านการเชื่อมคนและ resource ที่ควรจะรู้จักกัน คุณเห็นทันทีว่า "A กับ B ควรคุยกัน" และมีความสามารถพิเศษในการสร้าง trust ได้เร็วกับคนแปลกหน้า`,
-      how: `คุณ operate ได้ดีที่สุดใน environment ที่ต้องการ cross-functional collaboration คุณเป็น bridge ระหว่าง BU ที่ปกติไม่ interact และมักเป็นคนที่ทำให้ synergy เกิดขึ้นโดยที่คนอื่นไม่รู้ว่าคุณ orchestrate อยู่เบื้องหลัง`,
-      grow: `สิ่งที่ต้องพัฒนา: ความต้องการ maintain ความสัมพันธ์กับทุกฝ่ายอาจทำให้คุณ avoid conflict และ "keep everyone happy" มากเกินไป บางครั้งการ take a clear stand แม้จะ displease บางคน คือสิ่งที่ทีมต้องการจากคุณ`
+      who: lang==='th'?`คุณคือ <strong>${topName} — นักเชื่อมโลก</strong> คนที่สร้าง value ผ่านการเชื่อมคนและ resource ที่ควรจะรู้จักกัน คุณเห็นทันทีว่า "A กับ B ควรคุยกัน" และมีความสามารถพิเศษในการสร้าง trust ได้เร็วกับคนแปลกหน้า`:`You are <strong>${topName} — the Connector</strong>, creating value by linking people and resources that belong together. You immediately see "A and B should talk" and have a rare ability to build trust quickly with strangers.`,
+      how: lang==='th'?`คุณ operate ได้ดีที่สุดใน environment ที่ต้องการ cross-functional collaboration คุณเป็น bridge ระหว่าง BU ที่ปกติไม่ interact และมักเป็นคนที่ทำให้ synergy เกิดขึ้นโดยที่คนอื่นไม่รู้ว่าคุณ orchestrate อยู่เบื้องหลัง`:`You operate best in environments requiring cross-functional collaboration. You bridge BUs that don't normally interact and are often the person who makes synergy happen behind the scenes without anyone realizing you're orchestrating it.`,
+      grow: lang==='th'?`สิ่งที่ต้องพัฒนา: ความต้องการ maintain ความสัมพันธ์กับทุกฝ่ายอาจทำให้คุณ avoid conflict และ "keep everyone happy" มากเกินไป บางครั้งการ take a clear stand แม้จะ displease บางคน คือสิ่งที่ทีมต้องการจากคุณ`:`To develop: your need to maintain relationships with everyone can lead you to avoid conflict and "keep everyone happy" too much. Sometimes taking a clear stand — even if it displeases someone — is exactly what the team needs from you.`
     },
     Anchor: {
-      who: `คุณคือ <strong>${topName} — หลักของทีม</strong> คนที่สร้าง value ด้วยการให้ psychological safety และ stability ในช่วงที่ทุกอย่างไม่แน่นอน ทีมวิ่งมาหาคุณเมื่อรู้สึกสับสน เพราะพวกเขารู้ว่าคุณจะทำให้ทุกอย่างดูจัดการได้`,
-      how: `คุณ operate ได้ดีที่สุดเมื่อมีความสัมพันธ์ที่ลึกกับทีม คุณอ่านอารมณ์ห้องออก รู้ว่าเมื่อไรต้อง support เมื่อไรต้อง push และทีมที่มีคุณอยู่มักมี psychological safety สูงกว่าทีมที่ไม่มีคุณอย่างชัดเจน`,
-      grow: `Growth edge: ความใส่ใจที่คุณมีต่อทีมอาจกลายเป็น bottleneck เมื่อคุณ protect ทีมมากเกินจนพวกเขาไม่ได้ face challenge จริงๆ และคุณอาจ slow การเปลี่ยนแปลงโดยไม่ตั้งใจ การ practice "letting go" อย่างมี intention คือ key`
+      who: lang==='th'?`คุณคือ <strong>${topName} — หลักของทีม</strong> คนที่สร้าง value ด้วยการให้ psychological safety และ stability ในช่วงที่ทุกอยู่ไม่แน่นอน ทีมวิ่งมาหาคุณเมื่อรู้สึกสับสน เพราะพวกเขารู้ว่าคุณจะทำให้ทุกอย่างดูจัดการได้`:`You are <strong>${topName} — the Anchor</strong>, creating value by providing psychological safety and stability during uncertain times. Teams run to you when confused because they know you'll make everything feel manageable.`,
+      how: lang==='th'?`คุณ operate ได้ดีที่สุดเมื่อมีความสัมพันธ์ที่ลึกกับทีม คุณอ่านอารมณ์ห้องออก รู้ว่าเมื่อไรต้อง support เมื่อไรต้อง push และทีมที่มีคุณอยู่มักมี psychological safety สูงกว่าทีมที่ไม่มีคุณอย่างชัดเจน`:`You operate best with deep team relationships. You read the room, know when to support and when to push, and teams with you consistently show higher psychological safety than those without.`,
+      grow: lang==='th'?`Growth edge: ความใส่ใจที่คุณมีต่อทีมอาจกลายเป็น bottleneck เมื่อคุณ protect ทีมมากเกินจนพวกเขาไม่ได้ face challenge จริงๆ และคุณอาจ slow การเปลี่ยนแปลงโดยไม่ตั้งใจ การ practice "letting go" อย่างมี intention คือ key`:`Growth edge: your care for the team can become a bottleneck when you over-protect them from real challenges, and you may unintentionally slow change. Practicing intentional "letting go" is the key.`
     },
     Catalyst: {
-      who: `คุณคือ <strong>${topName} — นักจุดประกาย</strong> คนที่ทำให้คนรอบข้าง perform ได้ดีกว่าที่คิดว่าตัวเองทำได้ คุณ amplify potential คนอื่น สร้าง collective energy และมักเป็นคนที่ทำให้ทีมรู้สึกว่า "เราทำได้" ในช่วงที่ยากที่สุด`,
-      how: `คุณ operate ได้ดีที่สุดเมื่อมี audience และ platform คุณเป็น natural storyteller ที่พูดแล้วคนอยากลุกขึ้นทำ และคุณ live values โดยไม่ต้องอ่าน poster เพราะมันเป็นส่วนหนึ่งของ identity คุณ`,
-      grow: `สิ่งที่ต้องระวัง: energy ในการ ignite คนอาจทำให้คุณ start หลายอย่างพร้อมกันโดยไม่ see things through ทีมบางครั้ง excited แล้วก็ confused ว่า project ไหน active อยู่ การ pair กับ Optimizer หรือ Builder จะช่วย close loop ได้`
+      who: lang==='th'?`คุณคือ <strong>${topName} — นักจุดประกาย</strong> คนที่ทำให้คนรอบข้าง perform ได้ดีกว่าที่คิดว่าตัวเองทำได้ คุณ amplify potential คนอื่น สร้าง collective energy และมักเป็นคนที่ทำให้ทีมรู้สึกว่า "เราทำได้" ในช่วงที่ยากที่สุด`:`You are <strong>${topName} — the Catalyst</strong>, making people around you perform beyond what they thought possible. You amplify others' potential, generate collective energy, and are often the one who makes the team feel "we can do this" in the hardest moments.`,
+      how: lang==='th'?`คุณ operate ได้ดีที่สุดเมื่อมี audience และ platform คุณเป็น natural storyteller ที่พูดแล้วคนอยากลุกขึ้นทำ และคุณ live values โดยไม่ต้องอ่าน poster เพราะมันเป็นส่วนหนึ่งของ identity คุณ`:`You operate best with an audience and a platform. You're a natural storyteller — when you speak, people want to act. And you live the values without needing to read a poster because they're part of your identity.`,
+      grow: lang==='th'?`สิ่งที่ต้องระวัง: energy ในการ ignite คนอาจทำให้คุณ start หลายอย่างพร้อมกันโดยไม่ see things through ทีมบางครั้ง excited แล้วก็ confused ว่า project ไหน active อยู่ การ pair กับ Optimizer หรือ Builder จะช่วย close loop ได้`:`Watch out: your energy for igniting people can lead you to start many things simultaneously without seeing them through. Teams sometimes get excited then confused about which projects are still active. Pair with an Optimizer or Builder to close the loop.`
     },
     Challenger: {
-      who: `คุณคือ <strong>${topName} — นักท้าทายขีดจำกัด</strong> คนที่ไม่ยอมรับ "ดีพอแล้ว" เมื่อรู้ว่าสามารถทำได้ดีกว่า คุณสร้าง productive tension ในทีม และมักเป็นแรงผลักดันที่ทำให้ standard ขององค์กรสูงขึ้นอย่างต่อเนื่อง`,
-      how: `คุณ operate ได้ดีที่สุดเมื่อมีปัญหาจริงให้ push against และมีคนที่ debate ด้วยได้ คุณไม่กลัว uncomfortable conversation และมักเป็นคนที่ตั้งคำถามกับ assumption ที่คนอื่นถือว่า "ก็รู้กันอยู่แล้ว"`,
-      grow: `Growth edge สำคัญ: ความ direct ที่คุณมีเป็น superpower เมื่อ pair กับ empathy แต่เป็น risk เมื่อขาด people reading ทีมบางคนต้องการ time ก่อน push คุณ ฝึก "challenge ด้วย curiosity ไม่ใช่ verdict" จะ unlock trust ใหม่`
+      who: lang==='th'?`คุณคือ <strong>${topName} — นักท้าทายขีดจำกัด</strong> คนที่ไม่ยอมรับ "ดีพอแล้ว" เมื่อรู้ว่าสามารถทำได้ดีกว่า คุณสร้าง productive tension ในทีม และมักเป็นแรงผลักดันที่ทำให้ standard ขององค์กรสูงขึ้นอย่างต่อเนื่อง`:`You are <strong>${topName} — the Challenger</strong>, refusing to accept "good enough" when you know better is possible. You create productive tension in the team and are often the driving force that continuously raises the organization's standards.`,
+      how: lang==='th'?`คุณ operate ได้ดีที่สุดเมื่อมีปัญหาจริงให้ push against และมีคนที่ debate ด้วยได้ คุณไม่กลัว uncomfortable conversation และมักเป็นคนที่ตั้งคำถามกับ assumption ที่คนอื่นถือว่า "ก็รู้กันอยู่แล้ว"`:`You operate best when there's a real problem to push against and someone to debate with. You don't fear uncomfortable conversations and are often the one questioning assumptions others treat as "everyone already knows this."`,
+      grow: lang==='th'?`Growth edge สำคัญ: ความ direct ที่คุณมีเป็น superpower เมื่อ pair กับ empathy แต่เป็น risk เมื่อขาด people reading ทีมบางคนต้องการ time ก่อน push คุณ ฝึก "challenge ด้วย curiosity ไม่ใช่ verdict" จะ unlock trust ใหม่`:`Key growth edge: your directness is a superpower when paired with empathy, but a risk when you lack people-reading. Some teammates need time before being pushed. Practice "challenge with curiosity, not verdict" to unlock new trust.`
     },
     Explorer: {
-      who: `คุณคือ <strong>${topName} — นักสำรวจโอกาส</strong> คนที่ thrive ในสภาวะที่เปลี่ยนแปลงและไม่แน่นอน คุณ adapt ได้เร็วกว่าคนอื่น มองเห็นโอกาสในสิ่งที่คนอื่นมองว่าเป็นปัญหา และ energize จากความใหม่มากกว่าความ familiar`,
-      how: `คุณ operate ได้ดีที่สุดใน environment ที่ dynamic ที่มีการเปลี่ยนแปลง direction บ่อยๆ คุณเป็น asset ในช่วง pivoting หรือ crisis เพราะคุณไม่ยึดติดกับ "วิธีที่เคยทำ" และ pivot ได้โดยไม่ต้องใช้เวลาในการ process`,
-      grow: `สิ่งที่ต้องพัฒนา: ความรัก novelty อาจทำให้คุณ chase สิ่งใหม่โดยไม่ได้ deep ในสิ่งที่ทำอยู่ ทีมอาจ predict ได้ยากว่าคุณ commit กับอะไร การตั้ง intentional commitment กับ current role อย่างน้อย 18 เดือนจะสร้าง credibility ระยะยาว`
+      who: lang==='th'?`คุณคือ <strong>${topName} — นักสำรวจโอกาส</strong> คนที่ thrive ในสภาวะที่เปลี่ยนแปลงและไม่แน่นอน คุณ adapt ได้เร็วกว่าคนอื่น มองเห็นโอกาสในสิ่งที่คนอื่นมองว่าเป็นปัญหา และ energize จากความใหม่มากกว่าความ familiar`:`You are <strong>${topName} — the Explorer</strong>, thriving in change and uncertainty. You adapt faster than others, see opportunity where others see problems, and are energized by novelty more than familiarity.`,
+      how: lang==='th'?`คุณ operate ได้ดีที่สุดใน environment ที่ dynamic ที่มีการเปลี่ยนแปลง direction บ่อยๆ คุณเป็น asset ในช่วง pivoting หรือ crisis เพราะคุณไม่ยึดติดกับ "วิธีที่เคยทำ" และ pivot ได้โดยไม่ต้องใช้เวลาในการ process`:`You operate best in dynamic environments where direction changes often. You're a key asset during pivots or crises because you're not attached to "the way things were done" and can pivot without needing time to process.`,
+      grow: lang==='th'?`สิ่งที่ต้องพัฒนา: ความรัก novelty อาจทำให้คุณ chase สิ่งใหม่โดยไม่ได้ deep ในสิ่งที่ทำอยู่ ทีมอาจ predict ได้ยากว่าคุณ commit กับอะไร การตั้ง intentional commitment กับ current role อย่างน้อย 18 เดือนจะสร้าง credibility ระยะยาว`:`To develop: your love of novelty may lead you to chase new things without going deep in your current work. Teams find it hard to predict what you're committed to. Setting an intentional commitment to your current role for at least 18 months will build long-term credibility.`
     }
   };
 
   const narr = narratives[topName] || narratives.Builder;
 
   // ── 7. COLLABORATION GUIDE ────────────────────────────────────
-  const collabGuide = {
+  const collabGuide_th = {
     Strategist: 'ทำงานได้ดีกับ Builder (execute idea ของคุณ) และ Scout (feed ข้อมูลให้ framework) · ระวังกับ Anchor (อาจ slow change ที่คุณต้องการ) และ Explorer (อาจ unpredictable)',
     Innovator: 'ทำงานได้ดีกับ Builder (turn idea เป็น product) และ Scout (cross-pollinate ideas) · ระวังกับ Optimizer (อาจ kill ideas ก่อนทดสอบ) และ Anchor (resist change)',
     Scout: 'ทำงานได้ดีกับ Innovator (apply knowledge ร่วมกัน) และ Strategist (feed insight ให้ framework) · ระวังกับ Builder (อาจ impatient กับ research phase) และ Challenger (อาจ push ก่อนพร้อม)',
@@ -2000,60 +2019,47 @@ function showQuizResult() {
     Challenger: 'ทำงานได้ดีกับ Strategist (strategic challenge) และ Builder (push execution higher) · ระวังกับ Anchor (อาจ feel threatened) และ Connector (push อาจทำลาย relationship)',
     Explorer: 'ทำงานได้ดีกับ Innovator (explore + create ร่วมกัน) และ Strategist (ให้ frame กับ exploration) · ระวังกับ Optimizer (too structured) และ Anchor (too stable for your taste)'
   };
+  const collabGuide_en = {
+    Strategist: 'Works best with Builder (executes your ideas) and Scout (feeds data to your framework) · Watch out with Anchor (may slow the change you need) and Explorer (can be unpredictable)',
+    Innovator: 'Works best with Builder (turns ideas into products) and Scout (cross-pollinates ideas) · Watch out with Optimizer (may kill ideas before testing) and Anchor (resists change)',
+    Scout: 'Works best with Innovator (apply knowledge together) and Strategist (feed insights to frameworks) · Watch out with Builder (may be impatient with research) and Challenger (may push before you are ready)',
+    Builder: 'Works best with Strategist (clear direction) and Connector (helps align stakeholders) · Watch out with Optimizer (may slow iteration) and Anchor (may hold back your speed)',
+    Optimizer: 'Works best with Strategist (improve existing systems) and Builder (refine what was built) · Watch out with Innovator (may conflict with need for structure) and Explorer (too unpredictable)',
+    Connector: 'Works best with Catalyst (amplifies your network) and Strategist (connects the right people to the plan) · Watch out with Challenger (direct style may damage relationships you built) and Optimizer (needs depth you may trade off)',
+    Anchor: 'Works best with Catalyst (adds energy to your stability) and Connector (maintains long-term relationships) · Watch out with Builder (may move too fast) and Challenger (pushes too hard without warning)',
+    Catalyst: 'Works best with Builder (executes your energy) and Strategist (gives direction to your enthusiasm) · Watch out with Optimizer (may dampen energy) and Anchor (may become too comfortable)',
+    Challenger: 'Works best with Strategist (strategic challenge) and Builder (pushes execution higher) · Watch out with Anchor (may feel threatened) and Connector (pushing may damage relationships)',
+    Explorer: 'Works best with Innovator (explore and create together) and Strategist (gives frame to your exploration) · Watch out with Optimizer (too structured) and Anchor (too stable for your taste)'
+  };
+  const collabGuide = lang==='th' ? collabGuide_th : collabGuide_en;
 
   // ── 8. 30-60-90 PLAN ─────────────────────────────────────────
-  const plans = {
-    Strategist:[
-      '30 วัน: แชร์ archetype กับ Manager → ขอ seat ใน strategic planning meeting ของ BU',
-      '60 วัน: นำเสนอ 1 framework หรือ decision model ให้ทีมใช้ร่วมกัน → วัด adoption',
-      '90 วัน: เป็น co-lead ใน cross-BU initiative และ report outcome ให้ Director เห็น'
-    ],
-    Innovator:[
-      '30 วัน: Pitch 1 new idea ให้ Manager พร้อม prototype concept ง่ายๆ ใน 2 หน้า',
-      '60 วัน: ขอ creative time 4 ชม./สัปดาห์ → build working prototype ของ idea นั้น',
-      '90 วัน: Present result ต่อ team/leadership — แม้ fail ก็ document lesson ให้ชัด'
-    ],
-    Scout:[
-      '30 วัน: เลือก 1 domain ที่อยากเชี่ยวชาญ → สร้าง learning plan 90 วัน share ให้ Manager',
-      '60 วัน: จัด knowledge sharing 30 นาทีให้ทีม → share insight จาก external source',
-      '90 วัน: สร้าง "Scout Report" monthly ให้ team lead — trends, tools, best practice'
-    ],
-    Builder:[
-      '30 วัน: Identify 1 problem ใน workflow ปัจจุบัน → propose solution ด้วย simple prototype',
-      '60 วัน: ขอ own 1 mini project ตั้งแต่ต้นจนจบโดยไม่ต้องรอ perfect brief',
-      '90 วัน: Deliver และ demo ผลให้ทีมเห็น → document process ให้คนอื่น follow ได้'
-    ],
-    Optimizer:[
-      '30 วัน: Map 1 process ที่มี pain point → document ขั้นตอน waste ทุกจุด',
-      '60 วัน: Design improved version และ run pilot กับทีม 1 BU → measure ผล',
-      '90 วัน: Present before/after metrics และ propose rollout plan ให้ Manager'
-    ],
-    Connector:[
-      '30 วัน: List 5 คนใน Rabbit Family ที่ควรรู้จักกันแต่ยังไม่รู้จัก → introduce พวกเขา',
-      '60 วัน: Volunteer เป็น coordinator ใน cross-BU project → สร้าง collaboration rhythm',
-      '90 วัน: เสนอ "Rabbit Connect" session ให้ HR → monthly cross-BU intro event'
-    ],
-    Anchor:[
-      '30 วัน: เป็น buddy ให้ new joiner หรือ junior staff 1 คน → check-in ทุกสัปดาห์',
-      '60 วัน: Document "how this team really works" guide สำหรับ onboarding คนใหม่',
-      '90 วัน: เสนอตัวเป็น culture ambassador ของ BU → ทำ pulse check ทีมทุกเดือน'
-    ],
-    Catalyst:[
-      '30 วัน: เสนอ host 1 knowledge sharing หรือ team energizer session ใน 30 วันนี้',
-      '60 วัน: เป็น "Recognition Champion" → celebrate teammate win อย่างน้อยสัปดาห์ละครั้ง',
-      '90 วัน: ขอ slot ใน next all-hands หรือ Launch Day → share story ที่ inspire'
-    ],
-    Challenger:[
-      '30 วัน: เลือก 1 process ที่คิดว่าควรดีกว่านี้ → เตรียม data + alternative proposal',
-      '60 วัน: Lead improvement initiative กับทีม → ตั้ง success metric ชัดก่อน start',
-      '90 วัน: Present progress → ถ้า succeed ขอ lead bigger improvement initiative ต่อ'
-    ],
-    Explorer:[
-      '30 วัน: ขอ sit-in กับ BU อื่น 1 วัน → สังเกตและ document สิ่งที่แตกต่าง',
-      '60 วัน: เสนอ pilot idea ใหม่ที่ test ได้ใน 30 วัน → ขอ approve และลงมือ',
-      '90 วัน: Report outcome → ถ้า work ขอ scale ถ้า fail document learning ให้ทีม'
-    ]
+  // ── 8. 30-60-90 PLAN ─────────────────────────────────────────
+  const plans_th = {
+    Strategist:['30 วัน: แชร์ archetype กับ Manager → ขอ seat ใน strategic planning meeting ของ BU','60 วัน: นำเสนอ 1 framework หรือ decision model ให้ทีมใช้ร่วมกัน → วัด adoption','90 วัน: เป็น co-lead ใน cross-BU initiative และ report outcome ให้ Director เห็น'],
+    Innovator:['30 วัน: Pitch 1 new idea ให้ Manager พร้อม prototype concept ง่ายๆ ใน 2 หน้า','60 วัน: ขอ creative time 4 ชม./สัปดาห์ → build working prototype ของ idea นั้น','90 วัน: Present result ต่อ team/leadership — แม้ fail ก็ document lesson ให้ชัด'],
+    Scout:['30 วัน: เลือก 1 domain ที่อยากเชี่ยวชาญ → สร้าง learning plan 90 วัน share ให้ Manager','60 วัน: จัด knowledge sharing 30 นาทีให้ทีม → share insight จาก external source','90 วัน: สร้าง "Scout Report" monthly ให้ team lead — trends, tools, best practice'],
+    Builder:['30 วัน: Identify 1 problem ใน workflow ปัจจุบัน → propose solution ด้วย simple prototype','60 วัน: ขอ own 1 mini project ตั้งแต่ต้นจนจบโดยไม่ต้องรอ perfect brief','90 วัน: Deliver และ demo ผลให้ทีมเห็น → document process ให้คนอื่น follow ได้'],
+    Optimizer:['30 วัน: Map 1 process ที่มี pain point → document ขั้นตอน waste ทุกจุด','60 วัน: Design improved version และ run pilot กับทีม 1 BU → measure ผล','90 วัน: Present before/after metrics และ propose rollout plan ให้ Manager'],
+    Connector:['30 วัน: List 5 คนใน Rabbit Family ที่ควรรู้จักกันแต่ยังไม่รู้จัก → introduce พวกเขา','60 วัน: Volunteer เป็น coordinator ใน cross-BU project → สร้าง collaboration rhythm','90 วัน: เสนอ "Rabbit Connect" session ให้ HR → monthly cross-BU intro event'],
+    Anchor:['30 วัน: เป็น buddy ให้ new joiner หรือ junior staff 1 คน → check-in ทุกสัปดาห์','60 วัน: Document "how this team really works" guide สำหรับ onboarding คนใหม่','90 วัน: เสนอตัวเป็น culture ambassador ของ BU → ทำ pulse check ทีมทุกเดือน'],
+    Catalyst:['30 วัน: เสนอ host 1 knowledge sharing หรือ team energizer session ใน 30 วันนี้','60 วัน: เป็น "Recognition Champion" → celebrate teammate win อย่างน้อยสัปดาห์ละครั้ง','90 วัน: ขอ slot ใน next all-hands หรือ Launch Day → share story ที่ inspire'],
+    Challenger:['30 วัน: เลือก 1 process ที่คิดว่าควรดีกว่านี้ → เตรียม data + alternative proposal','60 วัน: Lead improvement initiative กับทีม → ตั้ง success metric ชัดก่อน start','90 วัน: Present progress → ถ้า succeed ขอ lead bigger improvement initiative ต่อ'],
+    Explorer:['30 วัน: ขอ sit-in กับ BU อื่น 1 วัน → สังเกตและ document สิ่งที่แตกต่าง','60 วัน: เสนอ pilot idea ใหม่ที่ test ได้ใน 30 วัน → ขอ approve และลงมือ','90 วัน: Report outcome → ถ้า work ขอ scale ถ้า fail document learning ให้ทีม']
   };
+  const plans_en = {
+    Strategist:['30 days: Share your archetype with your Manager → request a seat in BU strategic planning meetings','60 days: Present 1 framework or decision model for the team to use together → measure adoption','90 days: Co-lead a cross-BU initiative and report outcomes to your Director'],
+    Innovator:['30 days: Pitch 1 new idea to your Manager with a simple 2-page prototype concept','60 days: Request 4 hrs/week of creative time → build a working prototype of that idea','90 days: Present results to team/leadership — even if it fails, document the lessons clearly'],
+    Scout:['30 days: Pick 1 domain you want to master → build a 90-day learning plan and share with Manager','60 days: Host a 30-minute knowledge sharing session for the team → share insights from external sources','90 days: Create a monthly "Scout Report" for team lead — trends, tools, best practice'],
+    Builder:['30 days: Identify 1 pain point in the current workflow → propose a solution with a simple prototype','60 days: Request ownership of 1 mini project end-to-end without waiting for a perfect brief','90 days: Deliver and demo results to the team → document the process so others can follow'],
+    Optimizer:['30 days: Map 1 process with pain points → document every waste step','60 days: Design an improved version and run a pilot with 1 BU team → measure results','90 days: Present before/after metrics and propose a rollout plan to your Manager'],
+    Connector:['30 days: List 5 people in the Rabbit Family who should know each other but don\'t → introduce them','60 days: Volunteer as coordinator in a cross-BU project → build a collaboration rhythm','90 days: Propose a "Rabbit Connect" session to HR → monthly cross-BU intro event'],
+    Anchor:['30 days: Be a buddy to 1 new joiner or junior staff member → check in every week','60 days: Document a "how this team really works" guide for onboarding new members','90 days: Volunteer as BU culture ambassador → run a monthly team pulse check'],
+    Catalyst:['30 days: Propose hosting 1 knowledge sharing or team energizer session within 30 days','60 days: Become the "Recognition Champion" → celebrate a teammate win at least once a week','90 days: Request a slot at the next all-hands or Launch Day → share an inspiring story'],
+    Challenger:['30 days: Pick 1 process you believe should be better → prepare data + an alternative proposal','60 days: Lead an improvement initiative with the team → set clear success metrics before starting','90 days: Present progress → if successful, request to lead a bigger improvement initiative'],
+    Explorer:['30 days: Request to sit in with another BU for 1 day → observe and document what is different','60 days: Propose a new pilot idea testable in 30 days → get approval and execute','90 days: Report outcome → if it works, request to scale; if it fails, document the learnings for the team']
+  };
+  const plans = lang==='th' ? plans_th : plans_en;
   const plan = plans[topName] || plans.Builder;
 
   // ── 9. BUILD RESULT HTML ──────────────────────────────────────
@@ -2061,10 +2067,10 @@ function showQuizResult() {
     <!-- HERO -->
     <div style="background:var(--blk);border-radius:12px;padding:28px 32px;margin-bottom:16px;position:relative;overflow:hidden;" id="result-hero">
       <div style="position:absolute;top:0;right:0;bottom:0;width:4px;background:${arc.c};"></div>
-      <div style="font-size:9px;font-weight:700;letter-spacing:.2em;color:${arc.c};margin-bottom:10px;">YOUR RABBIT SIGNAL · ${new Date().toLocaleDateString('th-TH',{year:'numeric',month:'long',day:'numeric'})}</div>
+      <div style="font-size:9px;font-weight:700;letter-spacing:.2em;color:${arc.c};margin-bottom:10px;">YOUR RABBIT SIGNAL · ${new Date().toLocaleDateString(lang==='th'?'th-TH':'en-GB',{year:'numeric',month:'long',day:'numeric'})}</div>
       <div style="font-family:'Playfair Display',serif;font-size:clamp(28px,5vw,48px);color:#fff;line-height:1;margin-bottom:4px;">${topName}</div>
-      <div style="font-size:15px;color:rgba(255,255,255,.5);margin-bottom:14px;">${arc.th}</div>
-      <div style="font-style:italic;font-size:13px;color:rgba(255,255,255,.4);line-height:1.7;max-width:520px;border-left:2px solid ${arc.c};padding-left:14px;margin-bottom:18px;">"${arc.b_th}"</div>
+      <div style="font-size:15px;color:rgba(255,255,255,.5);margin-bottom:14px;">${lang==='th'?arc.th:arc.name}</div>
+      <div style="font-style:italic;font-size:13px;color:rgba(255,255,255,.4);line-height:1.7;max-width:520px;border-left:2px solid ${arc.c};padding-left:14px;margin-bottom:18px;">"${lang==='th' ? arc.b_th : arc.b_en}"</div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;">
         <div style="background:${arc.c}30;border:1px solid ${arc.c}60;border-radius:6px;padding:5px 12px;font-size:11px;color:${arc.c};font-weight:700;">${signalBand}</div>
         <div style="background:#ffffff18;border:1px solid #ffffff22;border-radius:6px;padding:5px 12px;font-size:11px;color:#bbb;">Secondary: ${top2Name}${hasPowerCombo?' ⚡ Power Combo':''}</div>
@@ -2083,8 +2089,8 @@ function showQuizResult() {
         <div style="flex:1;min-width:220px;">
           <div style="font-size:9px;font-weight:700;letter-spacing:.18em;color:${arc.c};margin-bottom:6px;">PRIMARY ARCHETYPE · DOMAIN ${Object.entries(domainMap).find(([,ks])=>ks.includes(topKey))?.[0]||'A'} · ${domainNames[Object.entries(domainMap).find(([,ks])=>ks.includes(topKey))?.[0]||'A']}</div>
           <div style="font-family:'Playfair Display',serif;font-size:32px;color:var(--ink);margin-bottom:4px;">${topName}</div>
-          <div style="font-size:14px;color:var(--ink3);margin-bottom:14px;">${arc.th}</div>
-          <div style="font-size:13px;color:var(--ink2);line-height:1.8;margin-bottom:14px;">${arc.desc_th || arc.b_th}</div>
+          <div style="font-size:14px;color:var(--ink3);margin-bottom:14px;">${lang==='th'?arc.th:arc.name}</div>
+          <div style="font-size:13px;color:var(--ink2);line-height:1.8;margin-bottom:14px;">${lang==='th' ? (arc.desc_th||arc.b_th) : (arc.desc_en||arc.b_en)}</div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;">
             ${(arc.tags||[arc.th]).map(t=>`<span style="font-size:10px;font-weight:600;padding:3px 10px;background:${arc.c}22;color:${arc.c};border-radius:20px;">${t}</span>`).join('')}
           </div>
@@ -2116,28 +2122,35 @@ function showQuizResult() {
       <div class="card-body">
         ${(()=>{
           const domKey = Object.entries(domainMap).find(([,ks])=>ks.includes(topKey))?.[0]||'A';
-          const domDescs = {
+          const domDescs_th = {
             A: { desc:'คนใน Domain A คือ <strong>สถาปนิกทางความคิด</strong> — พวกเขาสร้าง value ผ่านการคิด วิเคราะห์ สำรวจ และสังเคราะห์ ก่อนที่จะลงมือ Domain A คือแหล่งกำเนิดของ strategy, innovation, และ insight ที่ขับเคลื่อนองค์กร', types:'Strategist, Innovator, Scout', strength:'วางแผนระยะยาว · หา pattern จากข้อมูล · สร้าง framework ใหม่ · research และ synthesize', watch:'อาจ over-think ก่อน execute · ต้องการ Domain B (Execution) มาช่วย close loop', color:'#3B3BAA' },
             B: { desc:'คนใน Domain B คือ <strong>นักสร้างผลลัพธ์</strong> — พวกเขา energize จากการลงมือทำ build และ optimize สิ่งที่จับต้องได้ Domain B คือแรงขับที่ทำให้ idea กลายเป็น reality และ process ที่ดีขึ้นทุกวัน', types:'Builder, Optimizer', strength:'deliver ได้จริง · แก้ปัญหาเชิง system · iterate เร็ว · สร้าง efficiency', watch:'อาจ build ก่อน validate · ต้องการ Domain A ช่วย set direction ก่อน', color:'#1a7a50' },
             C: { desc:'คนใน Domain C คือ <strong>หัวใจของทีม</strong> — พวกเขาสร้าง value ผ่านการดูแล เชื่อมต่อ และ energize คนรอบข้าง Domain C คือกาวที่ยึดทีมเข้าด้วยกันในช่วงที่ยากที่สุด', types:'Connector, Anchor, Catalyst', strength:'build trust · สร้าง team cohesion · ดูแล well-being · ระดมพลัง', watch:'อาจ prioritize harmony มากกว่า performance · ต้องการ Domain D ช่วย push', color:'#8a2060' },
             D: { desc:'คนใน Domain D คือ <strong>ผู้ขับเคลื่อนการเปลี่ยนแปลง</strong> — พวกเขา energize จากการท้าทาย explore และ push boundary Domain D คือแรงกระเพื่อมที่ทำให้องค์กรไม่หยุดนิ่งและกล้าเดินในทางใหม่', types:'Challenger, Explorer', strength:'กระตุ้น innovation · ตั้งคำถาม status quo · adapt เร็ว · นำ change', watch:'อาจ restless และ ย้าย focus บ่อย · ต้องการ Domain C ช่วย stabilize', color:'#9a3a10' }
           };
+          const domDescs_en = {
+            A: { desc:'People in Domain A are <strong>Architects of Thought</strong> — they create value through thinking, analyzing, exploring, and synthesizing before taking action. Domain A is the origin of strategy, innovation, and insight that drives the organization.', types:'Strategist, Innovator, Scout', strength:'Long-range planning · Pattern recognition from data · Building new frameworks · Research and synthesis', watch:'May over-think before executing · Needs Domain B (Execution) to help close the loop', color:'#3B3BAA' },
+            B: { desc:'People in Domain B are <strong>Results Builders</strong> — they are energized by hands-on building and optimizing tangible things. Domain B is the force that turns ideas into reality and makes processes better every day.', types:'Builder, Optimizer', strength:'Delivers results · Solves systemic problems · Iterates fast · Builds efficiency', watch:'May build before validating · Needs Domain A to set direction first', color:'#1a7a50' },
+            C: { desc:'People in Domain C are the <strong>Heart of the Team</strong> — they create value through caring, connecting, and energizing those around them. Domain C is the glue that holds teams together in the hardest moments.', types:'Connector, Anchor, Catalyst', strength:'Builds trust · Creates team cohesion · Supports well-being · Rallies energy', watch:'May prioritize harmony over performance · Needs Domain D to help push', color:'#8a2060' },
+            D: { desc:'People in Domain D are <strong>Drivers of Change</strong> — they are energized by challenging, exploring, and pushing boundaries. Domain D is the force that keeps the organization moving and bold enough to walk new paths.', types:'Challenger, Explorer', strength:'Sparks innovation · Questions the status quo · Adapts fast · Leads change', watch:'May be restless and shift focus often · Needs Domain C to help stabilize', color:'#9a3a10' }
+          };
+          const domDescs = lang==='th' ? domDescs_th : domDescs_en;
           const dd = domDescs[domKey];
           return `
           <div style="font-size:13px;color:var(--ink2);line-height:1.8;margin-bottom:16px;">${dd.desc}</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;">
             <div style="padding:12px;background:${dd.color}0A;border-radius:8px;border-left:3px solid ${dd.color};">
-              <div style="font-size:9px;font-weight:700;color:${dd.color};letter-spacing:.1em;margin-bottom:5px;">✅ จุดแข็งของ Domain นี้</div>
+              <div style="font-size:9px;font-weight:700;color:${dd.color};letter-spacing:.1em;margin-bottom:5px;">${lang==='th'?'✅ จุดแข็งของ Domain นี้':'✅ Domain Strengths'}</div>
               <div style="font-size:12px;color:var(--ink2);line-height:1.7;">${dd.strength}</div>
             </div>
             <div style="padding:12px;background:#fff8f0;border-radius:8px;border-left:3px solid #f7941d;">
-              <div style="font-size:9px;font-weight:700;color:#8a4a00;letter-spacing:.1em;margin-bottom:5px;">⚠️ สิ่งที่ต้องระวัง</div>
+              <div style="font-size:9px;font-weight:700;color:#8a4a00;letter-spacing:.1em;margin-bottom:5px;">${lang==='th'?'⚠️ สิ่งที่ต้องระวัง':'⚠️ Watch Out For'}</div>
               <div style="font-size:12px;color:var(--ink2);line-height:1.7;">${dd.watch}</div>
             </div>
           </div>
           <div style="padding:10px 14px;background:var(--wh2);border-radius:7px;font-size:11px;color:var(--ink3);">
-            <strong>Archetypes ใน Domain นี้:</strong> ${dd.types}
-            &nbsp;·&nbsp; <strong>Domain ของคุณ (${domKey}):</strong> ${domainPct[domKey]}% strength
+            ${lang==='th'?'<strong>Archetypes ใน Domain นี้:</strong>':'<strong>Archetypes in this Domain:</strong>'} ${dd.types}
+            &nbsp;·&nbsp; ${lang==='th'?`<strong>Domain ของคุณ (${domKey}):</strong>`:`<strong>Your Domain (${domKey}):</strong>`} ${domainPct[domKey]}% strength
           </div>`;
         })()}
       </div>
@@ -2145,7 +2158,7 @@ function showQuizResult() {
 
     <!-- DOMAIN RADAR + BAR SIDE BY SIDE -->
     <div class="card" style="margin-bottom:16px;">
-      <div class="card-hdr"><div class="card-icon">🕸️</div><div class="card-title">Domain Signal Map — 4 มิติ</div></div>
+      <div class="card-hdr"><div class="card-icon">🕸️</div><div class="card-title">${lang==='th'?'Domain Signal Map — 4 มิติ':'Domain Signal Map — 4 Dimensions'}</div></div>
       <div class="card-body" style="display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap;">
         <div style="flex:0 0 auto;">${radarSVG}</div>
         <div style="flex:1;min-width:180px;">
@@ -2162,7 +2175,7 @@ function showQuizResult() {
               <div style="font-size:10px;color:var(--ink4);margin-top:2px;">${domainMap[d].map(k=>keyMap[k]).join(' · ')}</div>
             </div>`).join('')}
           <div style="margin-top:12px;font-size:10px;color:var(--ink4);line-height:1.6;padding:8px;background:var(--wh2);border-radius:6px;">
-            📌 แสดง relative strength — strongest domain = 100%
+            ${lang==='th'?'📌 แสดง relative strength — strongest domain = 100%':'📌 Relative strength shown — strongest domain = 100%'}
           </div>
         </div>
       </div>
@@ -2173,7 +2186,7 @@ function showQuizResult() {
       <div class="card-hdr"><div class="card-icon">📊</div><div class="card-title">Archetype Signal Strength</div></div>
       <div class="card-body">
         <div style="font-size:11px;color:var(--ink4);margin-bottom:14px;line-height:1.6;padding:8px 10px;background:var(--wh2);border-radius:6px;">
-          📌 <strong>วิธีอ่าน:</strong> % แสดง signal strength ของแต่ละ archetype เทียบกับ <em>ศักยภาพสูงสุดของ type นั้น</em> — คนที่ได้ 72% Explorer มีสัญญาณ Explorer แข็งแกร่งกว่าคนที่ได้ 80% Strategist เสมอไม่ใช่ (เพราะ max ต่างกัน) · Primary คือ archetype ที่ <em>normalized score</em> สูงสุดของคุณ
+          ${lang==='th'?'📌 <strong>วิธีอ่าน:</strong> % แสดง signal strength ของแต่ละ archetype เทียบกับ <em>ศักยภาพสูงสุดของ type นั้น</em> — คนที่ได้ 72% Explorer มีสัญญาณ Explorer แข็งแกร่งกว่าคนที่ได้ 80% Strategist เสมอไม่ใช่ (เพราะ max ต่างกัน) · Primary คือ archetype ที่ <em>normalized score</em> สูงสุดของคุณ':'📌 <strong>How to read:</strong> % = signal strength vs max possible per archetype — 72% Explorer is not automatically stronger than 80% Strategist (max differs per type) · Primary = archetype with your highest <em>normalized score</em>'}
         </div>
         ${(()=>{
           return sorted.map(([k,v],i)=>{
@@ -2194,7 +2207,7 @@ function showQuizResult() {
             </div>`;
           }).join('');
         })()}
-        <div style="font-size:10px;color:var(--ink4);margin-top:8px;">% = signal strength เทียบกับ max ที่เป็นไปได้ของแต่ละ archetype (ไม่ใช่ % ของ total)</div>
+        <div style="font-size:10px;color:var(--ink4);margin-top:8px;">${lang==='th'?'% = signal strength เทียบกับ max ที่เป็นไปได้ของแต่ละ archetype (ไม่ใช่ % ของ total)':'% = signal strength vs max possible per archetype (not % of total)'}</div>
       </div>
     </div>
 
@@ -2203,7 +2216,7 @@ function showQuizResult() {
       <div class="card-hdr"><div class="card-icon">🌟</div><div class="card-title">Culture Values Score</div></div>
       <div class="card-body">
         <div style="font-size:11px;color:var(--ink4);margin-bottom:14px;line-height:1.6;padding:8px 10px;background:var(--wh2);border-radius:6px;">
-          ⚡ คะแนนนี้ผ่านการ normalize ด้วย <strong>reverse-scored questions</strong> เพื่อลด self-report bias — คะแนนที่ได้สะท้อน <em>observed behavior</em> ไม่ใช่ intention
+          ${lang==='th'?'⚡ คะแนนนี้ผ่านการ normalize ด้วย <strong>reverse-scored questions</strong> เพื่อลด self-report bias — คะแนนที่ได้สะท้อน <em>observed behavior</em> ไม่ใช่ intention':'⚡ Scores are normalized using <strong>reverse-scored questions</strong> to reduce self-report bias — results reflect <em>observed behavior</em>, not just intention'}
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:14px;">
           ${[{l:'Impact',p:impPct,c:'#1a7a50'},{l:'Ownership',p:ownPct,c:'#3B3BAA'},{l:'Excellence',p:excPct,c:'#8a2060'}].map(v=>`
@@ -2214,9 +2227,9 @@ function showQuizResult() {
             </div>`).join('')}
         </div>
         ${[
-          {l:'Impact',p:impPct,c:'#1a7a50', hi:'คุณมอง output ในเชิง value เสมอ — ทุกงานต้องตอบได้ว่าสร้าง impact ยังไง', mid:'คุณเข้าใจ impact แต่บางครั้งยังทำงาน task-based มากกว่า outcome-based', lo:'แนะนำให้ฝึกถาม "So what?" กับทุก output ก่อนส่ง — งานชิ้นนี้สร้าง value ให้ใคร อย่างไร'},
-          {l:'Ownership',p:ownPct,c:'#3B3BAA', hi:'คุณ operate แบบ full accountability — ไม่รอให้ใครบอก ไม่โทษ context', mid:'คุณมี ownership sense ดี แต่บางสถานการณ์ที่กดดันอาจยังมีแนวโน้ม externalize', lo:'แนะนำให้ฝึก "Extreme Ownership mindset" — ทุกผลลัพธ์มี action ที่คุณทำได้เสมอ'},
-          {l:'Excellence',p:excPct,c:'#8a2060', hi:'คุณ set standard สูงและ iterate จนภูมิใจ — output ของคุณมักเกิน expectation', mid:'คุณใส่ใจ quality แต่บาง deadline อาจ compromise standard เพื่อ speed', lo:'แนะนำให้ตั้ง personal standard ว่า "งานที่ฉันภูมิใจต้องมีอะไรบ้าง" ก่อนเริ่มทุก project'}
+          {l:'Impact',p:impPct,c:'#1a7a50', hi:lang==='th'?'คุณมอง output ในเชิง value เสมอ — ทุกงานต้องตอบได้ว่าสร้าง impact ยังไง':'You always view output in terms of value — every piece of work must answer how it creates impact.', mid:lang==='th'?'คุณเข้าใจ impact แต่บางครั้งยังทำงาน task-based มากกว่า outcome-based':'You understand impact but sometimes still work task-based rather than outcome-based.', lo:lang==='th'?'แนะนำให้ฝึกถาม "So what?" กับทุก output ก่อนส่ง — งานชิ้นนี้สร้าง value ให้ใคร อย่างไร':'Practice asking "So what?" for every output before sending — who does this work create value for, and how?'},
+          {l:'Ownership',p:ownPct,c:'#3B3BAA', hi:lang==='th'?'คุณ operate แบบ full accountability — ไม่รอให้ใครบอก ไม่โทษ context':'You operate with full accountability — you don\'t wait to be told and don\'t blame context.', mid:lang==='th'?'คุณมี ownership sense ดี แต่บางสถานการณ์ที่กดดันอาจยังมีแนวโน้ม externalize':'You have a good sense of ownership, but in high-pressure situations you may still tend to externalize.', lo:lang==='th'?'แนะนำให้ฝึก "Extreme Ownership mindset" — ทุกผลลัพธ์มี action ที่คุณทำได้เสมอ':'Practice the Extreme Ownership mindset — every outcome has an action you can take.'},
+          {l:'Excellence',p:excPct,c:'#8a2060', hi:lang==='th'?'คุณ set standard สูงและ iterate จนภูมิใจ — output ของคุณมักเกิน expectation':'You set high standards and iterate until you\'re proud — your output often exceeds expectations.', mid:lang==='th'?'คุณใส่ใจ quality แต่บาง deadline อาจ compromise standard เพื่อ speed':'You care about quality, but some deadlines may lead you to compromise standards for speed.', lo:lang==='th'?'แนะนำให้ตั้ง personal standard ว่า "งานที่ฉันภูมิใจต้องมีอะไรบ้าง" ก่อนเริ่มทุก project':'Set a personal standard: "What must be in work I\'m proud of?" before starting every project.'}
         ].map(v=>`
           <div style="margin-bottom:10px;padding:12px 14px;background:${v.c}08;border-radius:8px;border-left:3px solid ${v.c};">
             <div style="font-size:10px;font-weight:700;color:${v.c};margin-bottom:4px;">${v.l}: ${v.p}%</div>
@@ -2230,20 +2243,20 @@ function showQuizResult() {
       <div class="card-hdr" style="background:${arc.c}12;"><div class="card-icon">🔍</div><div class="card-title" style="color:${arc.c};">Deep Profile — ${topName}</div></div>
       <div class="card-body" style="display:flex;flex-direction:column;gap:14px;">
         <div style="padding:14px;background:${arc.c}08;border-radius:8px;">
-          <div style="font-size:9px;font-weight:700;letter-spacing:.12em;color:${arc.c};margin-bottom:6px;">🧬 คุณคือใคร</div>
+          <div style="font-size:9px;font-weight:700;letter-spacing:.12em;color:${arc.c};margin-bottom:6px;">${lang==='th'?'🧬 คุณคือใคร':'🧬 Who You Are'}</div>
           <div style="font-size:13px;color:var(--ink2);line-height:1.75;">${narr.who}</div>
         </div>
         <div style="padding:14px;background:#fafafa;border-radius:8px;border:1px solid var(--ln);">
-          <div style="font-size:9px;font-weight:700;letter-spacing:.12em;color:var(--ink3);margin-bottom:6px;">⚙️ คุณ operate ยังไง</div>
+          <div style="font-size:9px;font-weight:700;letter-spacing:.12em;color:var(--ink3);margin-bottom:6px;">${lang==='th'?'⚙️ คุณ operate ยังไง':'⚙️ How You Operate'}</div>
           <div style="font-size:13px;color:var(--ink2);line-height:1.75;">${narr.how}</div>
         </div>
         <div style="padding:14px;background:#fff8f0;border-radius:8px;border:1px solid #f7941d33;">
-          <div style="font-size:9px;font-weight:700;letter-spacing:.12em;color:var(--or-dk);margin-bottom:6px;">🌱 Growth Edge ที่ต้องพัฒนา</div>
+          <div style="font-size:9px;font-weight:700;letter-spacing:.12em;color:var(--or-dk);margin-bottom:6px;">${lang==='th'?'🌱 Growth Edge ที่ต้องพัฒนา':'🌱 Growth Edge to Develop'}</div>
           <div style="font-size:13px;color:var(--ink2);line-height:1.75;">${narr.grow}</div>
         </div>
         ${hasPowerCombo?`<div style="padding:14px;background:#fffbe6;border-radius:8px;border:1px solid #f7c94866;">
           <div style="font-size:9px;font-weight:700;letter-spacing:.12em;color:#8a6000;margin-bottom:6px;">⚡ Power Combo: ${topName} + ${top2Name}</div>
-          <div style="font-size:13px;color:var(--ink2);line-height:1.75;">Secondary signal ของคุณ (${top2Name}) complement ${topName} ได้อย่างพอดี — คุณสามารถ switch mode ระหว่างสองนี้ตาม context ทำให้คุณ versatile มากกว่า pure-type signal และมักเป็นคนที่ทีม rely ได้ใน situation ที่หลากหลาย</div>
+          <div style="font-size:13px;color:var(--ink2);line-height:1.75;">${lang==='th'?`Secondary signal ของคุณ (${top2Name}) complement ${topName} ได้อย่างพอดี — คุณสามารถ switch mode ระหว่างสองนี้ตาม context ทำให้คุณ versatile มากกว่า pure-type signal และมักเป็นคนที่ทีม rely ได้ใน situation ที่หลากหลาย`:`Your secondary signal (${top2Name}) complements ${topName} well — you can switch between these modes by context, making you more versatile than a pure-type signal and often someone the team can rely on across diverse situations.`}</div>
         </div>`:''}
       </div>
     </div>
@@ -2251,14 +2264,14 @@ function showQuizResult() {
     <!-- SUPERPOWER + BLIND SPOT -->
     <div class="g2" style="margin-bottom:16px;">
       <div class="card"><div class="card-hdr" style="background:${arc.c}12;"><div class="card-icon">⚡</div><div class="card-title" style="color:${arc.c};">Superpower</div></div>
-        <div class="card-body" style="font-size:13px;line-height:1.7;">${arc.sp_th}</div></div>
+        <div class="card-body" style="font-size:13px;line-height:1.7;">${lang==='th' ? arc.sp_th : arc.sp_en}</div></div>
       <div class="card"><div class="card-hdr" style="background:#fff3e0;"><div class="card-icon">👁️</div><div class="card-title" style="color:#8a4a00;">Blind Spot</div></div>
-        <div class="card-body" style="font-size:13px;line-height:1.7;">${arc.blind_th}</div></div>
+        <div class="card-body" style="font-size:13px;line-height:1.7;">${lang==='th' ? arc.blind_th : arc.blind_en}</div></div>
     </div>
 
     <!-- COLLABORATION GUIDE -->
     <div class="card" style="margin-bottom:16px;">
-      <div class="card-hdr"><div class="card-icon">🤝</div><div class="card-title">Collaboration Guide — ทำงานกับคนอื่นยังไงให้ดีที่สุด</div></div>
+      <div class="card-hdr"><div class="card-icon">🤝</div><div class="card-title">${lang==='th'?'Collaboration Guide — ทำงานกับคนอื่นยังไงให้ดีที่สุด':'Collaboration Guide — How to Work Best with Others'}</div></div>
       <div class="card-body" style="font-size:13px;color:var(--ink3);line-height:1.8;">${collabGuide[topName]||''}</div>
     </div>
 
@@ -2268,7 +2281,7 @@ function showQuizResult() {
       <div class="card-body" style="padding:0;">
         ${plan.map((s,i)=>`
           <div style="padding:14px 20px;border-bottom:1px solid var(--ln);display:flex;gap:14px;align-items:flex-start;">
-            <div style="min-width:52px;text-align:center;padding:6px 8px;background:${i===0?'var(--blk)':i===1?'var(--blk2)':'var(--blk3)'};border-radius:6px;font-size:9px;font-weight:700;color:var(--or);letter-spacing:.08em;">${i===0?'30 วัน':i===1?'60 วัน':'90 วัน'}</div>
+            <div style="min-width:52px;text-align:center;padding:6px 8px;background:${i===0?'var(--blk)':i===1?'var(--blk2)':'var(--blk3)'};border-radius:6px;font-size:9px;font-weight:700;color:var(--or);letter-spacing:.08em;">${i===0?(lang==='th'?'30 วัน':'30 days'):i===1?(lang==='th'?'60 วัน':'60 days'):(lang==='th'?'90 วัน':'90 days')}</div>
             <div style="font-size:13px;color:var(--ink2);line-height:1.65;padding-top:4px;">${s}</div>
           </div>`).join('')}
       </div>
@@ -2276,18 +2289,16 @@ function showQuizResult() {
 
     <!-- SHARE & DOWNLOAD -->
     <div class="card" style="margin-bottom:16px;">
-      <div class="card-hdr"><div class="card-icon">📤</div><div class="card-title">บันทึก & แชร์ผล</div></div>
+      <div class="card-hdr"><div class="card-icon">📤</div><div class="card-title">${lang==='th'?'บันทึก & แชร์ผล':'Save & Share Results'}</div></div>
       <div class="card-body" style="display:flex;gap:10px;flex-wrap:wrap;">
         <button onclick="downloadResult(_lastResult)" style="padding:10px 20px;background:var(--blk);color:#fff;border:none;border-radius:7px;cursor:pointer;font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px;">⬇️ Download / Print</button>
-        <button onclick="copyResultText(_lastResult)" id="copy-btn" style="padding:10px 20px;background:#fff;border:1.5px solid var(--ln);color:var(--ink2);border-radius:7px;cursor:pointer;font-size:13px;font-weight:500;display:flex;align-items:center;gap:6px;">📋 Copy Summary</button>
-        <button onclick="exportCSV()" style="padding:10px 20px;background:#1a7a50;border:none;color:#fff;border-radius:7px;cursor:pointer;font-size:13px;font-weight:600;">⬇ Download CSV</button>
-        <button onclick="show('framework')" style="padding:10px 20px;background:${arc.c};border:none;color:#fff;border-radius:7px;cursor:pointer;font-size:13px;font-weight:600;">ดู ${topName} Full Profile →</button>
+        <button onclick="show('framework')" style="padding:10px 20px;background:${arc.c};border:none;color:#fff;border-radius:7px;cursor:pointer;font-size:13px;font-weight:600;">${lang==='th'?`ดู ${topName} Full Profile →`:`View ${topName} Full Profile →`}</button>
       </div>
     </div>
 
     <!-- RETAKE -->
     <div style="text-align:center;margin-bottom:24px;">
-      <button onclick="retakeQuiz()" style="padding:10px 28px;background:#fff;border:1.5px solid var(--ln);color:var(--ink4);border-radius:7px;cursor:pointer;font-size:12px;">ทำ Assessment ใหม่อีกครั้ง</button>
+      <button onclick="retakeQuiz()" style="padding:10px 28px;background:#fff;border:1.5px solid var(--ln);color:var(--ink4);border-radius:7px;cursor:pointer;font-size:12px;" data-th="ทำ Assessment ใหม่อีกครั้ง" data-en="Retake Assessment">ทำ Assessment ใหม่อีกครั้ง</button>
     </div>
   `;
   // ── SAVE TO LOCALSTORAGE + GOOGLE SHEETS ─────────────────────
@@ -2317,87 +2328,349 @@ function showQuizResult() {
 
 // ── DOWNLOAD & COPY HELPERS ───────────────────────────────────────
 function downloadResult(r) {
-  if (!r) { alert('ไม่พบข้อมูล — กรุณาทำ Assessment ให้เสร็จก่อน'); return; }
+  if (!r) { alert(getLang()==='th'?'ไม่พบข้อมูล — กรุณาทำ Assessment ให้เสร็จก่อน':'No result found — please complete the assessment first'); return; }
+  const pLang = getLang();
+  const arc = ARCHETYPES.find(a=>a.name===r.primary) || ARCHETYPES[0];
   const avgC = r.avgCulture ?? Math.round(((r.impPct||0)+(r.ownPct||0)+(r.excPct||0))/3);
   const cultureBadge = avgC>=82?'Culture Champion 🏆':avgC>=68?'Culture Aligned ✅':'Culture Growing 🌱';
-  const archetypes = ['Strategist','Innovator','Scout','Builder','Optimizer','Connector','Anchor','Catalyst','Challenger','Explorer'];
-  const normKeys = ['norm_St','norm_In','norm_Sc','norm_Bu','norm_Op','norm_Co','norm_An','norm_Ca','norm_Ch','norm_Ex'];
-  const arcRows = archetypes.map((a,i) => `<tr><td style="padding:4px 8px;font-size:12px;">${a}</td><td style="padding:4px 8px;font-weight:600;color:#333;">${r[normKeys[i]]||0}%</td></tr>`).join('');
+  const cultureColor = avgC>=82?'#1a7a50':avgC>=68?'#3B3BAA':'#F7941D';
+  const impPct=r.impPct||0, ownPct=r.ownPct||0, excPct=r.excPct||0;
+
+  // Sort archetypes by score
+  const archetypes=['Strategist','Innovator','Scout','Builder','Optimizer','Connector','Anchor','Catalyst','Challenger','Explorer'];
+  const normKeys=['norm_St','norm_In','norm_Sc','norm_Bu','norm_Op','norm_Co','norm_An','norm_Ca','norm_Ch','norm_Ex'];
+  const keyMap={St:'Strategist',In:'Innovator',Sc:'Scout',Bu:'Builder',Op:'Optimizer',Co:'Connector',An:'Anchor',Ca:'Catalyst',Ch:'Challenger',Ex:'Explorer'};
+  const domainMap={A:['St','In','Sc'],B:['Bu','Op'],C:['Co','An','Ca'],D:['Ch','Ex']};
+  const domainNames={A:'Thinking',B:'Execution',C:'People',D:'Drive'};
+  const domainHex={A:'#3B3BAA',B:'#1a7a50',C:'#8a2060',D:'#9a3a10'};
+  const sorted = archetypes.map((a,i)=>([normKeys[i].replace('norm_',''), r[normKeys[i]]||0])).sort((a,b)=>b[1]-a[1]);
+  const topKey=sorted[0][0], top2Key=sorted[1][0];
+  const topName=keyMap[topKey]||r.primary, top2Name=keyMap[top2Key]||r.secondary;
+  const domKey = Object.entries(domainMap).find(([,ks])=>ks.includes(topKey))?.[0]||'A';
+  const domainPct={};
+  Object.entries(domainMap).forEach(([d,ks])=>{ const max=Math.max(...ks.map(k=>sorted.find(s=>s[0]===k)?.[1]||0),1); domainPct[d]=Math.round(max); });
+  const maxDom=Math.max(...Object.values(domainPct),1);
+  Object.keys(domainPct).forEach(d=>{ domainPct[d]=Math.round((domainPct[d]/maxDom)*100); });
+
+  // Narrative
+  const narrs={
+    Strategist:{who:pLang==='th'?`คนที่สร้าง value สูงสุดผ่าน "วิธีคิด" ก่อนลงมือทำ มีความสามารถพิเศษในการมองเห็น pattern ที่ซ่อนอยู่ในข้อมูล และแปลง complexity ออกมาเป็น clarity ที่ทีมทำตามได้`:`Creates the most value through thinking before acting. Exceptional at spotting hidden patterns in data and converting complexity into clarity teams can follow.`,how:pLang==='th'?`ตั้งคำถามว่า "เราแก้ปัญหาที่ใช่ไหม?" ก่อน "เราแก้ยังไง?" ทำงานได้ดีในสภาวะที่ไม่แน่นอน เพราะมองว่า white space คือโอกาสสำหรับ framework ใหม่`:`Asks "Are we solving the right problem?" before "How?" Thrives in uncertainty — sees white space as an opportunity for new frameworks.`,grow:pLang==='th'?`อาจ over-plan ก่อน execute ทีมอาจรู้สึกว่า "think too much" — Balance strategic clarity กับ execution speed`:`May over-plan before executing. Balance strategic clarity with execution speed.`},
+    Innovator:{who:pLang==='th'?`Energize จากการสร้าง output ที่ไม่เคยมีมาก่อน เชื่อมสิ่งที่ดูไม่เกี่ยวกันได้อย่างเป็นธรรมชาติ และมักพบ solution จากมุมที่คนอื่นไม่ได้คิดถึง`:`Energized by creating output that has never existed before. Naturally connects unrelated things and finds solutions from angles others miss.`,how:pLang==='th'?`ทำงานได้ดีเมื่อมีพื้นที่ experiment โดยไม่กลัว fail มองว่า prototype ยังไม่สมบูรณ์ดีกว่า plan สมบูรณ์บนกระดาษ`:`Works best with space to experiment without fear of failure. An imperfect prototype beats a perfect plan on paper.`,grow:pLang==='th'?`Energy ในช่วง ideation มักลดลงเมื่อต้องการ consistency จับคู่กับ Builder หรือ Optimizer`:`Energy during ideation often drops when consistency is required. Pair with Builder or Optimizer.`},
+    Scout:{who:pLang==='th'?`Internal antenna ขององค์กร ดักจับ trend, insight, และ best practice ก่อนคนอื่น เรียนรู้จากทุกที่และมีพรสวรรค์ใน synthesize จากหลาย domain`:`The organization's internal antenna — capturing trends, insights, and best practices before anyone else. Learns from everywhere and synthesizes across domains.`,how:pLang==='th'?`ทำงานได้ดีเมื่อได้เรียนรู้อย่างต่อเนื่อง ทีมมักมาหาเมื่อต้องการรู้ว่า "ใครเป็น expert เรื่องนี้?"`:`Operates best when learning continuously. Teams seek you out when they need to know "Who's the expert on this?"`,grow:pLang==='th'?`อาจติดกับดัก "รอให้รู้ครบก่อน" — ตั้ง deadline ให้ตัวเองว่า "เรียนรู้ X สัปดาห์แล้ว ship"`:`May get trapped in "wait until I know enough." Set a deadline: "Learn for X weeks, then ship."`},
+    Builder:{who:pLang==='th'?`สร้าง value ผ่านการ "ลงมือทำ" จาก 0 ไม่รอ condition สมบูรณ์แบบ start ด้วยสิ่งที่มี iterate เร็ว และเรียนจาก real usage`:`Creates value by making things from zero. Doesn't wait for perfect conditions — starts with what's available and iterates fast.`,how:pLang==='th'?`Thrive ใน ambiguous เพราะ blank page คือโอกาส ทีมมักมาหาเมื่อต้องการ "ลงมือทำให้เกิดขึ้นจริง"`:`Thrives in ambiguity because a blank page is an opportunity. Teams come to you when they need to "make it actually happen."`,grow:pLang==='th'?`Style การทำงานคนเดียวที่รวดเร็วอาจทำให้ทีม left behind — Document และ involve ทีมตั้งแต่ต้น`:`Fast solo work style can leave the team behind. Document your work and involve the team from the start.`},
+    Optimizer:{who:pLang==='th'?`มองเห็น inefficiency ที่คนอื่นผ่านมองข้าม สร้าง value ผ่านการ refine, streamline และ standardize`:`Spots inefficiencies others walk past. Creates value through refining, streamlining, and standardizing.`,how:pLang==='th'?`ทำงานได้ดีเมื่อมี foundation ให้ปรับปรุง data-driven ไม่เปลี่ยนโดยไม่มี logic`:`Works best when there's a foundation to improve. Data-driven — won't change without logic.`,grow:pLang==='th'?`ความต้องการ data ก่อนเปลี่ยนอาจดู resistant ใน early stage — Practice tolerance ต่อ "good enough to test"`:`Need for data before change can appear resistant early on. Practice tolerance for "good enough to test."`},
+    Connector:{who:pLang==='th'?`สร้าง value ผ่านการเชื่อมคนและ resource เห็นทันทีว่า "A กับ B ควรคุยกัน" สร้าง trust ได้เร็วกับคนแปลกหน้า`:`Creates value by linking people and resources. Immediately sees who should meet and builds trust quickly with strangers.`,how:pLang==='th'?`ทำงานได้ดีใน cross-functional environment เป็น bridge ระหว่าง BU และมักทำให้ synergy เกิดขึ้นเบื้องหลัง`:`Works best in cross-functional environments. Bridges BUs and creates synergy behind the scenes.`,grow:pLang==='th'?`ความต้องการ maintain ทุก relationship อาจทำให้ avoid conflict — บางครั้งต้อง take a clear stand`:`Need to maintain all relationships may lead to avoiding conflict. Sometimes a clear stand is what's needed.`},
+    Anchor:{who:pLang==='th'?`สร้าง value ด้วยการให้ psychological safety และ stability ทีมวิ่งมาเมื่อสับสน เพราะรู้ว่าทุกอย่างดูจัดการได้`:`Creates value through psychological safety and stability. Teams run to you when confused because you make everything feel manageable.`,how:pLang==='th'?`ทำงานได้ดีเมื่อมีความสัมพันธ์ลึกกับทีม อ่านอารมณ์ห้องออก รู้ว่าเมื่อไรต้อง support เมื่อไรต้อง push`:`Works best with deep team relationships. Reads the room — knows when to support and when to push.`,grow:pLang==='th'?`ความใส่ใจอาจกลายเป็น bottleneck เมื่อ protect มากเกิน — Practice intentional "letting go"`:`Care for the team can become a bottleneck when over-protecting. Practice intentional "letting go."`},
+    Catalyst:{who:pLang==='th'?`ทำให้คนรอบข้าง perform ได้ดีกว่าที่คิด Amplify potential คนอื่น สร้าง collective energy`:`Makes people around you perform beyond what they thought possible. Amplifies others' potential and creates collective energy.`,how:pLang==='th'?`ทำงานได้ดีเมื่อมี audience และ platform เป็น natural storyteller ที่พูดแล้วคนอยากลุกขึ้นทำ`:`Works best with an audience and a platform. A natural storyteller — when you speak, people want to act.`,grow:pLang==='th'?`Energy ในการ ignite อาจทำให้ start หลายอย่างพร้อมกัน — Pair กับ Optimizer หรือ Builder`:`Energy for igniting people may lead to starting many things. Pair with Optimizer or Builder.`},
+    Challenger:{who:pLang==='th'?`ไม่ยอมรับ "ดีพอแล้ว" สร้าง productive tension และเป็นแรงผลักดันที่ทำให้ standard สูงขึ้น`:`Refuses to accept "good enough." Creates productive tension and continuously raises organizational standards.`,how:pLang==='th'?`ทำงานได้ดีเมื่อมีปัญหาจริงให้ push against ไม่กลัว uncomfortable conversation`:`Works best when there's a real problem to push against. Doesn't fear uncomfortable conversations.`,grow:pLang==='th'?`ความ direct เป็น superpower เมื่อ pair กับ empathy — ฝึก "challenge ด้วย curiosity ไม่ใช่ verdict"`:`Directness is a superpower paired with empathy. Practice "challenge with curiosity, not verdict."`},
+    Explorer:{who:pLang==='th'?`Thrive ในสภาวะที่เปลี่ยนแปลง adapt ได้เร็วกว่าคนอื่น มองเห็นโอกาสในสิ่งที่คนอื่นมองว่าเป็นปัญหา`:`Thrives in change and uncertainty. Adapts faster than others, sees opportunity where others see problems.`,how:pLang==='th'?`ทำงานได้ดีใน dynamic environment เป็น asset ในช่วง pivot หรือ crisis ไม่ยึดติดกับ "วิธีที่เคยทำ"`:`Works best in dynamic environments. A key asset during pivots or crises — not attached to "the way things were."`,grow:pLang==='th'?`ความรัก novelty อาจทำให้ chase สิ่งใหม่โดยไม่ deep — ทีม predict ได้ยากว่าคุณ commit กับอะไร`:`Love of novelty may lead to chasing new things without going deep. Teams find it hard to predict your commitments.`}
+  };
+  const np = narrs[r.primary] || narrs.Builder;
+
+  // Domain data
+  const domDescs_th={A:{desc:'คนใน Domain A คือ <strong>สถาปนิกทางความคิด</strong> — สร้าง value ผ่านการคิด วิเคราะห์ สำรวจ และสังเคราะห์ Domain A คือแหล่งกำเนิดของ strategy, innovation, และ insight',str:'วางแผนระยะยาว · หา pattern จากข้อมูล · สร้าง framework ใหม่',wtch:'อาจ over-think ก่อน execute · ต้องการ Domain B มาช่วย close loop'},B:{desc:'คนใน Domain B คือ <strong>นักสร้างผลลัพธ์</strong> — energize จากการลงมือทำ build และ optimize สิ่งที่จับต้องได้',str:'deliver ได้จริง · iterate เร็ว · สร้าง efficiency',wtch:'อาจ build ก่อน validate · ต้องการ Domain A ช่วย set direction'},C:{desc:'คนใน Domain C คือ <strong>หัวใจของทีม</strong> — สร้าง value ผ่านการดูแล เชื่อมต่อ และ energize คนรอบข้าง',str:'build trust · สร้าง team cohesion · ระดมพลัง',wtch:'อาจ prioritize harmony มากกว่า performance · ต้องการ Domain D push'},D:{desc:'คนใน Domain D คือ <strong>ผู้ขับเคลื่อนการเปลี่ยนแปลง</strong> — energize จากการท้าทาย explore และ push boundary',str:'กระตุ้น innovation · ตั้งคำถาม status quo · adapt เร็ว',wtch:'อาจ restless และ ย้าย focus บ่อย · ต้องการ Domain C stabilize'}};
+  const domDescs_en={A:{desc:'People in Domain A are <strong>Architects of Thought</strong> — they create value through thinking, analyzing, and synthesizing. Domain A is the source of strategy, innovation, and insight.',str:'Long-range planning · Pattern recognition · Building new frameworks',wtch:'May over-think before executing · Needs Domain B to help close the loop'},B:{desc:'People in Domain B are <strong>Results Builders</strong> — energized by hands-on building and optimizing tangible things.',str:'Delivers results · Iterates fast · Builds efficiency',wtch:'May build before validating · Needs Domain A to set direction first'},C:{desc:'People in Domain C are the <strong>Heart of the Team</strong> — they create value through caring, connecting, and energizing others.',str:'Builds trust · Creates team cohesion · Rallies energy',wtch:'May prioritize harmony over performance · Needs Domain D to push'},D:{desc:'People in Domain D are <strong>Drivers of Change</strong> — energized by challenging, exploring, and pushing boundaries.',str:'Sparks innovation · Questions status quo · Adapts fast',wtch:'May be restless and shift focus often · Needs Domain C to stabilize'}};
+  const dd = (pLang==='th'?domDescs_th:domDescs_en)[domKey]||domDescs_en.A;
+
+  // Collab
+  const collab_th={Strategist:'ทำงานได้ดีกับ Builder (execute idea) และ Scout (feed insight) · ระวังกับ Anchor (อาจ slow change) และ Explorer (อาจ unpredictable)',Innovator:'ทำงานได้ดีกับ Builder (turn idea เป็น product) และ Scout (cross-pollinate) · ระวังกับ Optimizer (อาจ kill ideas) และ Anchor',Scout:'ทำงานได้ดีกับ Innovator (apply knowledge) และ Strategist (feed insight) · ระวังกับ Builder (อาจ impatient) และ Challenger',Builder:'ทำงานได้ดีกับ Strategist (direction ชัด) และ Connector (align stakeholder) · ระวังกับ Optimizer (slow iteration) และ Anchor',Optimizer:'ทำงานได้ดีกับ Strategist (improve system) และ Builder (refine) · ระวังกับ Innovator (conflict กับ structure) และ Explorer',Connector:'ทำงานได้ดีกับ Catalyst (amplify network) และ Strategist (connect right people) · ระวังกับ Challenger (direct style) และ Optimizer',Anchor:'ทำงานได้ดีกับ Catalyst (เสริม energy) และ Connector (maintain ความสัมพันธ์) · ระวังกับ Builder (move too fast) และ Challenger',Catalyst:'ทำงานได้ดีกับ Builder (execute energy) และ Strategist (ให้ direction) · ระวังกับ Optimizer (dampen energy) และ Anchor',Challenger:'ทำงานได้ดีกับ Strategist (strategic challenge) และ Builder (push execution) · ระวังกับ Anchor (feel threatened) และ Connector',Explorer:'ทำงานได้ดีกับ Innovator (explore + create) และ Strategist (ให้ frame) · ระวังกับ Optimizer (too structured) และ Anchor'};
+  const collab_en={Strategist:'Works best with Builder (executes your ideas) and Scout (feeds data to your framework) · Watch out with Anchor (may slow change) and Explorer (can be unpredictable)',Innovator:'Works best with Builder (turns ideas into products) and Scout (cross-pollinates) · Watch out with Optimizer (may kill ideas) and Anchor',Scout:'Works best with Innovator (applies knowledge together) and Strategist (feeds insights) · Watch out with Builder (may be impatient) and Challenger',Builder:'Works best with Strategist (clear direction) and Connector (aligns stakeholders) · Watch out with Optimizer (slows iteration) and Anchor',Optimizer:'Works best with Strategist (improves systems) and Builder (refines output) · Watch out with Innovator (conflicts with structure) and Explorer',Connector:'Works best with Catalyst (amplifies network) and Strategist (connects right people) · Watch out with Challenger (direct style) and Optimizer',Anchor:'Works best with Catalyst (adds energy) and Connector (maintains relationships) · Watch out with Builder (moves too fast) and Challenger',Catalyst:'Works best with Builder (executes your energy) and Strategist (gives direction) · Watch out with Optimizer (dampens energy) and Anchor',Challenger:'Works best with Strategist (strategic challenge) and Builder (pushes execution) · Watch out with Anchor (feels threatened) and Connector',Explorer:'Works best with Innovator (explore and create) and Strategist (gives frame) · Watch out with Optimizer (too structured) and Anchor'};
+  const collabText = (pLang==='th'?collab_th:collab_en)[r.primary]||'';
+
+  // Plans
+  const plans_th={Strategist:['30 วัน: แชร์ archetype กับ Manager → ขอ seat ใน strategic planning meeting','60 วัน: นำเสนอ 1 framework ให้ทีมใช้ร่วมกัน → วัด adoption','90 วัน: เป็น co-lead ใน cross-BU initiative → report outcome ให้ Director'],Innovator:['30 วัน: Pitch 1 new idea ให้ Manager พร้อม prototype concept ใน 2 หน้า','60 วัน: ขอ creative time 4 ชม./สัปดาห์ → build working prototype','90 วัน: Present result — แม้ fail ก็ document lesson ให้ชัด'],Scout:['30 วัน: เลือก 1 domain → สร้าง learning plan 90 วัน share ให้ Manager','60 วัน: จัด knowledge sharing 30 นาทีให้ทีม','90 วัน: สร้าง "Scout Report" monthly ให้ team lead'],Builder:['30 วัน: Identify 1 pain point → propose solution ด้วย simple prototype','60 วัน: ขอ own 1 mini project ตั้งแต่ต้นจนจบ','90 วัน: Deliver + demo ผล → document process'],Optimizer:['30 วัน: Map 1 process pain point → document waste ทุกจุด','60 วัน: Design improved version → run pilot 1 BU → measure','90 วัน: Present before/after metrics → propose rollout plan'],Connector:['30 วัน: List 5 คนที่ควรรู้จักกัน → introduce','60 วัน: Volunteer เป็น coordinator cross-BU project','90 วัน: เสนอ "Rabbit Connect" session ให้ HR'],Anchor:['30 วัน: เป็น buddy ให้ new joiner 1 คน → check-in ทุกสัปดาห์','60 วัน: Document "how this team really works" guide','90 วัน: เสนอตัวเป็น culture ambassador → pulse check ทุกเดือน'],Catalyst:['30 วัน: Host 1 knowledge sharing หรือ team energizer','60 วัน: เป็น Recognition Champion → celebrate win สัปดาห์ละครั้ง','90 วัน: ขอ slot ใน all-hands → share story ที่ inspire'],Challenger:['30 วัน: เลือก 1 process ที่ควรดีกว่า → เตรียม data + proposal','60 วัน: Lead improvement initiative → ตั้ง success metric ก่อน','90 วัน: Present progress → ถ้า succeed ขอ lead bigger initiative'],Explorer:['30 วัน: ขอ sit-in BU อื่น 1 วัน → observe + document','60 วัน: เสนอ pilot idea ที่ test ได้ใน 30 วัน → ลงมือ','90 วัน: Report outcome → scale ถ้า work, document learning ถ้า fail']};
+  const plans_en={Strategist:['30 days: Share archetype with Manager → request seat in BU strategic planning','60 days: Present 1 framework for team use → measure adoption','90 days: Co-lead cross-BU initiative → report outcomes to Director'],Innovator:['30 days: Pitch 1 new idea with 2-page prototype concept','60 days: Request 4 hrs/week creative time → build working prototype','90 days: Present results — if it fails, document lessons clearly'],Scout:['30 days: Pick 1 domain → build 90-day learning plan, share with Manager','60 days: Host 30-min knowledge sharing for the team','90 days: Create monthly "Scout Report" for team lead'],Builder:['30 days: Identify 1 pain point → propose solution with simple prototype','60 days: Request ownership of 1 mini project end-to-end','90 days: Deliver + demo results → document process for others'],Optimizer:['30 days: Map 1 process pain point → document every waste step','60 days: Design improved version → pilot with 1 BU → measure','90 days: Present before/after metrics → propose rollout plan'],Connector:['30 days: List 5 people who should know each other → introduce them','60 days: Volunteer as cross-BU project coordinator','90 days: Propose "Rabbit Connect" session to HR'],Anchor:['30 days: Be buddy to 1 new joiner → weekly check-ins','60 days: Document "how this team really works" onboarding guide','90 days: Volunteer as BU culture ambassador → monthly pulse check'],Catalyst:['30 days: Host 1 knowledge sharing or team energizer session','60 days: Become Recognition Champion → celebrate a win weekly','90 days: Request slot at all-hands → share an inspiring story'],Challenger:['30 days: Pick 1 process that should be better → prepare data + proposal','60 days: Lead improvement initiative → set success metrics first','90 days: Present progress → if successful, lead bigger initiative'],Explorer:['30 days: Sit in with another BU for 1 day → observe + document','60 days: Propose testable pilot idea for 30 days → execute','90 days: Report outcome → scale if it works, document if not']};
+  const planItems = (pLang==='th'?plans_th:plans_en)[r.primary]||(pLang==='th'?plans_th:plans_en).Builder;
+
+  const t={
+    date: pLang==='th' ? '24 พฤษภาคม 2569' : r.date||new Date().toLocaleDateString('en-GB',{year:'numeric',month:'long',day:'numeric'}),
+    signalOf: pLang==='th' ? 'YOUR RABBIT SIGNAL' : 'YOUR RABBIT SIGNAL',
+    domain: `Domain ${domKey} · ${domainNames[domKey]}`,
+    yourDomain: pLang==='th' ? 'YOUR PRIMARY DOMAIN' : 'YOUR PRIMARY DOMAIN',
+    domStrength: pLang==='th' ? 'DOMAIN STRENGTH' : 'DOMAIN STRENGTH',
+    arcStrength: pLang==='th' ? 'Archetype Signal Strength' : 'Archetype Signal Strength',
+    cultureTitle: 'Culture Values Score',
+    deepProfile: `Deep Profile — ${r.primary}`,
+    whoYouAre: pLang==='th' ? '🧬 คุณคือใคร' : '🧬 Who You Are',
+    howOperate: pLang==='th' ? '⚙️ คุณ operate ยังไง' : '⚙️ How You Operate',
+    growEdge: pLang==='th' ? '🌱 Growth Edge ที่ต้องพัฒนา' : '🌱 Growth Edge to Develop',
+    superpower: 'Superpower',
+    blindspot: 'Blind Spot',
+    collab: pLang==='th' ? 'Collaboration Guide — ทำงานกับคนอื่นยังไงให้ดีที่สุด' : 'Collaboration Guide — How to Work Best with Others',
+    plan30: pLang==='th' ? '30-60-90 Day Action Plan' : '30-60-90 Day Action Plan',
+    d30: pLang==='th'?'30 วัน':'30 days', d60: pLang==='th'?'60 วัน':'60 days', d90: pLang==='th'?'90 วัน':'90 days',
+    domStr: pLang==='th'?'✅ จุดแข็งของ Domain นี้':'✅ Domain Strengths',
+    domWtch: pLang==='th'?'⚠️ สิ่งที่ต้องระวัง':'⚠️ Watch Out For',
+    arcInDom: pLang==='th'?'Archetypes ใน Domain นี้:':'Archetypes in this Domain:',
+    yourDom2: pLang==='th'?`Domain ของคุณ (${domKey}):` : `Your Domain (${domKey}):`,
+    howRead: pLang==='th'?'📌 วิธีอ่าน: % = signal strength เทียบกับ max ของแต่ละ type':'📌 How to read: % = signal strength vs max possible per archetype',
+    cultureNote: pLang==='th'?'⚡ คะแนน normalize ด้วย reverse-scored questions เพื่อลด self-report bias':'⚡ Scores normalized using reverse-scored questions to reduce self-report bias',
+    avg: pLang==='th'?'เฉลี่ย':'Average',
+    footer: 'Rabbit Signal Framework · People & Talent Development',
+    generated: pLang==='th'?'Generated:':'Generated:',
+  };
+
+  const arcColor = arc?.c || '#F7941D';
+  const arcSubtitle = pLang==='th'?(arc?.th||r.primary):(arc?.name||r.primary);
+  const arcQuote = pLang==='th'?(arc?.b_th||''):(arc?.b_en||'');
+  const arcDesc = pLang==='th'?(arc?.desc_th||arc?.b_th||''):(arc?.desc_en||arc?.b_en||'');
+  const arcSp = pLang==='th'?(arc?.sp_th||''):(arc?.sp_en||'');
+  const arcBlind = pLang==='th'?(arc?.blind_th||''):(arc?.blind_en||'');
+  const arcTags = arc?.tags||[arcSubtitle];
+
+  const archetypeRows = archetypes.map((a,i)=>{
+    const pct=r[normKeys[i]]||0;
+    const isTop = a===r.primary; const is2nd = a===r.secondary;
+    const col = isTop ? arcColor : is2nd ? '#888' : '#ccc';
+    return `<tr>
+      <td style="padding:5px 8px;font-size:12px;font-weight:${isTop?'700':'400'};color:${isTop?arcColor:is2nd?'#444':'#aaa'};width:110px;">${a}${isTop?' ★':''}</td>
+      <td style="padding:5px 8px;"><div style="height:${isTop?'8':is2nd?'5':'3'}px;background:#f5f5f5;border-radius:4px;"><div style="height:100%;width:${pct}%;background:${col};border-radius:4px;"></div></div></td>
+      <td style="padding:5px 8px;font-weight:${isTop?'700':'400'};color:${isTop?arcColor:'#aaa'};text-align:right;width:44px;font-size:12px;">${pct}%</td>
+    </tr>`;
+  }).join('');
+
+  const domainRows = Object.entries(domainPct).sort((a,b)=>b[1]-a[1]).map(([d,pct])=>`
+    <div style="margin-bottom:10px;">
+      <div style="display:flex;justify-content:space-between;margin-bottom:3px;">
+        <span style="font-size:12px;font-weight:600;color:${domainHex[d]};">${d} · ${domainNames[d]}</span>
+        <span style="font-size:11px;font-weight:700;color:${domainHex[d]};">${pct}%</span>
+      </div>
+      <div style="height:6px;background:#f0f0f0;border-radius:3px;"><div style="height:100%;width:${pct}%;background:${domainHex[d]};border-radius:3px;"></div></div>
+    </div>`).join('');
+
+  const cultureCards = [{l:'IMPACT',p:impPct,c:'#1a7a50'},{l:'OWNERSHIP',p:ownPct,c:'#3B3BAA'},{l:'EXCELLENCE',p:excPct,c:'#8a2060'},{l:t.avg.toUpperCase(),p:avgC,c:'#555'}]
+    .map(v=>`<div style="text-align:center;padding:14px 8px;border-radius:10px;border:1px solid #e8e8e8;border-top:3px solid ${v.c};background:#fff;">
+      <div style="font-size:9px;font-weight:700;letter-spacing:.12em;color:${v.c};margin-bottom:4px;">${v.l}</div>
+      <div style="font-family:'Playfair Display',serif;font-size:30px;color:${v.c};line-height:1;margin-bottom:4px;">${v.p}%</div>
+      <div style="font-size:10px;color:#888;">${v.p>=82?'Champion 🏆':v.p>=68?'Aligned ✅':'Growing 🌱'}</div>
+    </div>`).join('');
+
+  const cultureInsights = [
+    {l:'Impact',p:impPct,c:'#1a7a50',hi:pLang==='th'?'คุณมอง output ในเชิง value เสมอ — ทุกงานตอบได้ว่าสร้าง impact ยังไง':'You always view output in terms of value — every piece of work answers how it creates impact.',mid:pLang==='th'?'คุณเข้าใจ impact แต่บางครั้งยังทำงาน task-based มากกว่า outcome-based':'You understand impact but sometimes still work task-based rather than outcome-based.',lo:pLang==='th'?'แนะนำให้ฝึกถาม "So what?" กับทุก output ก่อนส่ง':'Practice asking "So what?" for every output before sending.'},
+    {l:'Ownership',p:ownPct,c:'#3B3BAA',hi:pLang==='th'?'คุณ operate แบบ full accountability ไม่รอให้ใครบอก':'You operate with full accountability — you don\'t wait to be told.',mid:pLang==='th'?'คุณมี ownership sense ดี แต่กดดันอาจยัง externalize':'You have a good sense of ownership but may still externalize under pressure.',lo:pLang==='th'?'ฝึก Extreme Ownership mindset — ทุกผลลัพธ์มี action ที่คุณทำได้':'Practice Extreme Ownership mindset — every outcome has an action you can take.'},
+    {l:'Excellence',p:excPct,c:'#8a2060',hi:pLang==='th'?'คุณ set standard สูงและ iterate จนภูมิใจ — output มักเกิน expectation':'You set high standards and iterate until proud — your output often exceeds expectations.',mid:pLang==='th'?'คุณใส่ใจ quality แต่บาง deadline อาจ compromise standard':'You care about quality but some deadlines may compromise standards.',lo:pLang==='th'?'ตั้ง personal standard ว่า "งานที่ฉันภูมิใจต้องมีอะไรบ้าง" ก่อนเริ่มทุก project':'Set a personal standard: "What must be in work I\'m proud of?" before every project.'}
+  ].map(v=>`<div style="margin-bottom:8px;padding:10px 12px;background:${v.c}08;border-radius:8px;border-left:3px solid ${v.c};">
+    <div style="font-size:10px;font-weight:700;color:${v.c};margin-bottom:3px;">${v.l}: ${v.p}%</div>
+    <div style="font-size:12px;color:#444;line-height:1.6;">${v.p>=82?v.hi:v.p>=68?v.mid:v.lo}</div>
+  </div>`).join('');
+
+  const planRows = planItems.map((s,i)=>`
+    <div style="display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid #f0f0f0;">
+      <div style="min-width:52px;text-align:center;padding:4px 6px;background:#1A1816;border-radius:5px;font-size:9px;font-weight:700;color:#F7941D;flex-shrink:0;">${i===0?t.d30:i===1?t.d60:t.d90}</div>
+      <div style="font-size:12.5px;color:#333;line-height:1.65;padding-top:2px;">${s}</div>
+    </div>`).join('');
 
   const win = window.open('','_blank');
   win.document.write(`<!DOCTYPE html><html><head><meta charset="UTF-8">
   <title>Rabbit Signal — ${r.fullName||'Result'}</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=IBM+Plex+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    *{box-sizing:border-box;} body{font-family:'IBM Plex Sans Thai',sans-serif;max-width:720px;margin:32px auto;padding:0 24px;color:#1A1816;background:#fff;}
-    h1{font-family:'Playfair Display',serif;font-size:42px;color:#0D0D0D;margin:0 0 4px;}
-    .meta{font-size:11px;color:#aaa;letter-spacing:.12em;margin-bottom:16px;}
-    .sub{color:#666;font-size:15px;margin-bottom:8px;}
-    .badge{display:inline-block;padding:4px 12px;border-radius:4px;font-size:11px;font-weight:700;margin:2px;}
-    .section{margin:16px 0;padding:14px 18px;border-radius:8px;background:#f7f7f5;border-left:4px solid #F7941D;}
-    .section h3{margin:0 0 8px;font-size:10px;letter-spacing:.14em;color:#888;font-weight:700;}
-    .section p,.section div{margin:0;line-height:1.7;font-size:13px;}
-    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0;}
-    .val-box{text-align:center;padding:12px 8px;border-radius:8px;border:1px solid #e8e8e8;}
-    .val-box .n{font-family:'Playfair Display',serif;font-size:30px;font-weight:600;}
-    .val-box .lbl{font-size:10px;color:#888;margin-top:2px;}
-    table{width:100%;border-collapse:collapse;} td{border-bottom:1px solid #f0f0f0;}
-    .info-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;}
-    .info-chip{padding:4px 10px;background:#f0f0f0;border-radius:4px;font-size:11px;color:#555;}
-    .footer{margin-top:28px;padding-top:14px;border-top:1px solid #eee;font-size:10px;color:#bbb;display:flex;justify-content:space-between;}
-    @media print{body{margin:16px;} button{display:none;}}
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'IBM Plex Sans Thai',sans-serif;max-width:760px;margin:32px auto;padding:0 28px;color:#1A1816;background:#fff;font-size:13px;line-height:1.65;}
+    h1{font-family:'Playfair Display',serif;font-size:44px;color:#0D0D0D;margin:0 0 4px;}
+    .meta{font-size:10px;color:${arcColor};letter-spacing:.18em;margin-bottom:12px;font-weight:700;}
+    .sub{color:rgba(255,255,255,.55);font-size:14px;margin-bottom:12px;}
+    .quote{font-style:italic;font-size:13px;color:rgba(255,255,255,.4);line-height:1.7;max-width:520px;border-left:2px solid ${arcColor};padding-left:14px;margin-bottom:16px;}
+    .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px;}
+    .badge-signal{background:${arcColor}30;border:1px solid ${arcColor}60;border-radius:6px;padding:4px 12px;font-size:11px;color:${arcColor};font-weight:700;}
+    .badge-sec{background:#ffffff18;border:1px solid #ffffff22;border-radius:6px;padding:4px 12px;font-size:11px;color:#bbb;}
+    .badge-cult{background:${cultureColor}30;border:1px solid ${cultureColor}55;border-radius:6px;padding:4px 12px;font-size:11px;color:${cultureColor};font-weight:700;}
+    .hero{background:#1A1816;border-radius:12px;padding:26px 30px;margin-bottom:14px;position:relative;overflow:hidden;}
+    .hero-stripe{position:absolute;top:0;right:0;bottom:0;width:4px;background:${arcColor};}
+    .hero h1{color:#fff;}
+    .info-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;}
+    .chip{padding:3px 10px;background:#f2f2f0;border-radius:4px;font-size:11px;color:#555;}
+    .card{margin-bottom:14px;border-radius:10px;border:1px solid #e8e8e8;overflow:hidden;}
+    .card-hdr{display:flex;align-items:center;gap:10px;padding:12px 16px;background:#f8f8f6;border-bottom:1px solid #eee;}
+    .card-icon{font-size:18px;}
+    .card-title{font-size:13px;font-weight:700;color:#1A1816;}
+    .card-body{padding:16px;}
+    .arch-card{background:linear-gradient(135deg,${arcColor}18 0%,${arcColor}06 100%);border:1.5px solid ${arcColor}44;border-radius:12px;padding:22px 26px;margin-bottom:14px;display:flex;gap:16px;flex-wrap:wrap;}
+    .arch-main{flex:1;min-width:200px;}
+    .arch-label{font-size:9px;font-weight:700;letter-spacing:.16em;color:${arcColor};margin-bottom:6px;}
+    .arch-name{font-family:'Playfair Display',serif;font-size:30px;color:#1A1816;margin-bottom:3px;}
+    .arch-sub{font-size:13px;color:#666;margin-bottom:12px;}
+    .arch-desc{font-size:12.5px;color:#333;line-height:1.75;margin-bottom:12px;}
+    .tags{display:flex;gap:6px;flex-wrap:wrap;}
+    .tag{font-size:10px;font-weight:600;padding:3px 10px;background:${arcColor}22;color:${arcColor};border-radius:20px;}
+    .arch-score{flex:0 0 auto;text-align:center;padding:14px 18px;background:rgba(255,255,255,.75);border-radius:10px;border:1px solid ${arcColor}30;min-width:96px;}
+    .score-lbl{font-size:9px;font-weight:700;color:${arcColor};letter-spacing:.1em;margin-bottom:4px;}
+    .score-n{font-family:'Playfair Display',serif;font-size:38px;color:${arcColor};line-height:1;}
+    .score-sub{font-size:10px;color:#aaa;margin-top:2px;}
+    .domain-hdr{background:${domainHex[domKey]}18;}
+    .domain-eyebrow{font-size:9px;font-weight:700;letter-spacing:.14em;color:${domainHex[domKey]};margin-bottom:2px;}
+    .domain-title{font-size:14px;font-weight:700;color:${domainHex[domKey]};}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;}
+    .grid4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px;margin-bottom:12px;}
+    .strength-box{padding:11px;background:${domainHex[domKey]}0A;border-radius:8px;border-left:3px solid ${domainHex[domKey]};}
+    .watch-box{padding:11px;background:#fff8f0;border-radius:8px;border-left:3px solid #f7941d;}
+    .box-label{font-size:9px;font-weight:700;letter-spacing:.1em;margin-bottom:4px;}
+    .box-text{font-size:12px;color:#444;line-height:1.65;}
+    .arc-footer{padding:9px 12px;background:#f8f8f6;border-radius:7px;font-size:11px;color:#666;}
+    .note-bar{font-size:10.5px;color:#666;padding:8px 10px;background:#f8f8f6;border-radius:6px;margin-bottom:12px;line-height:1.55;}
+    .section-hdr{font-size:9px;font-weight:700;letter-spacing:.14em;color:#aaa;text-transform:uppercase;margin-bottom:8px;}
+    .profile-block{padding:13px;border-radius:8px;margin-bottom:10px;}
+    .profile-label{font-size:9px;font-weight:700;letter-spacing:.13em;margin-bottom:5px;}
+    .profile-text{font-size:12.5px;color:#333;line-height:1.75;}
+    .sp-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px;}
+    .sp-card{border-radius:10px;overflow:hidden;border:1px solid #e8e8e8;}
+    .sp-hdr{padding:10px 14px;font-size:12px;font-weight:700;}
+    .sp-body{padding:12px 14px;font-size:12.5px;color:#333;line-height:1.65;}
+    .plan-row{display:flex;gap:12px;align-items:flex-start;padding:9px 0;border-bottom:1px solid #f0f0f0;}
+    .plan-tag{min-width:52px;text-align:center;padding:4px 6px;background:#1A1816;border-radius:5px;font-size:9px;font-weight:700;color:#F7941D;flex-shrink:0;}
+    .footer{margin-top:22px;padding-top:12px;border-top:1px solid #eee;font-size:10px;color:#ccc;display:flex;justify-content:space-between;}
+    table{width:100%;border-collapse:collapse;}
+    td{border-bottom:1px solid #f5f5f5;}
+    @media print{body{margin:8px;padding:0 14px;} .hero{-webkit-print-color-adjust:exact;print-color-adjust:exact;} .arch-card{-webkit-print-color-adjust:exact;print-color-adjust:exact;} button{display:none;} .card{break-inside:avoid;} .hero{break-inside:avoid;}}
   </style></head><body>
-  <div class="meta">RABBIT SIGNAL FRAMEWORK · PEOPLE & TALENT DEVELOPMENT · ${r.date||''}</div>
-  <h1>${r.primary||''}</h1>
-  <div class="sub">${r.secondary ? 'Secondary: '+r.secondary : ''} &nbsp;|&nbsp; ${r.signalBand||''}</div>
-  <div class="info-row">
-    <span class="info-chip">👤 ${r.fullName||'-'}</span>
-    <span class="info-chip">🏢 ${r.bu||'-'}</span>
-    <span class="info-chip">📁 ${r.dept||'-'}</span>
-    <span class="info-chip">🎯 ${r.level||'-'}</span>
-    ${r.email ? '<span class="info-chip">✉️ '+r.email+'</span>' : ''}
-  </div>
 
-  <div class="section">
-    <h3>CULTURE VALUES SCORE</h3>
-    <div class="grid2" style="grid-template-columns:1fr 1fr 1fr 1fr;">
-      <div class="val-box"><div class="n" style="color:#1a7a50;">${r.impPct||0}%</div><div class="lbl">Impact</div></div>
-      <div class="val-box"><div class="n" style="color:#3B3BAA;">${r.ownPct||0}%</div><div class="lbl">Ownership</div></div>
-      <div class="val-box"><div class="n" style="color:#8a2060;">${r.excPct||0}%</div><div class="lbl">Excellence</div></div>
-      <div class="val-box"><div class="n" style="color:#333;">${avgC}%</div><div class="lbl">เฉลี่ย</div></div>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-stripe"></div>
+    <div class="meta">${t.signalOf} · ${r.date||new Date().toLocaleDateString(pLang==='th'?'th-TH':'en-GB',{year:'numeric',month:'long',day:'numeric'})}</div>
+    <h1>${r.primary}</h1>
+    <div class="sub">${arcSubtitle}</div>
+    <div class="quote">"${arcQuote}"</div>
+    <div class="badges">
+      <div class="badge-signal">${r.signalBand||'Signal'}</div>
+      <div class="badge-sec">Secondary: ${r.secondary||'—'}</div>
+      <div class="badge-cult">${cultureBadge}</div>
     </div>
-    <div>${cultureBadge} &nbsp;·&nbsp; Dominance Ratio: ${r.dominanceRatio||0}%</div>
   </div>
 
-  <div class="section" style="border-left-color:#3B3BAA;">
-    <h3>ARCHETYPE SIGNAL STRENGTH (% of own max)</h3>
-    <table>${arcRows}</table>
+  <!-- INFO ROW -->
+  <div class="info-row">
+    <span class="chip">👤 ${r.fullName||'-'}</span>
+    <span class="chip">🏢 ${r.bu||'-'}</span>
+    <span class="chip">📁 ${r.dept||'-'}</span>
+    <span class="chip">🎯 ${r.level||'-'}</span>
+    ${r.email?`<span class="chip">✉️ ${r.email}</span>`:''}
   </div>
 
-  <div class="section" style="border-left-color:#1a7a50;">
-    <h3>แชร์ผลนี้ให้</h3>
-    <div>• <strong>Manager / Team Lead</strong> — เพื่อ plan development ร่วมกัน<br>
-    • <strong>HR / People Team</strong> — เพื่อ update Team Signal Map<br>
-    • <strong>เพื่อนร่วมทีม</strong> — เพื่อเข้าใจวิธี collaborate ที่ดีที่สุด</div>
+  <!-- ARCHETYPE CARD -->
+  <div class="arch-card">
+    <div class="arch-main">
+      <div class="arch-label">PRIMARY ARCHETYPE · DOMAIN ${domKey} · ${domainNames[domKey]}</div>
+      <div class="arch-name">${r.primary}</div>
+      <div class="arch-sub">${arcSubtitle}</div>
+      <div class="arch-desc">${arcDesc}</div>
+      <div class="tags">${arcTags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+    </div>
+    <div class="arch-score">
+      <div class="score-lbl">SIGNAL</div>
+      <div class="score-n">${sorted[0][1]}%</div>
+      <div class="score-sub">of own max</div>
+      <div style="margin-top:8px;padding-top:8px;border-top:1px solid ${arcColor}22;font-size:10px;color:#aaa;">Secondary<br><strong style="color:#555;font-size:11px;">${r.secondary||'—'}</strong><br><span style="font-size:10px;">${sorted[1][1]}%</span></div>
+    </div>
+  </div>
+
+  <!-- DOMAIN -->
+  <div class="card">
+    <div class="card-hdr domain-hdr">
+      <div class="card-icon">🗂️</div>
+      <div><div class="domain-eyebrow">${t.yourDomain}</div><div class="domain-title">${t.domain}</div></div>
+    </div>
+    <div class="card-body">
+      <div style="font-size:13px;color:#333;line-height:1.8;margin-bottom:14px;">${dd.desc}</div>
+      <div class="grid2">
+        <div class="strength-box"><div class="box-label" style="color:${domainHex[domKey]};">${t.domStr}</div><div class="box-text">${dd.str}</div></div>
+        <div class="watch-box"><div class="box-label" style="color:#8a4a00;">${t.domWtch}</div><div class="box-text">${dd.wtch}</div></div>
+      </div>
+      <div class="arc-footer">${t.arcInDom} ${domainMap[domKey].map(k=>keyMap[k]).join(', ')} &nbsp;·&nbsp; <strong>${t.yourDom2}</strong> ${domainPct[domKey]}% strength</div>
+    </div>
+  </div>
+
+  <!-- DOMAIN STRENGTH BARS -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-icon">🕸️</div><div class="card-title">${pLang==='th'?'Domain Signal Map — 4 มิติ':'Domain Signal Map — 4 Dimensions'}</div></div>
+    <div class="card-body">
+      <div class="section-hdr">${t.domainStr||'DOMAIN STRENGTH'}</div>
+      ${domainRows}
+      <div class="note-bar">${pLang==='th'?'📌 แสดง relative strength — strongest domain = 100%':'📌 Relative strength shown — strongest domain = 100%'}</div>
+    </div>
+  </div>
+
+  <!-- ARCHETYPE BARS -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-icon">📊</div><div class="card-title">${t.arcStrength}</div></div>
+    <div class="card-body">
+      <div class="note-bar">${t.howRead}</div>
+      <table>${archetypeRows}</table>
+      <div style="font-size:10px;color:#aaa;margin-top:8px;">${pLang==='th'?'% = signal strength เทียบกับ max ของแต่ละ archetype':'% = signal strength vs max possible per archetype'}</div>
+    </div>
+  </div>
+
+  <!-- CULTURE SCORES -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-icon">🌟</div><div class="card-title">${t.cultureTitle}</div></div>
+    <div class="card-body">
+      <div class="note-bar">${t.cultureNote}</div>
+      <div class="grid4">${cultureCards}</div>
+      ${cultureInsights}
+    </div>
+  </div>
+
+  <!-- DEEP PROFILE -->
+  <div class="card">
+    <div class="card-hdr" style="background:${arcColor}12;"><div class="card-icon">🔍</div><div class="card-title" style="color:${arcColor};">${t.deepProfile}</div></div>
+    <div class="card-body" style="display:flex;flex-direction:column;gap:10px;">
+      <div class="profile-block" style="background:${arcColor}08;border-radius:8px;">
+        <div class="profile-label" style="color:${arcColor};">${t.whoYouAre}</div>
+        <div class="profile-text">${np.who}</div>
+      </div>
+      <div class="profile-block" style="background:#fafafa;border-radius:8px;border:1px solid #eee;">
+        <div class="profile-label" style="color:#666;">${t.howOperate}</div>
+        <div class="profile-text">${np.how}</div>
+      </div>
+      <div class="profile-block" style="background:#fff8f0;border-radius:8px;border:1px solid #f7941d33;">
+        <div class="profile-label" style="color:#c07000;">${t.growEdge}</div>
+        <div class="profile-text">${np.grow}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUPERPOWER + BLIND SPOT -->
+  <div class="sp-grid">
+    <div class="sp-card">
+      <div class="sp-hdr" style="background:${arcColor}12;color:${arcColor};">⚡ ${t.superpower}</div>
+      <div class="sp-body">${arcSp}</div>
+    </div>
+    <div class="sp-card">
+      <div class="sp-hdr" style="background:#fff3e0;color:#8a4a00;">👁️ ${t.blindspot}</div>
+      <div class="sp-body">${arcBlind}</div>
+    </div>
+  </div>
+
+  <!-- COLLABORATION GUIDE -->
+  <div class="card">
+    <div class="card-hdr"><div class="card-icon">🤝</div><div class="card-title">${t.collab}</div></div>
+    <div class="card-body" style="font-size:12.5px;color:#555;line-height:1.8;">${collabText}</div>
+  </div>
+
+  <!-- 30-60-90 PLAN -->
+  <div class="card" style="border-color:#F7941D44;">
+    <div class="card-hdr" style="background:#fff9f0;"><div class="card-icon">🚀</div><div class="card-title" style="color:#c07000;">${t.plan30}</div></div>
+    <div class="card-body" style="padding-top:8px;padding-bottom:8px;">${planRows}</div>
   </div>
 
   <div class="footer">
-    <span>Rabbit Signal Framework · People & Talent Development</span>
-    <span>Generated: ${r.date||new Date().toLocaleDateString('th-TH')}</span>
+    <span>${t.footer}</span>
+    <span>${t.generated} ${r.date||new Date().toLocaleDateString(pLang==='th'?'th-TH':'en-GB')}</span>
   </div>
   <script>window.onload=function(){window.print();}<\/script>
   </body></html>`);
   win.document.close();
 }
 
+
 function copyResultText(r) {
-  if (!r) { alert('ไม่พบข้อมูล'); return; }
+  if (!r) { alert(getLang()==='th'?'ไม่พบข้อมูล':'No data found'); return; }
   const avgC = r.avgCulture ?? Math.round(((r.impPct||0)+(r.ownPct||0)+(r.excPct||0))/3);
   const badge = avgC>=82?'Champion 🏆':avgC>=68?'Aligned ✅':'Growing 🌱';
   const text = [
     '🐰 Rabbit Signal Result',
     '',
-    `ชื่อ: ${r.fullName||'-'}`,
+    getLang()==='th'?`ชื่อ: ${r.fullName||'-'}`:`Name: ${r.fullName||'-'}`,
     `BU: ${r.bu||'-'} · Dept: ${r.dept||'-'} · Level: ${r.level||'-'}`,
     '',
     `Primary Archetype: ${r.primary||'-'} (${r.signalBand||'-'})`,
@@ -2407,7 +2680,7 @@ function copyResultText(r) {
     `• Impact:     ${r.impPct||0}%`,
     `• Ownership:  ${r.ownPct||0}%`,
     `• Excellence: ${r.excPct||0}%`,
-    `• เฉลี่ย:     ${avgC}% — ${badge}`,
+    getLang()==='th'?`• เฉลี่ย:     ${avgC}% — ${badge}`:`• Average:    ${avgC}% — ${badge}`,
     '',
     'Archetype Signals:',
     `• Strategist ${r.norm_St||0}% · Innovator ${r.norm_In||0}% · Scout ${r.norm_Sc||0}%`,
@@ -2415,7 +2688,7 @@ function copyResultText(r) {
     `• Connector ${r.norm_Co||0}% · Anchor ${r.norm_An||0}% · Catalyst ${r.norm_Ca||0}%`,
     `• Challenger ${r.norm_Ch||0}% · Explorer ${r.norm_Ex||0}%`,
     '',
-    `วันที่ทำ: ${r.date||new Date().toLocaleDateString('th-TH')}`,
+    getLang()==='th'?`วันที่ทำ: ${r.date||new Date().toLocaleDateString('th-TH')}`:`Date: ${r.date||new Date().toLocaleDateString()}`,
     'Rabbit Signal Framework · People & Talent Development'
   ].join('\n');
 
@@ -2458,7 +2731,7 @@ function validateAndStart() {
   }
   errEl.style.display = 'none';
   employeeInfo = { firstName:fn, lastName:ln, bu, dept, level, email,
-    fullName: fn+' '+ln, date: new Date().toLocaleDateString('th-TH',{year:'numeric',month:'long',day:'numeric'}) };
+    fullName: fn+' '+ln, date: new Date().toLocaleDateString(getLang()==='th'?'th-TH':'en-GB',{year:'numeric',month:'long',day:'numeric'}) };
   startQuiz();
 }
 
@@ -2498,14 +2771,14 @@ function hrLogout() {
 async function refreshFromSheets() {
   const btn = document.getElementById('hr-refresh-btn');
   const status = document.getElementById('hr-sync-status');
-  if (btn) { btn.textContent = '⏳ กำลังดึงข้อมูล...'; btn.disabled = true; }
+  if (btn) { btn.textContent = lang==='th'?'⏳ กำลังดึงข้อมูล...':'⏳ Fetching data...'; btn.disabled = true; }
   if (!APPS_SCRIPT_URL) {
     if (status) {
       status.style.display = 'block';
       status.style.background = '#fff3cd'; status.style.color = '#856404'; status.style.border = '1px solid #ffc107';
-      status.textContent = '⚠️ ยังไม่ได้ตั้งค่า APPS_SCRIPT_URL — กรุณาทำตาม Setup Guide ก่อน';
+      status.textContent = lang==='th'?'⚠️ ยังไม่ได้ตั้งค่า APPS_SCRIPT_URL — กรุณาทำตาม Setup Guide ก่อน':'⚠️ APPS_SCRIPT_URL not configured — please follow the Setup Guide first';
     }
-    if (btn) { btn.textContent = '🔄 Refresh จาก Sheets'; btn.disabled = false; }
+    if (btn) { btn.textContent = lang==='th'?'🔄 Refresh จาก Sheets':'🔄 Refresh from Sheets'; btn.disabled = false; }
     return;
   }
   const results = await fetchFromSheets();
@@ -2513,16 +2786,16 @@ async function refreshFromSheets() {
   if (results !== null) {
     if (status) {
       status.style.background = '#d4edda'; status.style.color = '#155724'; status.style.border = '1px solid #c3e6cb';
-      status.textContent = `✅ ดึงข้อมูลสำเร็จ — ${results.length} records จาก Google Sheets (${new Date().toLocaleTimeString('th-TH')})`;
+      status.textContent = lang==='th'?`✅ ดึงข้อมูลสำเร็จ — ${results.length} records จาก Google Sheets (${new Date().toLocaleTimeString('th-TH')})`:`✅ Successfully fetched — ${results.length} records from Google Sheets (${new Date().toLocaleTimeString()})`;
     }
     renderHRDashboard();
   } else {
     if (status) {
       status.style.background = '#fff0f0'; status.style.color = '#c0392b'; status.style.border = '1px solid #f5c6cb';
-      status.textContent = '❌ ดึงข้อมูลไม่ได้ — ตรวจสอบ Apps Script URL และ permission (Execute as: Me, Access: Anyone)';
+      status.textContent = lang==='th'?'❌ ดึงข้อมูลไม่ได้ — ตรวจสอบ Apps Script URL และ permission (Execute as: Me, Access: Anyone)':'❌ Could not fetch data — check Apps Script URL and permission (Execute as: Me, Access: Anyone)';
     }
   }
-  if (btn) { btn.textContent = '🔄 Refresh จาก Sheets'; btn.disabled = false; }
+  if (btn) { btn.textContent = lang==='th'?'🔄 Refresh จาก Sheets':'🔄 Refresh from Sheets'; btn.disabled = false; }
 }
 
 function copyAppsScript() {
@@ -2608,7 +2881,7 @@ async function fetchFromSheets() {
 }
 
 async function clearAllResults() {
-  if (!confirm('ต้องการลบข้อมูล Assessment ทั้งหมดใช่ไหม? ไม่สามารถกู้คืนได้')) return;
+  if (!confirm(getLang()==='th'?'ต้องการลบข้อมูล Assessment ทั้งหมดใช่ไหม? ไม่สามารถกู้คืนได้':'Delete all assessment data? This cannot be undone.')) return;
   try { localStorage.removeItem('rabbit_signal_results'); } catch(e) {}
   if (APPS_SCRIPT_URL) {
     try {
@@ -2623,6 +2896,7 @@ async function clearAllResults() {
 }
 
 function renderHRDashboard() {
+  const lang = getLang();
   const results = getResults();
   const arcColors = {Strategist:'#3B3BAA',Innovator:'#3B3BAA',Scout:'#3B3BAA',Builder:'#1a7a50',Optimizer:'#1a7a50',Connector:'#8a2060',Anchor:'#8a2060',Catalyst:'#8a2060',Challenger:'#9a3a10',Explorer:'#9a3a10'};
 
@@ -2643,7 +2917,7 @@ function renderHRDashboard() {
 
   // Archetype distribution chart
   const archEl = document.getElementById('hr-arch-chart');
-  if (!results.length) { archEl.innerHTML = '<div style="color:var(--ink4);font-size:13px;">ยังไม่มีข้อมูล — รอพนักงานทำ Assessment</div>'; }
+  if (!results.length) { archEl.innerHTML = '<div style="color:var(--ink4);font-size:13px;" data-th="ยังไม่มีข้อมูล — รอพนักงานทำ Assessment" data-en="No data yet — waiting for employee assessments">ยังไม่มีข้อมูล — รอพนักงานทำ Assessment</div>'; }
   else {
     const allTypes = ['Strategist','Innovator','Scout','Builder','Optimizer','Connector','Anchor','Catalyst','Challenger','Explorer'];
     const maxCount = Math.max(...allTypes.map(t=>archCount[t]||0), 1);
@@ -2656,14 +2930,14 @@ function renderHRDashboard() {
         <div style="flex:1;height:18px;background:#f5f5f5;border-radius:4px;overflow:hidden;">
           <div style="height:100%;width:${barW}%;background:${c};border-radius:4px;transition:width .4s;"></div>
         </div>
-        <div style="width:60px;font-size:11px;color:${c};font-weight:600;text-align:right;">${n} คน (${pct}%)</div>
+        <div style="width:60px;font-size:11px;color:${c};font-weight:600;text-align:right;">${lang==='th'?`${n} คน (${pct}%)`:`${n} staff (${pct}%)`}</div>
       </div>`;
     }).join('');
   }
 
   // Domain balance
   const domEl = document.getElementById('hr-domain-chart');
-  if (!results.length) { domEl.innerHTML = '<div style="color:var(--ink4);font-size:13px;">ยังไม่มีข้อมูล</div>'; }
+  if (!results.length) { domEl.innerHTML = '<div style="color:var(--ink4);font-size:13px;" data-th="ยังไม่มีข้อมูล" data-en="No data yet">ยังไม่มีข้อมูล</div>'; }
   else {
     const domainOf = {Strategist:'A',Innovator:'A',Scout:'A',Builder:'B',Optimizer:'B',Connector:'C',Anchor:'C',Catalyst:'C',Challenger:'D',Explorer:'D'};
     const domCount = {A:0,B:0,C:0,D:0};
@@ -2678,7 +2952,7 @@ function renderHRDashboard() {
         return `<div>
           <div style="display:flex;justify-content:space-between;margin-bottom:5px;">
             <span style="font-size:12px;font-weight:600;color:${c};">${d} · ${domNames[d]}</span>
-            <span style="font-size:12px;color:${c};font-weight:700;">${n} คน · ${pct}%</span>
+            <span style="font-size:12px;color:${c};font-weight:700;">${lang==='th'?`${n} คน · ${pct}%`:`${n} staff · ${pct}%`}</span>
           </div>
           <div style="height:10px;background:#f5f5f5;border-radius:5px;overflow:hidden;">
             <div style="height:100%;width:${Math.round((n/maxD)*100)}%;background:${c};border-radius:5px;"></div>
@@ -2689,9 +2963,9 @@ function renderHRDashboard() {
 
   // Culture by BU
   const culEl = document.getElementById('hr-culture-bu');
-  if (!results.length || buses.length < 2) { culEl.innerHTML = '<div style="color:var(--ink4);font-size:13px;">ต้องมีข้อมูลอย่างน้อย 2 BU</div>'; }
+  if (!results.length || buses.length < 2) { culEl.innerHTML = '<div style="color:var(--ink4);font-size:13px;">'+(getLang()==='th'?'ต้องมีข้อมูลอย่างน้อย 2 BU':'Need data from at least 2 BUs')+'</div>'; }
   else {
-    culEl.innerHTML = `<div style="overflow-x:auto;"><table class="tbl"><tr><th>BU</th><th>จำนวน</th><th>Impact %</th><th>Ownership %</th><th>Excellence %</th><th>เฉลี่ย</th></tr>` +
+    culEl.innerHTML = `<div style="overflow-x:auto;"><table class="tbl"><tr><th>BU</th><th data-th="จำนวน" data-en="Count">จำนวน</th><th>Impact %</th><th>Ownership %</th><th>Excellence %</th><th>เฉลี่ย</th></tr>` +
       buses.map(bu => {
         const bRes = results.filter(r=>r.bu===bu);
         const avg = (key) => Math.round(bRes.reduce((s,r)=>s+(r[key]||0),0)/bRes.length);
@@ -2709,6 +2983,7 @@ function renderHRDashboard() {
 }
 
 function renderHRTable() {
+  const lang = getLang();
   const results = getResults();
   const search = (document.getElementById('hr-search')?.value||'').toLowerCase();
   const filtered = results.filter(r =>
@@ -2721,7 +2996,7 @@ function renderHRTable() {
   const arcColors = {Strategist:'#3B3BAA',Innovator:'#3B3BAA',Scout:'#3B3BAA',Builder:'#1a7a50',Optimizer:'#1a7a50',Connector:'#8a2060',Anchor:'#8a2060',Catalyst:'#8a2060',Challenger:'#9a3a10',Explorer:'#9a3a10'};
   const tbody = document.getElementById('hr-table-body');
   if (!filtered.length) {
-    tbody.innerHTML = `<tr><td colspan="12" style="text-align:center;color:var(--ink4);padding:24px;">${results.length?'ไม่พบข้อมูลที่ตรงกับการค้นหา':'ยังไม่มีข้อมูล — รอพนักงานทำ Assessment'}</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="12" style="text-align:center;color:var(--ink4);padding:24px;">${results.length?(getLang()==='th'?'ไม่พบข้อมูลที่ตรงกับการค้นหา':'No matching records'):(getLang()==='th'?'ยังไม่มีข้อมูล — รอพนักงานทำ Assessment':'No data yet — waiting for employee assessments')}</td></tr>`;
     return;
   }
   tbody.innerHTML = filtered.slice().reverse().map(r => {
@@ -2749,7 +3024,7 @@ function exportCSV() {
   // Use in-memory result if available (current session) — avoids async timing issues
   // Fall back to localStorage for HR bulk export
   const results = _lastResult ? [_lastResult] : getResults();
-  if (!results.length) { alert('ยังไม่มีข้อมูล — กรุณาทำ Assessment ให้เสร็จก่อน'); return; }
+  if (!results.length) { alert(getLang()==='th'?'ยังไม่มีข้อมูล — กรุณาทำ Assessment ให้เสร็จก่อน':'No data yet — please complete the assessment first'); return; }
 
   const headers = [
     'ชื่อ','นามสกุล','ชื่อ-นามสกุล','BU','Department','Level','Email',
@@ -2784,7 +3059,7 @@ function exportCSV() {
 // ─── HR BULK EXPORT (all results from localStorage/Sheets) ───────
 function exportAllCSV() {
   const results = getResults();
-  if (!results.length) { alert('ยังไม่มีข้อมูล — กด Refresh จาก Sheets ก่อน'); return; }
+  if (!results.length) { alert(getLang()==='th'?'ยังไม่มีข้อมูล — กด Refresh จาก Sheets ก่อน':'No data yet — click Refresh from Sheets first'); return; }
   const headers = [
     'ชื่อ','นามสกุล','ชื่อ-นามสกุล','BU','Department','Level','Email',
     'Primary Archetype','Secondary Archetype','Signal Band','Dominance Ratio %',
