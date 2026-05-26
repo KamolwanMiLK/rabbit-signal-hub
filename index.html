@@ -284,7 +284,7 @@ body{font-family:'IBM Plex Sans Thai','IBM Plex Sans',sans-serif;background:var(
 <div class="content" id="content">
 
 <!-- ═══ OVERVIEW ═══ -->
-<div class="sec on" id="sec-overview">
+<div class="sec" id="sec-overview">
 <div class="s-hero">
   <div class="s-ey" data-th="RABBIT SIGNAL FRAMEWORK" data-en="RABBIT SIGNAL FRAMEWORK">RABBIT SIGNAL FRAMEWORK</div>
   <div class="s-h1" data-th="One Signal,<br><em>One Family.</em>" data-en="One Signal,<br><em>One Family.</em>">One Signal,<br><em>One Family.</em></div>
@@ -662,7 +662,7 @@ body{font-family:'IBM Plex Sans Thai','IBM Plex Sans',sans-serif;background:var(
 
 
 <!-- ═══ SIGNAL ASSESSMENT QUIZ ═══ -->
-<div class="sec" id="sec-quiz">
+<div class="sec on" id="sec-quiz">
 <div class="s-hero" style="background:var(--blk3);">
   <div class="s-ey" data-th="SIGNAL ASSESSMENT · 48 ข้อ" data-en="SIGNAL ASSESSMENT · 48 QUESTIONS">SIGNAL ASSESSMENT · 48 ข้อ</div>
   <div class="s-h1" data-th="ค้นพบ<br><em>Signal ของคุณ</em>" data-en="Discover<br><em>Your Signal</em>">ค้นพบ<br><em>Signal ของคุณ</em></div>
@@ -1370,6 +1370,14 @@ function show(id){
     if(el && !el.children.length) buildMods(dataMap[id], cid, col);
   }
 }
+
+// ─── URL DEEP LINK — ?start goes directly to Assessment ──────────
+(function(){
+  const params = new URLSearchParams(window.location.search);
+  if(params.has('start')){
+    // will run after DOM ready — handled in DOMContentLoaded
+  }
+})();
 
 // ─── TOGGLES ─────────────────────────────────────────────────────
 function togArc(name){ const el=document.getElementById('arc-'+name); if(el) el.classList.toggle('open'); }
@@ -2325,6 +2333,16 @@ function showQuizResult() {
   });
   document.getElementById('content').scrollTop = 0;
 }
+
+// ── INIT — set default section + handle ?start URL param ──────────
+document.addEventListener('DOMContentLoaded', function(){
+  const params = new URLSearchParams(window.location.search);
+  if(params.has('start')){
+    show('quiz'); // ?start → direct to Assessment
+  } else {
+    show('quiz'); // default landing = Assessment
+  }
+});
 
 // ── DOWNLOAD & COPY HELPERS ───────────────────────────────────────
 function downloadResult(r) {
