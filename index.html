@@ -2787,16 +2787,17 @@ function hrLogout() {
 }
 
 async function refreshFromSheets() {
+  const _lang = getLang();
   const btn = document.getElementById('hr-refresh-btn');
   const status = document.getElementById('hr-sync-status');
-  if (btn) { btn.textContent = lang==='th'?'⏳ กำลังดึงข้อมูล...':'⏳ Fetching data...'; btn.disabled = true; }
+  if (btn) { btn.textContent = _lang==='th'?'⏳ กำลังดึงข้อมูล...':'⏳ Fetching data...'; btn.disabled = true; }
   if (!APPS_SCRIPT_URL) {
     if (status) {
       status.style.display = 'block';
       status.style.background = '#fff3cd'; status.style.color = '#856404'; status.style.border = '1px solid #ffc107';
-      status.textContent = lang==='th'?'⚠️ ยังไม่ได้ตั้งค่า APPS_SCRIPT_URL — กรุณาทำตาม Setup Guide ก่อน':'⚠️ APPS_SCRIPT_URL not configured — please follow the Setup Guide first';
+      status.textContent = _lang==='th'?'⚠️ ยังไม่ได้ตั้งค่า APPS_SCRIPT_URL — กรุณาทำตาม Setup Guide ก่อน':'⚠️ APPS_SCRIPT_URL not configured — please follow the Setup Guide first';
     }
-    if (btn) { btn.textContent = lang==='th'?'🔄 Refresh จาก Sheets':'🔄 Refresh from Sheets'; btn.disabled = false; }
+    if (btn) { btn.textContent = _lang==='th'?'🔄 Refresh จาก Sheets':'🔄 Refresh from Sheets'; btn.disabled = false; }
     return;
   }
   const results = await fetchFromSheets();
@@ -2804,16 +2805,16 @@ async function refreshFromSheets() {
   if (results !== null) {
     if (status) {
       status.style.background = '#d4edda'; status.style.color = '#155724'; status.style.border = '1px solid #c3e6cb';
-      status.textContent = lang==='th'?`✅ ดึงข้อมูลสำเร็จ — ${results.length} records จาก Google Sheets (${new Date().toLocaleTimeString('th-TH')})`:`✅ Successfully fetched — ${results.length} records from Google Sheets (${new Date().toLocaleTimeString()})`;
+      status.textContent = _lang==='th'?`✅ ดึงข้อมูลสำเร็จ — ${results.length} records จาก Google Sheets (${new Date().toLocaleTimeString('th-TH')})`:`✅ Successfully fetched — ${results.length} records from Google Sheets (${new Date().toLocaleTimeString()})`;
     }
     renderHRDashboard();
   } else {
     if (status) {
       status.style.background = '#fff0f0'; status.style.color = '#c0392b'; status.style.border = '1px solid #f5c6cb';
-      status.textContent = lang==='th'?'❌ ดึงข้อมูลไม่ได้ — ตรวจสอบ Apps Script URL และ permission (Execute as: Me, Access: Anyone)':'❌ Could not fetch data — check Apps Script URL and permission (Execute as: Me, Access: Anyone)';
+      status.textContent = _lang==='th'?'❌ ดึงข้อมูลไม่ได้ — ตรวจสอบ Apps Script URL และ permission (Execute as: Me, Access: Anyone)':'❌ Could not fetch data — check Apps Script URL and permission (Execute as: Me, Access: Anyone)';
     }
   }
-  if (btn) { btn.textContent = lang==='th'?'🔄 Refresh จาก Sheets':'🔄 Refresh from Sheets'; btn.disabled = false; }
+  if (btn) { btn.textContent = _lang==='th'?'🔄 Refresh จาก Sheets':'🔄 Refresh from Sheets'; btn.disabled = false; }
 }
 
 function copyAppsScript() {
