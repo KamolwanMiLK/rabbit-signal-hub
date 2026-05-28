@@ -227,6 +227,62 @@ body{font-family:'IBM Plex Sans Thai','IBM Plex Sans',sans-serif;background:var(
   .g2,.g3,.g4{grid-template-columns:1fr;}
   .prog-stats{grid-template-columns:1fr 1fr;}
 }
+/* ── DEBRIEF GUIDE ── */
+.btn-dg{display:inline-flex;align-items:center;gap:4px;padding:5px 10px;border-radius:6px;font-size:10px;font-weight:700;letter-spacing:.03em;cursor:pointer;border:1.5px solid var(--drv);color:var(--drv);background:var(--drv-lt);transition:all .15s;white-space:nowrap;font-family:inherit;}
+.btn-dg:hover{background:var(--drv);color:#fff;box-shadow:0 2px 6px rgba(154,58,16,.3);}
+.btn-dg svg{width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:2.5;flex-shrink:0;}
+th.col-dg,td.col-dg{position:sticky;right:0;background:var(--wh);border-left:1px solid var(--ln);z-index:2;padding:8px 12px;white-space:nowrap;}
+th.col-dg{background:var(--wh2);}
+#dgModal{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.65);backdrop-filter:blur(4px);overflow-y:auto;padding:20px 16px;}
+#dgModal.open{display:block;}
+.dg-wrap{max-width:700px;margin:0 auto;background:#fff;border-radius:14px;box-shadow:0 32px 80px rgba(0,0,0,.25);overflow:hidden;}
+.dg-head{background:#0d0d0d;padding:20px 22px 18px;display:flex;align-items:flex-start;gap:12px;}
+.dg-dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;margin-top:6px;}
+.dg-ht{flex:1;}
+.dg-elbl{font-size:10px;color:#666;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px;}
+.dg-aname{font-size:22px;font-weight:800;color:#fff;}
+.dg-ath{font-size:13px;color:#aaa;margin-top:3px;}
+.dg-dbadge{font-size:11px;padding:3px 10px;border-radius:20px;font-weight:700;margin-top:10px;display:inline-block;}
+.dg-x{background:none;border:none;color:#555;cursor:pointer;padding:4px;border-radius:6px;flex-shrink:0;line-height:1;}
+.dg-x:hover{color:#fff;}
+.dg-x svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;}
+.dg-scores{background:#f7f6f3;padding:12px 22px;display:flex;border-bottom:1px solid #eee;flex-wrap:wrap;}
+.dg-si{flex:1;min-width:80px;text-align:center;padding:5px 0;}
+.dg-sl{font-size:9px;color:#aaa;letter-spacing:.06em;text-transform:uppercase;margin-bottom:2px;}
+.dg-sv{font-size:17px;font-weight:800;}
+.dg-scards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:12px 22px;border-bottom:1px solid #eee;background:#fdfcfa;}
+.dg-sc{border-radius:8px;padding:11px 13px;border:1px solid;}
+.dg-scl{font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:5px;}
+.dg-scs{font-size:20px;font-weight:800;margin-bottom:4px;}
+.dg-scd{font-size:11px;line-height:1.55;color:#555;}
+.dg-scbar{height:4px;border-radius:2px;margin-top:7px;background:#eee;overflow:hidden;}
+.dg-scfill{height:100%;border-radius:2px;}
+.dg-body{padding:16px 22px 20px;max-height:52vh;overflow-y:auto;}
+.dg-body::-webkit-scrollbar{width:4px;}
+.dg-body::-webkit-scrollbar-thumb{background:#ddd;border-radius:2px;}
+.dg-sec{margin-bottom:14px;}
+.dg-sec-lbl{display:flex;align-items:center;gap:7px;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#bbb;margin-bottom:6px;}
+.dg-num{display:inline-flex;align-items:center;justify-content:center;width:17px;height:17px;border-radius:50%;font-size:9px;font-weight:800;}
+.dg-sbox{background:#faf9f7;border:1px solid #eeebe5;border-radius:8px;padding:13px 15px;}
+.dg-sbox p{font-size:13px;line-height:1.85;color:#1a1a1a;margin:0;}
+.dg-sbox p+p{margin-top:8px;}
+.dg-igrid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:14px;}
+.dg-ic{background:#faf9f7;border:1px solid #eeebe5;border-radius:8px;padding:9px 12px;}
+.ic-l{font-size:9px;color:#bbb;text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px;}
+.ic-v{font-size:12px;font-weight:500;line-height:1.5;color:#111;}
+.ic-w{color:#c86030;}
+.dg-qlist,.dg-dlist{display:flex;flex-direction:column;gap:5px;}
+.dg-q{background:#faf9f7;border:1px solid #eeebe5;border-radius:7px;padding:9px 13px;font-size:12.5px;line-height:1.65;color:#1a1a1a;}
+.dg-d{padding:8px 12px;border-radius:7px;font-size:12.5px;line-height:1.65;border-left:3px solid;}
+.dg-tags{display:flex;flex-wrap:wrap;gap:5px;}
+.dg-tag{font-size:11px;padding:2px 10px;border-radius:11px;font-weight:500;}
+.dg-foot{padding:12px 22px;border-top:1px solid #eee;display:flex;align-items:center;gap:8px;background:#faf9f7;}
+.dg-fnote{font-size:11px;color:#bbb;margin-right:auto;}
+.dg-bprint{display:inline-flex;align-items:center;gap:5px;padding:8px 16px;border-radius:7px;font-size:12px;font-weight:700;cursor:pointer;border:none;background:#0d0d0d;color:#fff;font-family:inherit;}
+.dg-bprint:hover{background:var(--drv);}
+.dg-bprint svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2.5;}
+.dg-bclose{padding:8px 14px;border-radius:7px;font-size:12px;cursor:pointer;border:1px solid #ddd;background:transparent;color:#888;font-family:inherit;}
+.dg-bclose:hover{background:#f0ede8;color:#333;}
 </style>
 </head>
 <body>
@@ -956,9 +1012,10 @@ function jsonRes(data) {
             <th>Excellence</th>
             <th>Culture Avg</th>
             <th data-th="วันที่ทำ" data-en="Date">วันที่ทำ</th>
+            <th class="col-dg" data-th="Debrief" data-en="Debrief">Debrief</th>
           </tr>
           <tbody id="hr-table-body">
-            <tr><td colspan="12" style="text-align:center;color:var(--ink4);padding:24px;" data-th="ยังไม่มีข้อมูล — รอพนักงานทำ Assessment" data-en="No data yet — waiting for employee assessments">ยังไม่มีข้อมูล — รอพนักงานทำ Assessment</td></tr>
+            <tr><td colspan="13" style="text-align:center;color:var(--ink4);padding:24px;" data-th="ยังไม่มีข้อมูล — รอพนักงานทำ Assessment" data-en="No data yet — waiting for employee assessments">ยังไม่มีข้อมูล — รอพนักงานทำ Assessment</td></tr>
           </tbody>
         </table>
       </div>
@@ -3015,13 +3072,18 @@ function renderHRTable() {
   const arcColors = {Strategist:'#3B3BAA',Innovator:'#3B3BAA',Scout:'#3B3BAA',Builder:'#1a7a50',Optimizer:'#1a7a50',Connector:'#8a2060',Anchor:'#8a2060',Catalyst:'#8a2060',Challenger:'#9a3a10',Explorer:'#9a3a10'};
   const tbody = document.getElementById('hr-table-body');
   if (!filtered.length) {
-    tbody.innerHTML = `<tr><td colspan="12" style="text-align:center;color:var(--ink4);padding:24px;">${results.length?(getLang()==='th'?'ไม่พบข้อมูลที่ตรงกับการค้นหา':'No matching records'):(getLang()==='th'?'ยังไม่มีข้อมูล — รอพนักงานทำ Assessment':'No data yet — waiting for employee assessments')}</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="13" style="text-align:center;color:var(--ink4);padding:24px;">${results.length?(getLang()==='th'?'ไม่พบข้อมูลที่ตรงกับการค้นหา':'No matching records'):(getLang()==='th'?'ยังไม่มีข้อมูล — รอพนักงานทำ Assessment':'No data yet — waiting for employee assessments')}</td></tr>`;
     return;
   }
   tbody.innerHTML = filtered.slice().reverse().map(r => {
     const avgC = Math.round(((r.impPct||0)+(r.ownPct||0)+(r.excPct||0))/3);
     const badge = avgC>=82?'🏆':avgC>=68?'✅':'🌱';
     const c = arcColors[r.primary]||'#888';
+    const imp = (r.impPct||0)+'%', own = (r.ownPct||0)+'%', exc = (r.excPct||0)+'%';
+    const band = r.signalBand||'-';
+    const name = (r.fullName||'-').replace(/'/g,"\\'");
+    const pri = (r.primary||'-').replace(/'/g,"\\'");
+    const sec = (r.secondary||'-').replace(/'/g,"\\'");
     return `<tr>
       <td class="tb">${r.fullName||'-'}</td>
       <td>${r.bu||'-'}</td>
@@ -3035,6 +3097,12 @@ function renderHRTable() {
       <td style="color:#8a2060;font-weight:600;">${r.excPct||0}%</td>
       <td><strong>${avgC}% ${badge}</strong></td>
       <td style="color:var(--ink4);font-size:11px;">${r.date||'-'}</td>
+      <td class="col-dg">
+        <button class="btn-dg" onclick="openDG('${name}','${pri}','${sec}','${band}','${imp}','${own}','${exc}')">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          Debrief Guide
+        </button>
+      </td>
     </tr>`;
   }).join('');
 }
@@ -3109,8 +3177,221 @@ function exportAllCSV() {
   URL.revokeObjectURL(url);
 }
 
-// ─── INIT ─────────────────────────────────────────────────────────
-show('overview');
+<!-- ══ DEBRIEF GUIDE MODAL ══ -->
+<div id="dgModal" onclick="if(event.target===this)closeDG()">
+  <div class="dg-wrap">
+    <div class="dg-head">
+      <div class="dg-dot" id="dgDot"></div>
+      <div class="dg-ht">
+        <div class="dg-elbl" id="dgElbl"></div>
+        <div class="dg-aname" id="dgAname"></div>
+        <div class="dg-ath" id="dgAth"></div>
+        <div class="dg-dbadge" id="dgDbadge"></div>
+      </div>
+      <button class="dg-x" onclick="closeDG()"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    </div>
+    <div class="dg-scores" id="dgScores"></div>
+    <div class="dg-scards" id="dgScards"></div>
+    <div class="dg-body" id="dgBody"></div>
+    <div class="dg-foot">
+      <span class="dg-fnote">กด "บันทึก / ส่งให้ Manager" เพื่อเปิด PDF</span>
+      <button class="dg-bclose" onclick="closeDG()">ปิด</button>
+      <button class="dg-bprint" onclick="dgPrint()"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>บันทึก / ส่งให้ Manager</button>
+    </div>
+  </div>
+</div>
+<script>
+/* ── DEBRIEF GUIDE ENGINE ─────────────────────────────── */
+const _DGC={Drive:'#9a3a10',Thinking:'#3B3BAA',Execution:'#1a7a50',People:'#8a2060'};
+const _DGL={
+  Drive:{bg:'#FDEEE6',tx:'#9a3a10',dbg:'#FDF3EE',dbr:'#9a3a10'},
+  Thinking:{bg:'#EEEEFF',tx:'#3B3BAA',dbg:'#F3F2FD',dbr:'#3B3BAA'},
+  Execution:{bg:'#E4F5EC',tx:'#1a7a50',dbg:'#EAF7F2',dbr:'#1a7a50'},
+  People:{bg:'#FCE8F4',tx:'#8a2060',dbg:'#FDF0F5',dbr:'#8a2060'}
+};
+const _DGA={
+Explorer:{th:'นักสำรวจโอกาส',domain:'Drive',thrive:'สถานการณ์ที่ไม่แน่นอน ต้องตัดสินใจเร็ว',blind:'อาจ chase novelty จนไม่ deep enough ใน execution',career:'BD, Innovation, Strategy in fast-moving business',stretch:'Lead market expansion หรือ new vertical',pc:['Innovator','Strategist','Builder'],
+open:'สวัสดีครับ/ค่ะ [NAME] — วันนี้เรามา debrief ผล Rabbit Signal ด้วยกันนะครับ\n\nผลบอกว่าคุณเป็น Explorer หรือที่เรียกว่า "นักสำรวจโอกาส" ใน domain ของ Drive — ฟังดูเป็นยังไงครับ? ตรงกับที่คุณรู้สึกเกี่ยวกับตัวเองไหม?',
+core:'Explorer หมายความว่าคุณเจริญเติบโตได้ดีที่สุดในสภาวะที่เปลี่ยนแปลง — คุณ adapt เร็ว มองเห็นโอกาสในความไม่แน่นอน และไม่รอให้ทุกอย่างชัดก่อนเริ่มเดิน\n\nSuperpower ของคุณคือ "Thrive in chaos" — เวลาที่คนอื่นชะงัก คุณกลับเดินหน้าได้',
+growth:'Growth area คือการ "go deep" มากขึ้น — Explorer อาจ chase สิ่งใหม่จนไม่ได้ลงลึก execute จริงๆ\n\nลองถามตัวเองว่า: "idea ที่ดีที่สุดของเราเดือนนี้ — เราทำมันถึงเส้นชัยหรือยัง?"',
+q:['คุณรู้สึกมีพลังที่สุดเวลาทำงานแบบไหน?','งานที่ผ่านมา — มีตอนไหนที่คุณรู้สึกว่า "นี่แหละที่ฉันทำได้ดีที่สุด"?','มีโปรเจกต์ไหนที่คุณอยากลอง แต่ยังไม่ได้โอกาสบ้าง?','เวลาที่ทุกอย่างเปลี่ยนเร็วมาก คุณรู้สึกยังไง? ตื่นเต้นหรือกังวล?','มีครั้งไหนที่คุณ explore แล้วพบว่า "นี่ไม่ใช่" — คุณ pivot ยังไง?','ถ้าจะทำ project ใหม่ในปีนี้ คุณอยากมีเป้าหมายอะไร?','คุณ get bored กับงานแบบไหน? อะไรทำให้คุณ engaged นานที่สุด?','มีโอกาสไหนที่คุณเห็นในองค์กรแต่ยังไม่มีใครทำบ้าง?','คุณ build ความสัมพันธ์กับคนที่มี perspective ต่างจากคุณยังไง?','ถ้าให้ describe ตัวเองในฐานะ Explorer ใน Rabbit — คุณจะพูดว่าอะไร?'],
+dev:['ทำ project ที่ต้อง own ตั้งแต่ต้นจนส่งมอบ — วัด completion rate','จับคู่กับ Optimizer เพื่อฝึก execution discipline','รับ stretch assignment ที่ต้อง deep dive ใน 1 area อย่างน้อย 3 เดือน']},
+Challenger:{th:'นักท้าทายขีดจำกัด',domain:'Drive',thrive:'ได้ challenge assumption และ push for better',blind:'อาจดูก้าวร้าวถ้าขาด empathy — challenge โดยไม่ build trust ก่อน',career:'Strategy, Senior BD, Change agent, Innovation lead',stretch:'Lead organization-wide improvement drive',pc:['Strategist','Builder','Scout'],
+open:'สวัสดีครับ/ค่ะ [NAME] — มาดูผล Rabbit Signal ด้วยกันนะครับ\n\nคุณได้ Challenger — "นักท้าทายขีดจำกัด" ใน domain Drive — ลองเล่าให้ฟังหน่อยได้ไหมว่าคุณรู้สึกยังไงกับผลนี้?',
+core:'Challenger คือคนที่ไม่ยอมรับ "ดีพอแล้ว" — คุณเห็นว่าอะไรทำได้ดีกว่า และคุณพูดออกมา push ให้เกิดการเปลี่ยนแปลงจริงๆ\n\nSuperpower คือการสร้าง "productive tension" — ความตึงที่สร้างสรรค์ที่ทำให้ทีมยกระดับขึ้น',
+growth:'Growth area คือการ build trust ก่อน challenge — คนที่ไว้ใจคุณแล้วจะ open รับ challenge มากกว่า\n\nลองถาม: "ก่อนที่ฉัน push back ครั้งที่แล้ว — relationship ระหว่างฉันกับคนนั้นแข็งแกร่งพอไหม?"',
+q:['มีเรื่องไหนในทีมที่คุณอยากเห็นเปลี่ยนแปลงมากที่สุด?','เวลา push back แล้ว ผลลัพธ์มักออกมาเป็นยังไง?','คุณคิดว่าทีมมอง challenge ของคุณเป็นยังไง?','มีครั้งไหนที่คุณ challenge แล้วรู้สึกว่าได้ผลดีที่สุด — คุณทำอะไรต่างออกไป?','คุณ pick battles ยังไง — ทุกเรื่องควร challenge หรือมีตัวกรอง?','เมื่อคนอื่น pushback กลับมา คุณ respond ยังไง?','มีเรื่องที่คุณอยาก challenge แต่เลือกเงียบ — ทำไม?','ความสัมพันธ์กับใครในทีมที่คุณรู้สึกว่า challenge กันได้อย่างสร้างสรรค์?','คุณแยกแยะระหว่าง "ฉันถูก" กับ "ทีมได้ประโยชน์" ยังไง?','ถ้าอยากให้ Challenger ของคุณมี impact มากขึ้น คุณจะเปลี่ยนอะไร?'],
+dev:['ฝึก "empathy before challenge" — ฟังให้ครบก่อน push back','ทำ project ที่ต้อง lead people ผ่าน resistance — วัดจาก team buy-in','Mentoring กับ senior ที่เป็น Anchor เพื่อ learn trust-building']},
+Strategist:{th:'นักวางยุทธศาสตร์',domain:'Thinking',thrive:'โจทย์ซับซ้อนที่ต้องการ framework ชัดเจน',blind:'อาจ over-plan จนไม่ ship — paralysis by analysis',career:'Strategy lead, Senior management, Business architect, GM',stretch:'Lead cross-BU strategy ที่ align ทุก stakeholder',pc:['Builder','Connector','Explorer'],
+open:'สวัสดีครับ/ค่ะ [NAME] — มา debrief ผล Rabbit Signal ด้วยกันนะครับ\n\nคุณได้ Strategist — "นักวางยุทธศาสตร์" ใน domain Thinking — รู้สึกยังไงกับผลนี้ครับ?',
+core:'Strategist คือคนที่มองเห็น pattern ในความซับซ้อน และแปลง big picture เป็น direction ที่ clear ให้คนอื่นเดินตามได้\n\nSuperpower คือ "แปลง complexity เป็น clarity" — Strategist คือคนที่ทำให้ทุกคนเดินไปทิศทางเดียวกัน',
+growth:'Growth area คือการ "ship imperfect plans" — quality ของ plan อาจทำให้รอจนสมบูรณ์แบบก่อน แต่ market ไม่รอ\n\nลองถาม: "แผนที่วางไว้ดีที่สุดในปีนี้ — เราเริ่ม execute จริงเร็วพอไหม?"',
+q:['framework หรือ strategy ที่คุณวางแล้ว impact มากที่สุดคืออะไร?','เวลาที่ complex situation — คุณเริ่ม make sense ให้กับมันยังไง?','มีแผนไหนที่คุณรู้สึกว่า overthought มากเกินไปในมุมมองย้อนหลัง?','คุณตัดสินใจว่าอะไรควรวางแผนละเอียด และอะไรควร "just go" ยังไง?','เมื่อ strategy ที่วางไว้ไม่ work — คุณ adapt ยังไง?','คุณ communicate strategy ให้คนที่มี style ต่างกันยังไง?','มีครั้งไหนที่ execute เร็วกว่าที่วางแผน — ผลลัพธ์เป็นยังไง?','ใครใน Rabbit ที่คุณคิดว่า strategic thinking แข็งแกร่ง — คุณเรียนรู้อะไรจากเขา?','ถ้าต้องสอน strategic thinking ให้คนอื่น คุณจะเริ่มยังไง?','คุณ balance ระหว่าง long-term strategy และ short-term execution ยังไง?'],
+dev:['ฝึก "good enough to test" — launch MVP ของ strategy ใน 2 สัปดาห์','ทำ decision journal — track ว่า decision ไหน took too long','รับ role ที่ต้อง execute แทนที่จะแค่ plan']},
+Innovator:{th:'นักประดิษฐ์ความคิด',domain:'Thinking',thrive:'White space ไม่มีข้อจำกัด ได้ทดลองอย่างอิสระ',blind:'อาจ reinvent แทนที่จะ leverage ของที่มี',career:'Product innovator, Creative lead, R&D head',stretch:'นำ innovation lab หรือ hackathon ระดับ cross-BU',pc:['Builder','Scout','Explorer'],
+open:'สวัสดีครับ/ค่ะ [NAME] — วันนี้มา debrief ผล Rabbit Signal ด้วยกันนะครับ\n\nผลออกมาว่าคุณเป็น Innovator — "นักประดิษฐ์ความคิด" ใน domain Thinking — รู้สึกยังไงกับผลนี้ครับ?',
+core:'Innovator หมายถึงคนที่สร้าง output ใหม่ที่ยังไม่เคยมี — ไม่ใช่แค่ idea เยอะ แต่ idea ของคุณออกมาเป็น tangible result ได้\n\nSuperpower คือ "สร้างสิ่งที่ยังไม่เคยมี" — คุณสบายใจในพื้นที่ที่ blank ที่สุด',
+growth:'Growth area คือการ finish สิ่งที่เริ่ม — passion ในการสร้างสิ่งใหม่อาจทำให้กระโดดไป idea ถัดไปก่อน deliver อันเดิมให้เสร็จ\n\nลองถาม: "idea 3 อันที่เราเริ่มไปในปีนี้ — อันไหน shipped จริงๆ?"',
+q:['idea ที่คุณภูมิใจที่สุดที่ทำให้เกิดจริงคืออะไร?','มี idea ไหนที่คิดไว้แต่ยังไม่ได้ทำ — ทำไมถึงยังไม่ได้ทำ?','คุณ collaborate กับคนอื่นใน idea ของคุณบ่อยแค่ไหน?','inspiration ของคุณมาจากที่ไหนบ่อยที่สุด?','คุณรู้ได้ยังไงว่า idea ไหนควรลงทุนเวลาและพลังงาน?','เคยมี idea ที่คนอื่น "ไม่เห็นด้วย" แต่คุณยังเชื่อมั่น — จบยังไง?','คุณ test idea ก่อน commit เต็มที่ยังไง?','มี constraint ในงานปัจจุบันที่ขัดกับ creativity ของคุณบ้าง?','ถ้าไม่มีข้อจำกัดอะไร — คุณอยาก innovate อะไรใน Rabbit Rewards?','คุณ measure ว่า innovation ของคุณ successful ยังไง?'],
+dev:['ทำ "idea-to-ship tracker" — commit ว่า idea ถัดไปจะ launch จริง','จับคู่กับ Optimizer เพื่อฝึก polish และ scale','เข้าร่วม hackathon แล้ว own ผลลัพธ์จนถึง presentation']},
+Scout:{th:'นักสำรวจความรู้',domain:'Thinking',thrive:'เรียนรู้ domain ใหม่ไม่หยุด มีโจทย์ที่ต้องการ cross-domain thinking',blind:'อาจ collect ความรู้มากกว่า execute — ยังไม่ ship ออกมา',career:'Research strategist, L&D lead, Consultant, Knowledge designer',stretch:'ออกแบบ learning program ข้าม BU ที่สร้าง business impact',pc:['Innovator','Builder','Strategist'],
+open:'สวัสดีครับ/ค่ะ [NAME] — มาดูผล Rabbit Signal ด้วยกันนะครับ\n\nคุณได้ Scout — "นักสำรวจความรู้" ใน domain Thinking — ได้ยินคำนี้แล้วรู้สึกยังไงบ้างครับ?',
+core:'Scout คือคนที่ดูดความรู้จากทุกที่และ connect dots ที่คนอื่นไม่เห็น\n\nSuperpower คือ "Connect dots ข้าม domain" — คนที่ synthesize ได้เร็วและ apply ได้ก่อนคือคนที่ valuable ที่สุด',
+growth:'Growth area คือการเปลี่ยนจาก "รู้" เป็น "ทำ" — ความสุขในการเรียนรู้อาจทำให้อยู่ใน collect mode นานเกินไป\n\nลองถาม: "ความรู้ที่ฉัน learn มาในเดือนนี้ — ฉันแปลงมันเป็น deliverable อะไรได้บ้าง?"',
+q:['คุณ learn อะไรใหม่ล่าสุดที่ทำให้ตื่นเต้น?','มีความรู้ไหนที่คุณมีแต่ยังไม่ได้แชร์หรือ apply กับทีม?','ถ้าจะ teach คนอื่นเรื่องหนึ่งที่คุณรู้ดีที่สุด คุณจะ teach อะไร?','คุณ learn จากแหล่งไหนบ่อยที่สุด — books, people, experience?','มี connection ระหว่าง 2 domain ที่ดูไม่เกี่ยวกัน แต่คุณเห็นว่าเชื่อมกันได้?','คุณ curate ความรู้ยังไง ไม่ให้ overwhelmed?','learning ล่าสุดที่คุณนำมา apply กับงานจริง — ได้ผลยังไง?','มีเรื่องที่คุณอยากเป็น "expert" ในระยะ 2 ปีข้างหน้า?','คุณ share ความรู้ให้ทีมยังไง?','ถ้าต้องทำ internal talk คุณจะเลือกเรื่องอะไร?'],
+dev:['ทำ "knowledge-to-output" project — เปลี่ยน insight เป็น document/workshop','Present สิ่งที่เรียนรู้ให้ทีมฟังอย่างน้อยเดือนละ 1 ครั้ง','Design learning initiative ที่ทีมอื่นใช้ได้จริง']},
+Builder:{th:'นักสร้างของใหม่',domain:'Execution',thrive:'Blank slate ให้ทดลอง ได้สร้างจาก ground up',blind:'อาจสร้างคนเดียวจนลืม involve ทีม — miss collaboration',career:'Product PM, Tech lead, Founder mindset, New ventures',stretch:'Own new product line หรือ initiative ตั้งแต่ 0 ถึง launch',pc:['Strategist','Connector','Catalyst'],
+open:'สวัสดีครับ/ค่ะ [NAME] — วันนี้มา debrief ผล Rabbit Signal นะครับ\n\nผลบอกว่าคุณเป็น Builder — "นักสร้างของใหม่" ใน domain Execution — ฟังดูเป็นยังไงครับ?',
+core:'Builder คือคนที่สร้างสิ่งที่ยังไม่มีได้จาก 0 — คุณทน ambiguity ได้ ไม่รอให้ทุกอย่างพร้อมก่อนเริ่ม\n\nSuperpower คือ "0→1 ได้เสมอ" — ในขณะที่คนอื่นยังวางแผน คุณ build ไปแล้ว',
+growth:'Growth area คือการ involve คนอื่น — passion ในการ build อาจทำให้ทำคนเดียวเร็วกว่า แต่ output ที่คน own ด้วยกัน sustain ได้นานกว่า\n\nลองถาม: "ใน project ล่าสุด — มีใครที่ควรอยู่ใน process แต่เราไม่ได้ involve บ้าง?"',
+q:['project ที่คุณภูมิใจที่สุดที่สร้างจาก 0 คืออะไร?','เวลา build อะไรใหม่ คุณ involve ทีมยังไง?','ถ้าได้ build อะไรก็ได้ใน Rabbit — คุณจะ build อะไร?','ตอน start project ใหม่ ขั้นตอนแรกๆ ของคุณคืออะไร?','คุณรับมือกับ ambiguity ยังไง เมื่อยังไม่มี roadmap ชัด?','มี build ไหนที่ไม่ work — คุณเรียนรู้อะไรจากมัน?','คุณรู้ได้ยังไงว่า "สร้างเสร็จ" และถึงเวลา handoff?','คนที่คุณ build งานด้วยแล้ว easy ที่สุดมี style แบบไหน?','ถ้าให้ describe สิ่งที่อยากสร้างใน 1 ปีข้างหน้า — คืออะไร?','คุณ scale งานจาก 0→1 ไป 1→10 ยังไง?'],
+dev:['ทำ project ที่ต้อง co-create กับทีมอื่นอย่างน้อย 2 ทีม','ฝึก handoff — document งานให้คนอื่น pick up ได้ทันที','Mentor คนในทีมที่อยากเรียนรู้ "builder mindset"']},
+Optimizer:{th:'นักขัดเกลาระบบ',domain:'Execution',thrive:'มีระบบให้ปรับปรุง มี process ที่ชัดเจน',blind:'อาจ resist การเปลี่ยนแปลงถ้า logic ไม่ชัด',career:'Operations lead, Process improvement, CX design, System architect',stretch:'Own efficiency initiative ระดับ cross-BU ที่วัดผลได้',pc:['Strategist','Builder','Scout'],
+open:'สวัสดีครับ/ค่ะ [NAME] — มา debrief ผล Rabbit Signal ด้วยกันนะครับ\n\nคุณได้ Optimizer — "นักขัดเกลาระบบ" ใน domain Execution — รู้สึกยังไงกับผลนี้ครับ?',
+core:'Optimizer คือคนที่เอาของที่ดีอยู่แล้วมาทำให้ดียิ่งกว่าเดิม — คุณมองเห็น inefficiency ที่คนอื่นมองข้าม\n\nSuperpower คือ "ทำให้ 1 กลายเป็น 10" — Optimizer คือคนที่ทำให้สิ่งที่สร้างแล้วทำงานได้อย่างทรงพลัง',
+growth:'Growth area คือการ comfortable กับ ambiguity — โอกาสที่ดีที่สุดบางอันยังไม่มี proof หรือ data พอ\n\nลองถาม: "มี process ไหนที่เราปรับแล้ว แต่ environment เปลี่ยนแล้ว — พร้อมจะ rebuild ไหม?"',
+q:['process หรือระบบไหนในทีมที่คุณคิดว่าทำให้ดีกว่านี้ได้?','คุณ handle ความไม่แน่นอนในงานยังไง?','มีเวลาไหนที่คุณต้อง "just try it" โดยไม่มีข้อมูลพอ — ผลออกมาเป็นยังไง?','คุณเริ่ม spot inefficiency ยังไง — มี pattern ที่คุณมองหาไหม?','การ optimize ที่คุณภูมิใจที่สุดในปีที่ผ่านมาคืออะไร?','เมื่อ optimize แล้ว คุณ measure ว่า better ยังไง?','มีระบบไหนที่คุณเคย resist แต่พอลองแล้วดีกว่าที่คิด?','คุณ balance ระหว่าง "ทำตาม process" กับ "flexible เมื่อจำเป็น" ยังไง?','ถ้าต้องออกแบบ process ใหม่ในทีม คุณจะเริ่มจากอะไร?','คุณ convince คนอื่นให้ adopt process ใหม่ยังไง เมื่อเขา resist?'],
+dev:['รับ project ที่ยังไม่มี roadmap ชัด — ฝึก navigate ambiguity','ลอง "2-week experiment" กับ idea ที่ยังไม่มี data support','จับคู่กับ Explorer หรือ Builder เพื่อเรียนรู้ iteration mindset']},
+Connector:{th:'นักเชื่อมโลก',domain:'People',thrive:'ได้เชื่อมคนใหม่เสมอ มี ecosystem ให้ navigate',blind:'อาจ keep everyone happy จนไม่กล้า challenge',career:'BD, Partnership, Community, Cross-BU lead, Ecosystem designer',stretch:'Design cross-BU collaboration initiative ที่วัด business impact',pc:['Catalyst','Strategist','Builder'],
+open:'สวัสดีครับ/ค่ะ [NAME] — มา debrief ผล Rabbit Signal นะครับ\n\nผลบอกว่าคุณเป็น Connector — "นักเชื่อมโลก" ใน domain People — ฟังดูยังไงครับ?',
+core:'Connector คือคนที่เห็น bridge ระหว่างคน ระหว่างทีม ระหว่าง resource ที่คนอื่นมองไม่เห็น\n\nSuperpower คือ "สร้าง bridge ที่คนอื่นมองไม่เห็น" — Connector คือ glue ที่ทำให้ทั้งระบบทำงานได้',
+growth:'Growth area คือการ comfortable กับ conflict — คนที่รักษา harmony อาจหลีกเลี่ยงการพูดความจริงที่จำเป็น\n\nลองถาม: "มีเรื่องไหนที่ฉันรู้ว่าควรพูดแต่หลีกเลี่ยงเพราะกลัว disrupt relationship?"',
+q:['connection ไหนที่คุณสร้างแล้วสร้าง value ให้ทีมมากที่สุด?','มีเรื่องไหนในทีมที่คุณเห็นปัญหาแต่ไม่แน่ใจว่าควรพูดไหม?','คุณ manage ความขัดแย้งระหว่างคนในทีมยังไง?','คุณรู้ได้ยังไงว่าใครควรรู้จักใคร?','มีการ connect ที่คุณ initiate แล้วสร้าง outcome ที่ไม่คาดคิด?','เวลามี conflict คุณ step in หรือ let them work it out เอง?','relationship ในองค์กรที่คุณ invest เวลามากที่สุดคือกับใคร ทำไม?','คุณ maintain connection กับคนที่ไม่ได้ทำงานด้วยโดยตรงยังไง?','มีครั้งไหนที่ต้องเลือกระหว่าง harmony กับ truth — คุณทำยังไง?','ถ้า describe เครือข่ายที่คุณสร้างใน Rabbit — มีกี่ circle?'],
+dev:['ฝึก "courageous conversation" — หยิบ 1 เรื่องที่เลี่ยงมานาน แล้ว address มัน','นำ cross-BU initiative ที่ต้องตัดสินใจยากๆ อย่างน้อย 1 ครั้ง','อ่านและ practice conflict resolution framework']},
+Anchor:{th:'หลักของทีม',domain:'People',thrive:'ทีมต้องการ stability ผ่านช่วง change หรือ crisis',blind:'อาจ protect too much จน slow ทีมลง',career:'People lead, Culture champion, Senior advisor, Change management',stretch:'Lead change management ใน major transformation',pc:['Catalyst','Connector','Strategist'],
+open:'สวัสดีครับ/ค่ะ [NAME] — มา debrief ผล Rabbit Signal ด้วยกันนะครับ\n\nคุณได้ Anchor — "หลักของทีม" ใน domain People — ได้ยินคำนี้แล้วรู้สึกยังไงครับ?',
+core:'Anchor คือคนที่ทีมวิ่งมาหาเมื่อรู้สึกไม่แน่นอน — คุณให้ความมั่นคงทางจิตใจ ทำให้ทีม feel safe\n\nSuperpower คือ "ทีมรู้สึก safe เมื่ออยู่ใกล้" — psychological safety คือ foundation ของทุกอย่าง',
+growth:'Growth area คือการ push ทีมไปข้างหน้าด้วย — การ protect ทีมมากเกินไปอาจทำให้ทีม grow ช้า\n\nลองถาม: "ใน 3 เดือนที่ผ่านมา — ฉัน push ทีมให้ก้าวออก comfort zone บ้างไหม?"',
+q:['เวลาทีมเครียดหรือไม่แน่นอน คุณทำอะไรเป็นอันดับแรก?','มีช่วงไหนที่คุณรู้สึกว่าต้อง push ทีมมากกว่าที่ทำ?','คุณคิดว่า legacy ที่คุณทิ้งไว้ในทีมคืออะไร?','คนในทีมมาหาคุณด้วยเรื่องแบบไหนบ่อยที่สุด?','คุณ recharge ตัวเองยังไงเมื่อรับ emotional load จากทีมมาก?','มีครั้งไหนที่ให้ stability มากเกินไปจน team ไม่ได้ grow?','คุณ balance ระหว่าง "ฉันพร้อมรับฟัง" กับ "ถึงเวลา push forward" ยังไง?','ถ้าทีมไม่มีคุณสักเดือน — อะไรจะขาดหายไปมากที่สุด?','มี anchor role model ที่คุณ admire — เขา/เธอทำอะไรที่คุณอยากเรียน?','การ lead ด้วย stability ต่างจาก lead ด้วย inspiration ยังไง?'],
+dev:['ตั้ง "growth challenge" ให้ทีมทุกไตรมาส','ฝึก "strategic push" — เรียนรู้วิธี challenge ทีมอย่าง kind แต่ clear','จับคู่กับ Challenger เพื่อเรียนรู้วิธี raise the bar']},
+Catalyst:{th:'นักจุดประกาย',domain:'People',thrive:'ได้ inspire, energize และเห็นคนอื่น grow',blind:'อาจ ignite แล้วไม่ execute จนจบ',career:'People leader, Marketing lead, Culture carrier, Talent developer',stretch:'Lead org-wide culture initiative ที่วัด culture index ได้',pc:['Builder','Strategist','Connector'],
+open:'สวัสดีครับ/ค่ะ [NAME] — มา debrief ผล Rabbit Signal นะครับ\n\nผลบอกว่าคุณเป็น Catalyst — "นักจุดประกาย" ใน domain People — ฟังดูยังไงครับ ตรงกับตัวเองไหม?',
+core:'Catalyst คือคนที่ทำให้คนรอบข้าง perform ได้ดีกว่าที่พวกเขาคิดว่าตัวเองทำได้\n\nSuperpower คือ "Unlock potential คนอื่น" — 1 Catalyst สามารถ multiply performance ของทั้งทีมได้',
+growth:'Growth area คือการ follow through — energy ในการจุดประกายสูงมากใน launch แต่ sustainability ต้องการ execute อย่างต่อเนื่อง\n\nลองถาม: "initiative ที่ฉันจุดประกายในปีที่แล้ว — ยังไปต่อได้ด้วยตัวเองไหม?"',
+q:['คนไหนในทีมที่คุณรู้สึกว่า unlock ให้ grow ได้มากที่สุด?','มี initiative ไหนที่คุณ initiate แล้ว sustain ได้ดีโดยไม่ต้องพึ่งคุณตลอด?','ถ้าออกไปสักเดือน — อะไรในทีมที่ยังดำเนินต่อได้เอง?','คุณรู้ได้ยังไงว่าใครกำลัง "ready to be ignited"?','มีครั้งที่คุณ inspire แล้วคนนั้น outperform ความคาดหวัง — เล่าให้ฟัง?','energy ที่ใช้ใน inspire คนอื่น — คุณ recharge มันได้ยังไง?','คุณ inspire ด้วยวิธีไหน — story, challenge, vision, หรืออย่างอื่น?','มีคนที่คุณ inspire แต่ยังไม่ได้ผลตามที่หวัง — คุณคิดว่าทำไม?','ถ้าต้องสร้าง culture ของ Rabbit จากศูนย์ — คุณจะเริ่มอะไรก่อน?','Catalyst ที่แข็งแกร่งต้องมีอะไรนอกจาก energy และ vision?'],
+dev:['ทำ "initiative sustainability check" — initiative ไหน depend on you มากเกินไป?','ฝึก "delegate with clarity" — ให้คนอื่น own initiative ที่คุณ start','Set OKR ที่วัด team performance ไม่ใช่แค่ personal contribution']}
+};
+
+function _dgSM(val,type){
+  const n=parseInt(val)||0;
+  const bands=[
+    {min:90,lbl:'Exceptional',desc:{Impact:'สร้างผลลัพธ์ที่ส่งผลชัดเจนต่อทีมและองค์กร',Ownership:'รับผิดชอบงานแบบ "เจ้าของ" แท้จริง ไม่รอคนบอก',Excellence:'มาตรฐานงานสูงมาก ส่งมอบงาน polished เสมอ'}},
+    {min:80,lbl:'Strong',desc:{Impact:'สร้าง impact ที่คนรอบข้างรับรู้และอ้างอิงได้',Ownership:'รับผิดชอบและ drive งานได้โดยไม่ต้องติดตาม',Excellence:'งานมีคุณภาพสม่ำเสมอ เหนือกว่า expectation ปกติ'}},
+    {min:70,lbl:'Developing',desc:{Impact:'เริ่มสร้าง impact ได้ มีพื้นที่ขยายให้มากขึ้น',Ownership:'มีความรับผิดชอบดี มีโอกาสเพิ่ม proactive ownership',Excellence:'งานได้มาตรฐาน มีโอกาส level up ใน polish'}},
+    {min:0,lbl:'Emerging',desc:{Impact:'กำลัง build impact อยู่ ต้องการ support และ clarity',Ownership:'ยังอยู่ในช่วง build confidence ในการ own งาน',Excellence:'กำลังพัฒนา standard — ต้องการ feedback loop ที่ชัดเจน'}}
+  ];
+  const b=bands.find(x=>n>=x.min);
+  return {lbl:b.lbl,desc:b.desc[type]||'',pct:n};
+}
+
+function _dgScCard(lbl,val,c,bg,tx){
+  const n=parseInt(val)||0, m=_dgSM(val,lbl);
+  return `<div class="dg-sc" style="border-color:${bg};background:${bg}20">
+    <div class="dg-scl" style="color:${tx}">${lbl}</div>
+    <div class="dg-scs" style="color:${c}">${val}</div>
+    <div style="font-size:10px;font-weight:700;color:${c};margin-bottom:4px">${m.lbl}</div>
+    <div class="dg-scd">${m.desc}</div>
+    <div class="dg-scbar"><div class="dg-scfill" style="width:${n}%;background:${c}"></div></div>
+  </div>`;
+}
+
+let _dgCur=null;
+function openDG(emp,arcId,secondary,band,impact,own,excel){
+  const a=_DGA[arcId]; if(!a) return;
+  const c=_DGC[a.domain], dl=_DGL[a.domain];
+  _dgCur={emp,arcId,secondary,band,impact,own,excel,a,c,dl};
+  const fn=emp.split(' ')[0];
+  document.getElementById('dgDot').style.background=c;
+  document.getElementById('dgElbl').textContent=emp+' · MANAGER DEBRIEF GUIDE';
+  document.getElementById('dgAname').textContent=arcId;
+  document.getElementById('dgAth').textContent=a.th;
+  const bd=document.getElementById('dgDbadge');
+  bd.textContent=a.domain; bd.style.cssText='background:'+dl.bg+';color:'+dl.tx;
+  const scDef=[
+    {l:'IMPACT',v:impact,c:'#1a7a50'},{l:'OWNERSHIP',v:own,c:'#3B3BAA'},{l:'EXCELLENCE',v:excel,c:'#8a2060'},
+    {l:'PRIMARY',v:arcId,c:c,fs:'13px'},{l:'SECONDARY',v:secondary,c:'#888',fs:'12px'},{l:'SIGNAL BAND',v:band,c:'#555',fs:'11px'}
+  ];
+  document.getElementById('dgScores').innerHTML=scDef.map(s=>
+    `<div class="dg-si"><div class="dg-sl">${s.l}</div><div class="dg-sv" style="color:${s.c}${s.fs?';font-size:'+s.fs:''}">${s.v}</div></div>`
+  ).join('');
+  document.getElementById('dgScards').innerHTML=
+    _dgScCard('Impact',impact,'#1a7a50','#1a7a50','#0F6E56')+
+    _dgScCard('Ownership',own,'#3B3BAA','#3B3BAA','#2a2a88')+
+    _dgScCard('Excellence',excel,'#8a2060','#8a2060','#5a1040');
+  function sb(t){return '<div class="dg-sbox">'+t.replace(/\[NAME\]/g,fn).split('\n').map(l=>l?'<p>'+l+'</p>':'').join('')+'</div>';}
+  function sec(n,lbl,html){return `<div class="dg-sec"><div class="dg-sec-lbl"><span class="dg-num" style="background:${dl.bg};color:${dl.tx}">${n}</span>${lbl}</div>${html}</div>`;}
+  document.getElementById('dgBody').innerHTML=
+    sec(1,'เปิด Debrief — พูดแบบนี้',sb(a.open))+
+    `<div class="dg-igrid">
+      <div class="dg-ic"><div class="ic-l">Thrive เมื่อ</div><div class="ic-v">${a.thrive}</div></div>
+      <div class="dg-ic"><div class="ic-l">Blind Spot</div><div class="ic-v ic-w">${a.blind}</div></div>
+      <div class="dg-ic"><div class="ic-l">Career Path</div><div class="ic-v">${a.career}</div></div>
+      <div class="dg-ic"><div class="ic-l">Stretch</div><div class="ic-v">${a.stretch}</div></div>
+    </div>`+
+    sec(2,'อธิบาย Archetype — core message',sb(a.core))+
+    sec(3,'Growth Conversation',sb(a.growth))+
+    sec(4,'Conversation Starters — 10 ข้อ',
+      `<div class="dg-qlist">${a.q.map((q,i)=>`<div class="dg-q"><span style="font-weight:700;color:#bbb;margin-right:5px">${i+1}.</span>${q}</div>`).join('')}</div>`)+
+    sec(5,'Development Actions',
+      `<div class="dg-dlist">${a.dev.map(d=>`<div class="dg-d" style="background:${dl.dbg};border-color:${dl.dbr};color:${dl.tx}">${d}</div>`).join('')}</div>`)+
+    `<div class="dg-sec"><div class="dg-sec-lbl"><span class="dg-num" style="background:${dl.bg};color:${dl.tx}">+</span>Power Combo</div>
+    <div class="dg-tags">${a.pc.map(t=>`<span class="dg-tag" style="background:${dl.bg};color:${dl.tx}">${t}</span>`).join('')}</div></div>`;
+  document.getElementById('dgModal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeDG(){
+  document.getElementById('dgModal').classList.remove('open');
+  document.body.style.overflow='';
+}
+function dgPrint(){
+  if(!_dgCur) return;
+  const {emp,arcId,secondary,band,impact,own,excel,a,c,dl}=_dgCur;
+  const fn=emp.split(' ')[0];
+  function pb(t){return '<div style="background:#faf9f7;border:1px solid #eee;border-radius:7px;padding:12px 14px">'+t.replace(/\[NAME\]/g,fn).split('\n').map(l=>l?'<p style="font-size:12px;line-height:1.8;color:#1a1a1a;margin:0 0 6px">'+l+'</p>':'').join('')+'</div>';}
+  function psec(n,lbl,html){return `<div style="margin-bottom:13px;page-break-inside:avoid"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#aaa;margin-bottom:6px;display:flex;align-items:center;gap:5px"><span style="display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;border-radius:50%;font-size:9px;font-weight:800;background:${dl.bg};color:${dl.tx}">${n}</span>${lbl}</div>${html}</div>`;}
+  function psmc(lbl,val,cc,bg,tx){const n=parseInt(val)||0,m=_dgSM(val,lbl);return `<div style="border-radius:7px;padding:9px 11px;border:1px solid ${bg};background:${bg}20"><div style="font-size:9px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:${tx};margin-bottom:3px">${lbl}</div><div style="font-size:18px;font-weight:800;color:${cc};margin-bottom:2px">${val}</div><div style="font-size:10px;font-weight:700;color:${cc};margin-bottom:3px">${m.lbl}</div><div style="font-size:10.5px;line-height:1.55;color:#555;margin-bottom:5px">${m.desc}</div><div style="height:3px;border-radius:2px;background:#eee;overflow:hidden"><div style="height:100%;width:${n}%;background:${cc};border-radius:2px"></div></div></div>`;}
+  const html=`<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Debrief — ${emp}</title>
+<style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,BlinkMacSystemFont,'IBM Plex Sans Thai','IBM Plex Sans',sans-serif;background:#fff;color:#1a1a1a;padding:22px 26px}@media print{.nopr{display:none!important}button{display:none!important}}</style>
+</head><body>
+<div class="nopr" style="background:#0d0d0d;color:#fff;padding:9px 14px;border-radius:7px;margin-bottom:16px;display:flex;align-items:center;gap:12px;font-size:12px">
+  <span>🖨️ กด <strong>⌘+P / Ctrl+P</strong> เพื่อ Save as PDF</span>
+  <button onclick="window.print()" style="padding:5px 12px;border-radius:5px;background:#F7941D;color:#000;border:none;font-size:11px;font-weight:700;cursor:pointer">Print / Save PDF</button>
+  <button onclick="window.close()" style="padding:5px 12px;border-radius:5px;background:transparent;color:#888;border:1px solid #444;font-size:11px;cursor:pointer">ปิด</button>
+</div>
+<div style="margin-bottom:14px;padding-bottom:11px;border-bottom:2.5px solid #0d0d0d">
+  <div style="font-size:9px;color:#999;letter-spacing:.1em;text-transform:uppercase;margin-bottom:2px">RABBIT SIGNAL · MANAGER DEBRIEF GUIDE · HR CONFIDENTIAL</div>
+  <div style="font-size:12px;color:#666;margin-bottom:4px">${emp}</div>
+  <div style="font-size:24px;font-weight:800;color:${c}">${arcId}</div>
+  <div style="font-size:12px;color:#888;margin-top:2px">${a.th}</div>
+  <span style="display:inline-block;font-size:11px;padding:2px 9px;border-radius:11px;font-weight:700;margin-top:6px;background:${dl.bg};color:${dl.tx}">${a.domain}</span>
+</div>
+<div style="display:flex;border:1px solid #eee;border-radius:7px;overflow:hidden;margin-bottom:12px">
+  ${[['IMPACT',impact,'#1a7a50'],['OWNERSHIP',own,'#3B3BAA'],['EXCELLENCE',excel,'#8a2060'],['PRIMARY',arcId,c],['SECONDARY',secondary,'#888'],['SIGNAL BAND',band,'#555']].map(s=>`<div style="flex:1;text-align:center;padding:8px 5px;border-right:1px solid #eee"><div style="font-size:9px;color:#bbb;letter-spacing:.05em;text-transform:uppercase;margin-bottom:2px">${s[0]}</div><div style="font-size:14px;font-weight:800;color:${s[2]}">${s[1]}</div></div>`).join('')}
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-bottom:13px">
+  ${psmc('Impact',impact,'#1a7a50','#1a7a50','#0F6E56')}
+  ${psmc('Ownership',own,'#3B3BAA','#3B3BAA','#2a2a88')}
+  ${psmc('Excellence',excel,'#8a2060','#8a2060','#5a1040')}
+</div>
+${psec(1,'เปิด Debrief — พูดแบบนี้',pb(a.open))}
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:13px">
+  <div style="background:#faf9f7;border:1px solid #eee;border-radius:7px;padding:8px 11px"><div style="font-size:9px;color:#bbb;text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">Thrive เมื่อ</div><div style="font-size:11px;font-weight:500;line-height:1.5">${a.thrive}</div></div>
+  <div style="background:#faf9f7;border:1px solid #eee;border-radius:7px;padding:8px 11px"><div style="font-size:9px;color:#bbb;text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">Blind Spot</div><div style="font-size:11px;font-weight:500;line-height:1.5;color:#c86030">${a.blind}</div></div>
+  <div style="background:#faf9f7;border:1px solid #eee;border-radius:7px;padding:8px 11px"><div style="font-size:9px;color:#bbb;text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">Career Path</div><div style="font-size:11px;font-weight:500;line-height:1.5">${a.career}</div></div>
+  <div style="background:#faf9f7;border:1px solid #eee;border-radius:7px;padding:8px 11px"><div style="font-size:9px;color:#bbb;text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">Stretch</div><div style="font-size:11px;font-weight:500;line-height:1.5">${a.stretch}</div></div>
+</div>
+${psec(2,'อธิบาย Archetype — core message',pb(a.core))}
+${psec(3,'Growth Conversation',pb(a.growth))}
+${psec(4,'Conversation Starters — 10 ข้อ',`<div style="display:flex;flex-direction:column;gap:4px">${a.q.map((q,i)=>`<div style="background:#faf9f7;border:1px solid #eee;border-radius:6px;padding:7px 11px;font-size:11px;line-height:1.6"><span style="font-weight:700;color:#bbb;margin-right:4px">${i+1}.</span>${q}</div>`).join('')}</div>`)}
+${psec(5,'Development Actions',`<div style="display:flex;flex-direction:column;gap:4px">${a.dev.map(d=>`<div style="padding:7px 11px;border-radius:6px;font-size:11px;line-height:1.6;border-left:3px solid ${dl.dbr};background:${dl.dbg};color:${dl.tx}">${d}</div>`).join('')}</div>`)}
+<div style="margin-bottom:12px"><div style="font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#aaa;margin-bottom:5px">+ POWER COMBO</div><div style="display:flex;flex-wrap:wrap;gap:4px">${a.pc.map(t=>`<span style="font-size:11px;padding:2px 9px;border-radius:10px;font-weight:500;background:${dl.bg};color:${dl.tx}">${t}</span>`).join('')}</div></div>
+<div style="margin-top:16px;padding-top:9px;border-top:1px solid #eee;font-size:9px;color:#ccc;text-align:center">Rabbit Signal · Manager Debrief Guide · HR Confidential · ${new Date().toLocaleDateString('th-TH',{year:'numeric',month:'long',day:'numeric'})}</div>
+</body></html>`;
+  const w=window.open('','_blank','width=820,height=900,scrollbars=yes');
+  w.document.write(html);
+  w.document.close();
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDG();});
 </script>
 </body>
 </html>
